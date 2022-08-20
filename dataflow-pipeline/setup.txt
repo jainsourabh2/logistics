@@ -1,0 +1,7 @@
+export PROJECT=on-prem-project-337210
+export REGION=asia-south1
+export STAGING_LOCATION=gs://customer-demos-asia-south1/dataflow/staging
+export TEMP_LOCATION=gs://customer-demos-asia-south1/dataflow/temp
+export TEMPLATE_LOCATION=gs://customer-demos-asia-south1/dataflow/templates
+
+python -m streaming --runner DataflowRunner --project=$PROJECT --staging_location $STAGING_LOCATION --temp_location $TEMP_LOCATION --region $REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime
