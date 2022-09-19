@@ -1,0 +1,16 @@
+* {
+  /** border: 0.5px solid grey; */
+  margin: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 30vh 50vh;
+  grid-template-columns: 50vh 50vh;
+  justify-content: center;
+  align-items: center;
+}

@@ -7,26 +7,11 @@ import logging
 import argparse
 import json
 import random
-from apache_beam.transforms.window import FixedWindows
-from apache_beam import DoFn, GroupBy, io, ParDo, Pipeline, PTransform, WindowInto, WithKeys
 from apache_beam.io import fileio, filesystem
-from apache_beam.io.filebasedsink_test import _TestCaseWithTempDirCleanUp
-
 
 PROJECT="on-prem-project-337210"
 schema = "client_id:STRING,epoch_time:STRING"
 TOPIC = "projects/on-prem-project-337210/topics/vitaming"
-
-class WriteFilesTest(_TestCaseWithTempDirCleanUp):
-  class JsonSink(fileio.TextSink):
-
-    def write(self, record):
-      self._fh.write(json.dumps(record).encode('utf8'))
-      self._fh.write('\n'.encode('utf8'))
-
-def no_colon_file_naming(*args):
-    file_name = fileio.destination_prefix_naming()(*args)
-    return file_name.replace(':', '_')
 
 def main(argv=None, save_main_session=True):
     import random
@@ -50,18 +35,6 @@ def main(argv=None, save_main_session=True):
             | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:vitaming.logistics'.format(PROJECT), schema=schema,
                                 write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
                                 create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED)
-        )
-
-        gcs_window_write = (datasource
-        | "Window into fixed intervals" >> WindowInto(FixedWindows(30))
-        | "Group by key" >> GroupBy(lambda s: random.randint(0, 2))
-        | 'Extract Values"' >> beam.FlatMap(lambda x: x[1])
-        | 'Write to GCS' >> fileio.WriteToFiles(
-                                    path=str("gs://customer-demos-asia-south1/dataflow/"),
-                                    sink=lambda x: WriteFilesTest.JsonSink(),
-                                    file_naming=no_colon_file_naming,
-                                    max_writers_per_bundle=0
-                                    )
         )
 
     result = p.run()
