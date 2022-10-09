@@ -6,7 +6,7 @@ import json
 import requests
 import datetime  
 
-url = 'http://35.200.173.88:8001/api/orders/create'
+url = 'http://xxx.xxx.xxx.xxx:8001/api/orders/create'
 
 STATUS = (
     'order_placed', 'supplier_checkout', 'warehouse_checkin', 'warehouse_checkout', 'local_warehouse_checkin', 'local_warehouse_checkout', 'order_delivered'
