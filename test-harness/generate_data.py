@@ -4,6 +4,7 @@ import random
 import csv
 import json
 import requests
+import datetime  
 
 url = 'http://35.200.173.88:8001/api/orders/create'
 
@@ -37,7 +38,7 @@ for x in range(1):
 	order = {}
 	customer_id = str(uuid.uuid1())
 	item_id = random.randint(1,500)
-	transaction_time = int(time.time() * 1000)
+	transaction_time = int(time.time())
 	supplier_loc = random.randint(1,1019) # Update the maximum number from supplier list.
 	supplier_code_state = suppliers_warehouse[supplier_loc]
 	package_generated_loc = random.randint(1,1019) # Update the maximum number from supplier list.
@@ -63,38 +64,40 @@ for x in range(1):
 	order['supplier_id'] = supplier_loc
 	order['item_id'] = item_id
 	order['customer_location']  = package_generated_loc
-	order['transaction_time'] = transaction_time
+	order['transaction_time'] = datetime.datetime.fromtimestamp(transaction_time).strftime('%Y-%m-%d %H:%M:%S.%f')  
 	order['status'] = 'order_placed'
 	#Make API Call for order_paced status
+	print(order)
 	data_json= json.dumps(order)
 	response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-	supplier_checkout_timestamp = (transaction_time + ((supplier_pickup_hours * 60 * 60) * 1000))
-	order['transaction_time'] = supplier_checkout_timestamp
+	supplier_checkout_timestamp = (transaction_time + ((supplier_pickup_hours * 60 * 60)))
+	order['transaction_time'] = datetime.datetime.fromtimestamp(supplier_checkout_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f') 
 	order['status'] = 'supplier_checkout'
 	#Make API Call for supplier_checkout status
+
 	data_json= json.dumps(order)
 	response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 	if supplier_code_state == package_generated_state:
-		local_warehouse_checkin_timestamp = (supplier_checkout_timestamp + ((local_warehouse_checkin_hours_same_state * 60 * 60) * 1000))
-		order['transaction_time'] = local_warehouse_checkin_timestamp
+		local_warehouse_checkin_timestamp = (supplier_checkout_timestamp + ((local_warehouse_checkin_hours_same_state * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(local_warehouse_checkin_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f') 
 		order['local_warehouse'] = supplier_code_state
 		order['status'] = 'local_warehouse_checkin'
 		#Make API Call for local_warehouse_checkin status
 		data_json= json.dumps(order)
 		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-		local_warehouse_checkout_timestamp = (local_warehouse_checkin_timestamp + ((local_warehouse_checkout_hours_same_state * 60 * 60) * 1000))
-		order['transaction_time'] = local_warehouse_checkout_timestamp
+		local_warehouse_checkout_timestamp = (local_warehouse_checkin_timestamp + ((local_warehouse_checkout_hours_same_state * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(local_warehouse_checkout_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['local_warehouse'] = supplier_code_state
 		order['status'] = 'local_warehouse_checkout'
 		#Make API Call for local_warehouse_checkout status
 		data_json= json.dumps(order)
 		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-		order_delivered_timestamp = (local_warehouse_checkout_timestamp + ((order_delivered_hours * 60 * 60) * 1000))
-		order['transaction_time'] = order_delivered_timestamp
+		order_delivered_timestamp = (local_warehouse_checkout_timestamp + ((order_delivered_hours * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(order_delivered_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['local_warehouse'] = supplier_code_state
 		order['status'] = 'order_delivered'
 		#Make API Call for order_delivered status
@@ -104,40 +107,40 @@ for x in range(1):
 		print("Package to be delivered in the same state")
 	else:
 
-		warehouse_checkin_timestamp = (supplier_checkout_timestamp + ((warehouse_checkin_hours_different_state * 60 * 60) * 1000))
-		order['transaction_time'] = warehouse_checkin_timestamp
+		warehouse_checkin_timestamp = (supplier_checkout_timestamp + ((warehouse_checkin_hours_different_state * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(warehouse_checkin_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['warehouse'] = supplier_code_state
 		order['status'] = 'warehouse_checkin'
 		#Make API Call for warehouse_checkin status
 		data_json= json.dumps(order)
 		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-		warehouse_checkout_timestamp = (warehouse_checkin_timestamp + ((warehouse_checkout_hours_different_state * 60 * 60) * 1000))
-		order['transaction_time'] = warehouse_checkout_timestamp
+		warehouse_checkout_timestamp = (warehouse_checkin_timestamp + ((warehouse_checkout_hours_different_state * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(warehouse_checkout_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['warehouse'] = supplier_code_state
 		order['status'] = 'warehouse_checkout'
 		#Make API Call for warehouse_checkout status
 		data_json= json.dumps(order)
 		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-		local_warehouse_checkin_timestamp = (warehouse_checkout_timestamp + ((local_warehouse_checkin_hours_different_state * 60 * 60) * 1000))
-		order['transaction_time'] = local_warehouse_checkin_timestamp
+		local_warehouse_checkin_timestamp = (warehouse_checkout_timestamp + ((local_warehouse_checkin_hours_different_state * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(local_warehouse_checkin_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['local_warehouse'] = package_generated_state
 		order['status'] = 'local_warehouse_checkin'
 		#Make API Call for local_warehouse_checkin status
 		data_json= json.dumps(order)
 		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-		local_warehouse_checkout_timestamp = (local_warehouse_checkin_timestamp + ((local_warehouse_checkout_hours_different_state * 60 * 60) * 1000))
-		order['transaction_time'] = local_warehouse_checkout_timestamp
+		local_warehouse_checkout_timestamp = (local_warehouse_checkin_timestamp + ((local_warehouse_checkout_hours_different_state * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(local_warehouse_checkout_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['local_warehouse'] = package_generated_state
 		order['status'] = 'local_warehouse_checkout'
 		#Make API Call for local_warehouse_checkout status
 		data_json= json.dumps(order)
 		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
-		order_delivered_timestamp = (local_warehouse_checkout_timestamp + ((order_delivered_hours * 60 * 60) * 1000))
-		order['transaction_time'] = order_delivered_timestamp
+		order_delivered_timestamp = (local_warehouse_checkout_timestamp + ((order_delivered_hours * 60 * 60)))
+		order['transaction_time'] = datetime.datetime.fromtimestamp(order_delivered_timestamp).strftime('%Y-%m-%d %H:%M:%S.%f')
 		order['local_warehouse'] = package_generated_state
 		order['status'] = 'order_delivered'
 		#Make API Call for order_delivered status

@@ -32,8 +32,8 @@ def main(argv=None, save_main_session=True):
         datasource = (p
             | 'ReadData' >> beam.io.ReadFromPubSub(topic=TOPIC).with_output_types(bytes)
             | 'Reshuffle' >> beam.Reshuffle()
-            | 'With timestamps' >> beam.Map(lambda mytime: beam.window.TimestampedValue(mytime, mytime['transaction_time']))
-            | 'Get timestamp' >> beam.ParDo(GetTimestamp())
+            #| 'With timestamps' >> beam.Map(lambda mytime: beam.window.TimestampedValue(mytime, mytime['transaction_time']))
+            #| 'Get timestamp' >> beam.ParDo(GetTimestamp())
             | 'Json Parser' >> beam.Map(json.loads)
         )
 
