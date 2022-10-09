@@ -56,9 +56,7 @@ pipeline_options = XyzOptions(
 def run (argv=None):
     
     with beam.Pipeline(options=pipeline_options) as p:
-       
-       input_subscription=f"projects/{PROJECT}/subscriptions/{SUBSCRIPTION}"
-
+        input_subscription=f"projects/tdbargolis1/subscriptions/vitaming-subscription-delivery"
         _ = (p
                 | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(subscription=input_subscription).with_output_types(bytes)
                 | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
@@ -66,7 +64,7 @@ def run (argv=None):
                 | 'Conversion string to row object' >> beam.ParDo(CreateRowFn(pipeline_options)) 
                 | 'Writing row object to BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
                                   instance_id=pipeline_options.bigtable_instance,
-                                  table_id=pipeline_options.bigtable_table))
-
+                                  table_id=pipeline_options.bigtable_table)
+            )
 if __name__ == '__main__':
     run()
