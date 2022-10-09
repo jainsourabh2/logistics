@@ -8,3 +8,13 @@ export GCP_PROJ_ID="on-prem-project-337210"
 export MAIN_PORT=8001
 export PORT_1=8002
 export PORT_2=8003
+
+
+#Steps for setting the environment
+
+sudo apt install git
+git clone https://github.com/jainsourabh2/logistics.git
+sudo apt install nodejs npm -y
+install yarn
+yarn start
+

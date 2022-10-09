@@ -10,7 +10,7 @@ import random
 from apache_beam.io import fileio, filesystem
 
 PROJECT="on-prem-project-337210"
-schema = "client_id:STRING,epoch_time:STRING"
+schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING"
 TOPIC = "projects/on-prem-project-337210/topics/vitaming"
 
 def main(argv=None, save_main_session=True):
@@ -31,7 +31,7 @@ def main(argv=None, save_main_session=True):
             | "Json Parser" >> beam.Map(json.loads)
         )
 
-        bq_streaming_write = (datasource
+        bigquery_streaming_write = (datasource
             | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:vitaming.logistics'.format(PROJECT), schema=schema,
                                 write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
                                 create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED)
