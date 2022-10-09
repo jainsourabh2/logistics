@@ -16,6 +16,6 @@ sudo apt install git
 git clone https://github.com/jainsourabh2/logistics.git
 sudo apt install nodejs npm -y
 install yarn
-yarn start
+yarn start or pm2 start "yarn start" --name Logistics 
 sudo apt-get remove python3-pip
 sudo apt-get install python3-pip
