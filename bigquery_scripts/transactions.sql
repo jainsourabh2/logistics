@@ -1,5 +1,6 @@
 #PArtitioned by hour on transaction_time column and clustered by supplier_id,local_warehouse and warehouse
 
+
 [
   {
     "mode": "NULLABLE",

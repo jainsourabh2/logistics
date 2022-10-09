@@ -32,7 +32,7 @@ read_csv_into_array()
 
 #print(suppliers_warehouse[8])
 
-for x in range(2):
+for x in range(1):
 	time.sleep(1)
 	order = {}
 	customer_id = str(uuid.uuid1())

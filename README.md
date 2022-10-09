@@ -17,4 +17,5 @@ git clone https://github.com/jainsourabh2/logistics.git
 sudo apt install nodejs npm -y
 install yarn
 yarn start
-
+sudo apt-get remove python3-pip
+sudo apt-get install python3-pip

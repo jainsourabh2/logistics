@@ -13,6 +13,10 @@ PROJECT="on-prem-project-337210"
 schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING"
 TOPIC = "projects/on-prem-project-337210/topics/vitaming"
 
+class GetTimestamp(beam.DoFn):
+ def process(self, mytime, timestamp=beam.DoFn.TimestampParam):
+   yield '{}'.format(timestamp.to_utc_datetime())
+
 def main(argv=None, save_main_session=True):
     import random
 
@@ -28,7 +32,9 @@ def main(argv=None, save_main_session=True):
         datasource = (p
             | 'ReadData' >> beam.io.ReadFromPubSub(topic=TOPIC).with_output_types(bytes)
             | 'Reshuffle' >> beam.Reshuffle()
-            | "Json Parser" >> beam.Map(json.loads)
+            | 'With timestamps' >> beam.Map(lambda mytime: beam.window.TimestampedValue(mytime, mytime['transaction_time']))
+            | 'Get timestamp' >> beam.ParDo(GetTimestamp())
+            | 'Json Parser' >> beam.Map(json.loads)
         )
 
         bigquery_streaming_write = (datasource

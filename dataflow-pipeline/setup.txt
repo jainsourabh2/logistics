@@ -1,7 +1,9 @@
-export PROJECT=tdbargolis1
+export PROJECT=on-prem-project-337210
 export REGION=asia-south1
-export STAGING_LOCATION=gs://vitaming-bucket-logs/staging/
-export TEMP_LOCATION=gs://vitaming-bucket-logs/temp/
-export TEMPLATE_LOCATION=gs://vitaming-bucket-logs/temp/templates
+export STAGING_LOCATION=gs://vitaming-demo/staging/
+export TEMP_LOCATION=gs://vitaming-demo/temp/
+export TEMPLATE_LOCATION=gs://vitaming-demo/templates/
 
 python -m dataflow-bigtable --runner DataflowRunner --project=$PROJECT --staging_location $STAGING_LOCATION --temp_location $TEMP_LOCATION --region $REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/tdbargolis1/regions/asia-south1/subnetworks/tdbarg-app-vpc-sub03 --dataflow_service_options=enable_prime
+
+python3 -m streaming-pubsub-to-bq --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime
