@@ -24,7 +24,7 @@ persist_with: logistic-demo_default_datagroup
 explore: logistics {
   join: suppliers {
     type: left_outer
-    sql_on: ${logistics.supplier_id} = ${suppliers.id} ;;
+    sql_on: ${logistics.supplier_id} = ${suppliers.code} ;;
     relationship: many_to_one
   }
 }
