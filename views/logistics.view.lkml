@@ -104,5 +104,4 @@ view: logistics {
     sql: ${total_price}/${total_orders} ;;
     value_format: "$0.00"
   }
-
 }
