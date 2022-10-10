@@ -10,7 +10,7 @@ import random
 from apache_beam.io import fileio, filesystem
 
 PROJECT="on-prem-project-337210"
-schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING"
+schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING,price:INTEGER"
 TOPIC = "projects/on-prem-project-337210/topics/vitaming"
 
 class GetTimestamp(beam.DoFn):
