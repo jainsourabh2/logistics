@@ -88,8 +88,21 @@ view: logistics {
     sql: ${TABLE}.warehouse ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: [suppliers.admin_name, suppliers.id]
+  measure: total_orders  {
+    type: count_distinct
+    sql: ${package_id};;
   }
+
+  measure: total_sales {
+    type: sum
+    sql: ${price} ;;
+    value_format: "$0"
+  }
+
+  measure: avg_sales_price {
+    type: number
+    sql: ${total_price}/${total_orders} ;;
+    value_format: "$0.00"
+  }
+
 }
