@@ -18,7 +18,7 @@ class CreateRowFn(beam.DoFn):
         
         from google.cloud.bigtable import row
         import datetime
-
+        print(key)
         #direct_row = row.DirectRow(row_key='key')
         direct_row = row.DirectRow(row_key='1234abcd#4321joe')
         direct_row.set_cell(
@@ -35,7 +35,7 @@ class XyzOptions(PipelineOptions):
     
     @classmethod
     def _add_argparse_args(cls, parser):
-        parser.add_argument('--bigtable_project', default='tdbargolis1'),
+        parser.add_argument('--bigtable_project', default='on-prem-project-337210'),
         parser.add_argument('--bigtable_instance', default='vitg-inst'),
         parser.add_argument('--bigtable_table', default='logistics-cust')
 
@@ -43,11 +43,11 @@ pipeline_options = XyzOptions(
     save_main_session=True, 
     streaming=True,
     runner='DataflowRunner',
-    project='tdbargolis1',
+    project='on-prem-project-337210',
     region='asia-south1',
-    temp_location='gs://vitaming-bucket-logs/temp/',
-    staging_location='gs://vitaming-bucket-logs/staging/',
-    bigtable_project='tdbargolis1',
+    temp_location='gs://vitaming-demo/temp/',
+    staging_location='gs://vitaming-demo/staging/',
+    bigtable_project='on-prem-project-337210',
     bigtable_instance='vitg-inst',
     bigtable_table='logistics-cust')
 
@@ -56,7 +56,7 @@ pipeline_options = XyzOptions(
 def run (argv=None):
     
     with beam.Pipeline(options=pipeline_options) as p:
-        input_subscription=f"projects/tdbargolis1/subscriptions/vitaming-subscription-delivery"
+        input_subscription=f"projects/on-prem-project-337210/subscriptions/vitaming-subscription-delivery"
         _ = (p
                 | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(subscription=input_subscription).with_output_types(bytes)
                 | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
