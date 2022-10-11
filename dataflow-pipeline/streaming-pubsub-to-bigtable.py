@@ -20,14 +20,14 @@ class CreateRowFn(beam.DoFn):
         import datetime
         import json
 
-        #order_json = json.loads(element)
-        print(element)
+        order_json = json.dumps(element)
+        #print(element)
         #direct_row = row.DirectRow(row_key='key')
-        direct_row = row.DirectRow(row_key=element["package_id"])
+        direct_row = row.DirectRow(row_key=order_json["package_id"])
         direct_row.set_cell(
             'delivery_stats',
             'status',
-            element,
+            order_json,
             timestamp=datetime.datetime.now())
         
         yield direct_row
