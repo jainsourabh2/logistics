@@ -21,10 +21,17 @@ class CreateRowFn(beam.DoFn):
         import datetime
         import json
 
-        #order_json = json.dumps(element)
-        #print(element)
+        order_json = json.dumps(element)
+        print("Element")
+        print(element)
+        print(type(element))
+        print("OrderJSON")
+        print(order_json)
+        print(type(order_json))
+
         #direct_row = row.DirectRow(row_key='key')
-        direct_row = row.DirectRow(row_key=element["package_id"])
+
+        direct_row = row.DirectRow(row_key=element)
         direct_row.set_cell(
             'delivery_stats',
             'status',
@@ -64,7 +71,7 @@ def run (argv=None):
         _ = (p
                 | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(subscription=input_subscription).with_output_types(bytes)
                 | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
-                | 'Json Parser' >> beam.Map(json.loads)
+                #| 'Json Parser' >> beam.Map(json.loads)
                 | 'Reshuffle' >> beam.Reshuffle()                
                 | 'Conversion string to row object' >> beam.ParDo(CreateRowFn(pipeline_options)) 
                 | 'Writing row object to BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
