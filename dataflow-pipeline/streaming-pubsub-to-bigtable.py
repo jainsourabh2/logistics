@@ -4,6 +4,7 @@ import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.io.gcp.bigtableio import WriteToBigTable
 from google.cloud import pubsub_v1
+import json
 
 # Classes
  
