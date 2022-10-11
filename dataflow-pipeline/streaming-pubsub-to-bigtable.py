@@ -19,14 +19,15 @@ class CreateRowFn(beam.DoFn):
         from google.cloud.bigtable import row
         import datetime
         import json
-        order_json = json.loads(element)
-        print(order_json)
+
+        #order_json = json.loads(element)
+        print(element)
         #direct_row = row.DirectRow(row_key='key')
-        direct_row = row.DirectRow(row_key=order_json["package_id"])
+        direct_row = row.DirectRow(row_key=element["package_id"])
         direct_row.set_cell(
             'delivery_stats',
             'status',
-            order_json,
+            element,
             timestamp=datetime.datetime.now())
         
         yield direct_row
