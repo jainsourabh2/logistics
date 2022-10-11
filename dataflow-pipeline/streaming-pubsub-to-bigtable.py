@@ -56,7 +56,7 @@ pipeline_options = XyzOptions(
 def run (argv=None):
     
     with beam.Pipeline(options=pipeline_options) as p:
-        input_subscription=f"projects/on-prem-project-337210/subscriptions/vitaming-subscription-delivery"
+        input_subscription=f"projects/on-prem-project-337210/subscriptions/transactions-subscibed"
         _ = (p
                 | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(subscription=input_subscription).with_output_types(bytes)
                 | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
