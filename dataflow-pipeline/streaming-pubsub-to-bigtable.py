@@ -30,8 +30,9 @@ class CreateRowFn(beam.DoFn):
         print(type(order_json))
 
         #direct_row = row.DirectRow(row_key='key')
+        key = element["package_id"]
 
-        direct_row = row.DirectRow(row_key=element)
+        direct_row = row.DirectRow(row_key=key)
         direct_row.set_cell(
             'delivery_stats',
             'status',
