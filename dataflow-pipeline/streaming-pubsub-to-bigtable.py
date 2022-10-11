@@ -14,17 +14,19 @@ class CreateRowFn(beam.DoFn):
         self.instance_id = pipeline_options.bigtable_instance
         self.table_id = pipeline_options.bigtable_table
   
-    def process(self, key):
+    def process(self, element):
         
         from google.cloud.bigtable import row
         import datetime
-        print(key)
+        import json
+        order_json = json.loads(element)
+        print(order_json)
         #direct_row = row.DirectRow(row_key='key')
-        direct_row = row.DirectRow(row_key=key)
+        direct_row = row.DirectRow(row_key=order_json["package_id"])
         direct_row.set_cell(
             'delivery_stats',
-            'dataflow',
-            'value1',
+            'status',
+            order_json,
             timestamp=datetime.datetime.now())
         
         yield direct_row
