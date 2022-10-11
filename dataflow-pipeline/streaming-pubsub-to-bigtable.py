@@ -20,7 +20,7 @@ class CreateRowFn(beam.DoFn):
         import datetime
         print(key)
         #direct_row = row.DirectRow(row_key='key')
-        direct_row = row.DirectRow(row_key='1234abcd#4321joe')
+        direct_row = row.DirectRow(row_key=key)
         direct_row.set_cell(
             'delivery_stats',
             'dataflow',
