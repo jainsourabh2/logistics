@@ -96,7 +96,7 @@ view: logistics {
   measure: total_sales {
     type: sum
     sql: ${price} ;;
-    value_format: "$0"
+    value_format: "#,,M"
   }
 
   measure: avg_sales_price {
