@@ -30,7 +30,7 @@ class CreateRowFn(beam.DoFn):
         print(type(order_json))
 
         #direct_row = row.DirectRow(row_key='key')
-        key = order_json[0]
+        key = order_json["package_id"]
 
         direct_row = row.DirectRow(row_key=key)
         direct_row.set_cell(
