@@ -63,8 +63,8 @@ def run (argv=None):
         input_subscription=f"projects/on-prem-project-337210/subscriptions/transactions-subscibed"
         _ = (p
                 | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(subscription=input_subscription).with_output_types(bytes)
+                | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
                 | 'Json Parser' >> beam.Map(json.loads)
-                #| 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
                 | 'Reshuffle' >> beam.Reshuffle()                
                 | 'Conversion string to row object' >> beam.ParDo(CreateRowFn(pipeline_options)) 
                 | 'Writing row object to BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
