@@ -15,10 +15,12 @@ export const DisplayForm = (props) => {
         const displayDict = {};
         Object.keys(data).forEach(packageId => {
             displayDict[packageId] = [];
-            data[packageId].locations.value.forEach(locationData => {
+            data[packageId].delivery_stats.status.forEach(locationData => {
+                let trans_time = JSON.parse(JSON.stringify(locationData.value))
+                let time = JSON.parse(trans_time)
                 displayDict[packageId].push([
-                    timestampToHumanReadable(locationData.timestamp),
-                    locationData.value
+                    time.transaction_time,
+                    trans_time
                 ]);
             });
         });
@@ -51,9 +53,10 @@ export const DisplayForm = (props) => {
             </div>
         </div>;
     } catch (err) {
+        console.log(err)
         return <div>
             <h2>Package Lookup Result</h2>
-            <div>Unable to parse result.</div>
+            <div>Error Block</div>
         </div>;
     }
 

@@ -1,4 +1,3 @@
-
 '''
 Script to populate localhost:8080 server with test data for demos.
 
@@ -85,7 +84,7 @@ def createAndPopulateRow(rowkey, locations):
 
 def main():
     # Clear old test data.
-    postURL('/test/clear')
+    # postURL('/test/clear')
 
     # Generate packages for each vendor within vendor range.
     for vendor in range(*VENDOR_RANGE):
