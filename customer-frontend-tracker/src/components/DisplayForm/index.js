@@ -20,7 +20,7 @@ export const DisplayForm = (props) => {
                 let time = JSON.parse(trans_time)
                 displayDict[packageId].push([
                     time.transaction_time,
-                    trans_time
+                    time.status
                 ]);
             });
         });
