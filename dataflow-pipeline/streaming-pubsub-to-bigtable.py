@@ -23,7 +23,7 @@ class CreateRowFn(beam.DoFn):
 
         order_json = json.loads(element)
         key = order_json["package_id"]
-        transaction_time = order_json["transaction_time"]
+        transaction_time = datetime.datetime.strptime(order_json["transaction_time"],"%Y-%m-%d %H:%M:%S.%f")
 
         direct_row = row.DirectRow(row_key=key)
         direct_row.set_cell(
