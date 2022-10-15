@@ -16,7 +16,7 @@ const btInstance = new bigtable.BigTableReader(
 app.post('/api/get', (req, res) => {
     btInstance.readRow(req.body.packageId, {
         row: {
-            cellLimit: 1,
+            cellLimit: 10,
         }
     }).then(
         data => {

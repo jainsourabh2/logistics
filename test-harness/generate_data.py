@@ -33,8 +33,8 @@ read_csv_into_array()
 
 #print(suppliers_warehouse[8])
 
-for x in range(100):
-	time.sleep(1)
+for x in range(50):
+	time.sleep(0.01)
 	order = {}
 	customer_id = str(uuid.uuid1())
 	item_id = random.randint(1,500)
