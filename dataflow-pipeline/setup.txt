@@ -5,10 +5,14 @@ export TEMP_LOCATION=gs://vitaming-demo/temp/
 export TEMPLATE_LOCATION=gs://vitaming-demo/templates/
 
 
-##Submitting a new pipeline
-python3 -m streaming-pubsub-to-bigtable --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime --jobName=logistics-pipeline-bigtable
+##Submitting a new pipeline for bigtable
+python3 -m streaming-pubsub-to-bigtable --job_name pubsub-dataflow-bigtable --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime
 
-##Update existing pipeline
-python3 -m streaming-pubsub-to-bigtable --job_name beamapp-adminsourabhsjainaltostratco-1011054512-316301-iqpt7q9e --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --update --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime --jobName=logistics-pipeline-bigtable
+##Update existing pipeline for bigtable
+python3 -m streaming-pubsub-to-bigtable --job_name pubsub-dataflow-bigtable --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --update --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime --jobName=logistics-pipeline-bigtable
 
-python3 -m streaming-pubsub-to-bq --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime --update --jobName=logistics-pipeline-bigquery
+##Submitting a new pipeline for bigquery
+python3 -m streaming-pubsub-to-bq --job_name pubsub-dataflow-bigquery --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime
+
+##Update existing pipeline for bigtable
+python3 -m streaming-pubsub-to-bq --job_name pubsub-dataflow-bigquery --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --update --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime
