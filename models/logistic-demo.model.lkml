@@ -23,8 +23,29 @@ persist_with: logistic-demo_default_datagroup
 
 explore: logistics {
   join: suppliers {
-    type: left_outer
+    type: inner
     sql_on: ${logistics.supplier_id} = ${suppliers.code} ;;
+    relationship: many_to_one
+  }
+
+  join: customers {
+    view_label: "Customers_Location"
+    type: inner
+    sql_on: ${logistics.customer_id} = ${customers.code} ;;
+    relationship: many_to_one
+  }
+
+  join: warehouse {
+    view_label: "Warehouse"
+    type: inner
+    sql_on: ${logistics.warehouse} = ${warehouse.code} ;;
+    relationship: many_to_one
+  }
+
+  join: warehouse_local {
+    view_label: "Warehouse Local"
+    type: inner
+    sql_on: ${logistics.local_warehouse} = ${warehouse_local.code} ;;
     relationship: many_to_one
   }
 }
@@ -34,3 +55,4 @@ explore: logistics {
 # Each joined view also needs to define a primary key.
 
 explore: suppliers {}
+explore: customers {}

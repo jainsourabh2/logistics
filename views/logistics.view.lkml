@@ -96,7 +96,7 @@ view: logistics {
   measure: total_sales {
     type: sum
     sql: ${price} ;;
-    value_format: "#,,M"
+    value_format: "##.##,,M"
   }
 
   measure: avg_sales_price {
@@ -104,4 +104,17 @@ view: logistics {
     sql: ${total_price}/${total_orders} ;;
     value_format: "$0.00"
   }
+
+  measure: completed_orders {
+    type: count
+    filters: [status: "order_delivered"]
+  }
+
+  measure: pending_orders {
+    type: number
+    sql: ${total_orders}- ${completed_orders} ;;
+    drill_fields: [package_id,transaction_time,local_warehouse,warehouse,status]
+  }
+
+
 }
