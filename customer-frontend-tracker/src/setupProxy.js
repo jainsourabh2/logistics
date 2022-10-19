@@ -9,7 +9,7 @@ module.exports = function (app) {
         createProxyMiddleware({
             //target: 'https://bigtable-apis-q5cbfb3b6a-el.a.run.app'
             target: 'http://35.200.173.88:8080',
-            changeOrigin: true,
+            changeOrigin: false,
             secure: false,
             // pathRewrite: {
             //     '^/php': '/public/php'
