@@ -9,13 +9,13 @@ const cors = require('cors');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-const { MAIN_PORT, NODE_ENV } = process.env;
+const { PORT, NODE_ENV } = process.env;
 NODE_ENV !== "production" ? app.use(morgan('dev')) : app.use(morgan('combined'));
 app.use(helmet());
 app.use(cors());
 app.use('/api/orders', ordersRoute);
 
-app.listen(MAIN_PORT);
+app.listen(PORT);
 if (NODE_ENV !== "production" ) {
-    console.log(`Orders service is running at http://localhost:${MAIN_PORT}`);
+    console.log(`Orders service is running at http://localhost:${PORT}`);
 }
