@@ -3,9 +3,8 @@
 FROM node:12.18.1
 
 ENV NODE_ENV=production
-ENV BT_INSTANCE=production
-ENV BT_TABLE=production
-
+ENV BT_INSTANCE=vitg-inst
+ENV BT_TABLE=logistics-cust
 
 WORKDIR /app
 

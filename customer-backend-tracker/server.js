@@ -1,10 +1,12 @@
 const express = require('express');
 const bigtable = require('./bigtable');
 require('dotenv').config();
+const cors = require('cors')
 
 // Initialize express app and bigtable instance.  
 const port = process.env.PORT || 8080;
 const app = express();
+app.use(cors()); // This is CORS-enabled for all origins!
 app.use(express.json()); // Let app communicate in jsons. 
 
 const btInstance = new bigtable.BigTableReader(
