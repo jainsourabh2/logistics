@@ -1,0 +1,14 @@
+#Open Cloud shell or console and navigate to this directory
+
+gcloud config set project on-prem-project-337210
+export GOOGLE_CLOUD_PROJECT=on-prem-project-337210
+
+gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/ingest-pubsub
+
+gcloud container images list
+
+gcloud run deploy ingest-pubsub \
+  --image gcr.io/$GOOGLE_CLOUD_PROJECT/ingest-pubsub \
+  --platform managed \
+  --region asia-south1 \
+  --allow-unauthenticated

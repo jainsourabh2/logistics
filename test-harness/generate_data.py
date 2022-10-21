@@ -3,10 +3,11 @@ import time
 import random
 import csv
 import json
-import requests
+#import requests
+import requests_async as requests
 import datetime  
 
-url = 'http://35.200.173.88:8001/api/orders/create'
+url = 'https://ingest-pubsub-q5cbfb3b6a-el.a.run.app'
 
 STATUS = (
     'order_placed', 'supplier_checkout', 'warehouse_checkin', 'warehouse_checkout', 'local_warehouse_checkin', 'local_warehouse_checkout', 'order_delivered'
@@ -71,7 +72,7 @@ for x in range(50):
 		order['status'] = 'order_placed'
 		#Make API Call for order_paced status
 		data_json= json.dumps(order)
-		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+		response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 	if order_status_generation >= 2:
 		supplier_checkout_timestamp = (transaction_time + ((supplier_pickup_hours * 60 * 60)))
@@ -79,7 +80,7 @@ for x in range(50):
 		order['status'] = 'supplier_checkout'
 		#Make API Call for supplier_checkout status
 		data_json= json.dumps(order)
-		response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+		response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 	if supplier_code_state == package_generated_state:
 		if order_status_generation >= 3:
@@ -89,7 +90,7 @@ for x in range(50):
 			order['status'] = 'local_warehouse_checkin'
 			#Make API Call for local_warehouse_checkin status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		if order_status_generation >= 4:
 			local_warehouse_checkout_timestamp = (local_warehouse_checkin_timestamp + ((local_warehouse_checkout_hours_same_state * 60 * 60)))
@@ -98,7 +99,7 @@ for x in range(50):
 			order['status'] = 'local_warehouse_checkout'
 			#Make API Call for local_warehouse_checkout status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		if order_status_generation >= 5:
 			order_delivered_timestamp = (local_warehouse_checkout_timestamp + ((order_delivered_hours * 60 * 60)))
@@ -107,7 +108,7 @@ for x in range(50):
 			order['status'] = 'order_delivered'
 			#Make API Call for order_delivered status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		print("Package to be delivered in the same state")
 	else:
@@ -118,7 +119,7 @@ for x in range(50):
 			order['status'] = 'warehouse_checkin'
 			#Make API Call for warehouse_checkin status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		if order_status_generation >= 4:
 			warehouse_checkout_timestamp = (warehouse_checkin_timestamp + ((warehouse_checkout_hours_different_state * 60 * 60)))
@@ -127,7 +128,7 @@ for x in range(50):
 			order['status'] = 'warehouse_checkout'
 			#Make API Call for warehouse_checkout status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		if order_status_generation >= 5:
 			local_warehouse_checkin_timestamp = (warehouse_checkout_timestamp + ((local_warehouse_checkin_hours_different_state * 60 * 60)))
@@ -136,7 +137,7 @@ for x in range(50):
 			order['status'] = 'local_warehouse_checkin'
 			#Make API Call for local_warehouse_checkin status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		if order_status_generation >= 6:
 			local_warehouse_checkout_timestamp = (local_warehouse_checkin_timestamp + ((local_warehouse_checkout_hours_different_state * 60 * 60)))
@@ -145,7 +146,7 @@ for x in range(50):
 			order['status'] = 'local_warehouse_checkout'
 			#Make API Call for local_warehouse_checkout status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		if order_status_generation >= 7:
 			order_delivered_timestamp = (local_warehouse_checkout_timestamp + ((order_delivered_hours * 60 * 60)))
@@ -154,6 +155,6 @@ for x in range(50):
 			order['status'] = 'order_delivered'
 			#Make API Call for order_delivered status
 			data_json= json.dumps(order)
-			response = requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
+			response = await requests.post(url, data=data_json, headers={"Content-Type": "application/json"})
 
 		print("Package to be delivered in a different state")
