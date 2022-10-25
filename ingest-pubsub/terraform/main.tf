@@ -1,5 +1,3 @@
-gcloud auth application-default login
-
 terraform {
   required_version = ">= 0.14"
 
