@@ -5,8 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}",
-        "${_SERVICE_FOLDER}",
+        "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"
       ]
 
   - id: "push image"
