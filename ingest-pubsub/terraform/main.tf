@@ -27,7 +27,7 @@ resource "google_cloud_run_service" "run_service" {
   template {
     spec {
       containers {
-        image = "gcr.io/on-prem-project-337210/ingest-pubsub:latest"
+        image = data.external.image_digest.result.image
       }
     }
   }
@@ -36,6 +36,8 @@ resource "google_cloud_run_service" "run_service" {
     percent         = 100
     latest_revision = true
   }
+
+  autogenerate_revision_name = true
 
   # Waits for the Cloud Run API to be enabled
   depends_on = [google_project_service.run_api]
@@ -53,3 +55,13 @@ resource "google_cloud_run_service_iam_member" "run_all_users" {
 output "service_url" {
   value = google_cloud_run_service.run_service.status[0].url
 }
+
+locals {
+  service_name   = "ingest-pubsub"
+}
+
+# WORKAROUND 
+data "external" "image_digest" {
+  program = ["bash", "scripts/get_latest_tag.sh", var.project, local.service_name]
+}
+# END WORKAROUND
