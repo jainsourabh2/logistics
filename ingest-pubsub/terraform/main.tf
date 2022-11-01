@@ -9,20 +9,19 @@ terraform {
 
 provider "google" {
   # Replace `PROJECT_ID` with your project
-  project = "on-prem-project-337210"
+  project = var.project
 }
 
 # Enables the Cloud Run API
 resource "google_project_service" "run_api" {
   service = "run.googleapis.com"
-
   disable_on_destroy = true
 }
 
 # Create the Cloud Run service
 resource "google_cloud_run_service" "run_service" {
-  name = "ingest-pubsub"
-  location = "asia-south1"
+  name = local.service_name
+  location = var.region
 
   template {
     spec {
