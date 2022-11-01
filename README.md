@@ -16,3 +16,4 @@ install yarn
 yarn start or pm2 start "yarn start" --name Logistics 
 sudo apt-get remove python3-pip
 sudo apt-get install python3-pip
+.
