@@ -104,7 +104,7 @@ def main(argv=None, save_main_session=True):
     with beam.Pipeline(options=pipeline_options) as p:   
 
         datasource = (p
-            | 'ReadData' >> beam.io.ReadFromPubSub(topic=input_topic).with_output_types(bytes)
+            | 'ReadData' >> beam.io.ReadFromPubSub(topic=pipeline_options.input_topic).with_output_types(bytes)
             | 'Reshuffle' >> beam.Reshuffle()
         )
 
