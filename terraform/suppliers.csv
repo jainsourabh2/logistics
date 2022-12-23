@@ -1,0 +1,1020 @@
+code,city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id,Type,warehouse_code,local_warehouse_code
+251,Marmagao,Marmagao,15.402,73.8,India,IN,IND,Goa,,94393,1356764529,Supplier,30,30
+268,Panaji,Panaji,15.48,73.83,India,IN,IND,Goa,admin,40017,1356909212,Supplier,30,30
+359,Madgaon,Madgaon,15.2719,73.9583,India,IN,IND,Goa,,87650,1356337752,Supplier,30,30
+493,Curchorem,Curchorem,15.25,74.1,India,IN,IND,Goa,,22730,1356224201,Supplier,30,30
+611,Kānkon,Kankon,15.0109,74.0363,India,IN,IND,Goa,,12434,1356134641,Supplier,30,30
+877,Morgim,Morgim,15.6294,73.7358,India,IN,IND,Goa,,6760,1356019850,Supplier,30,30
+943,Loutolim,Loutolim,15.33,73.98,India,IN,IND,Goa,,6121,1356023315,Supplier,30,30
+36,Guwāhāti,Guwahati,26.1722,91.7458,India,IN,IND,Assam,,1116267,1356593800,Supplier,31,31
+198,Dibrugarh,Dibrugarh,27.4833,95,India,IN,IND,Assam,,154019,1356100193,Supplier,31,31
+201,Silchar,Silchar,24.7904,92.79,India,IN,IND,Assam,,152393,1356102467,Supplier,31,31
+283,Dispur,Dispur,26.15,91.77,India,IN,IND,Assam,admin,16140,1356960169,Supplier,31,31
+352,Tinsukia,Tinsukia,27.4892,95.36,India,IN,IND,Assam,,99507,1356391413,Supplier,31,31
+372,Jorhāt,Jorhat,26.75,94.2167,India,IN,IND,Assam,,69033,1356638741,Supplier,31,31
+387,Tezpur,Tezpur,26.6338,92.8,India,IN,IND,Assam,,58851,1356299437,Supplier,31,31
+487,Gauripur,Gauripur,26.08,89.97,India,IN,IND,Assam,,23477,1356178626,Supplier,31,31
+1,Delhi,Delhi,28.6667,77.2167,India,IN,IND,Delhi,admin,31870000,1356872604,Supplier,1,1
+46,New Delhi,New Delhi,28.6139,77.209,India,IN,IND,Delhi,primary,249998,1356215164,Supplier,1,1
+259,Mūndka,Mundka,28.6794,77.0284,India,IN,IND,Delhi,,54541,1356773697,Supplier,1,1
+21,Patna,Patna,25.61,85.1414,India,IN,IND,Bihār,admin,1684222,1356821429,Supplier,10,10
+89,Gaya,Gaya,24.75,85.0167,India,IN,IND,Bihār,,474093,1356045727,Supplier,10,10
+97,Bhāgalpur,Bhagalpur,25.25,87.0167,India,IN,IND,Bihār,,410210,1356760990,Supplier,10,10
+108,Muzaffarpur,Muzaffarpur,26.12,85.3833,India,IN,IND,Bihār,,333200,1356897425,Supplier,10,10
+119,Purnea,Purnea,25.78,87.47,India,IN,IND,Bihār,,310817,1356486511,Supplier,10,10
+138,Begusarai,Begusarai,25.42,86.13,India,IN,IND,Bihār,,252008,1356619346,Supplier,10,10
+181,Deo,Deo,24.6561,84.4356,India,IN,IND,Bihār,,173216,1356131438,Supplier,10,10
+194,Saharsa,Saharsa,25.88,86.6,India,IN,IND,Bihār,,156540,1356492911,Supplier,10,10
+354,Aurangābād,Aurangabad,24.7704,84.38,India,IN,IND,Bihār,,95929,1356920493,Supplier,10,10
+422,Rājgīr,Rajgir,25.03,85.42,India,IN,IND,Bihār,,41587,1356823690,Supplier,10,10
+653,Kasba,Kasba,25.5856,88.1122,India,IN,IND,Bihār,,10067,1356834956,Supplier,10,10
+681,Datian,Datian,25.4379,87.8378,India,IN,IND,Bihār,,9102,1356104820,Supplier,10,10
+950,Khata,Khata,26.028,87.9465,India,IN,IND,Bihār,,5358,1356533334,Supplier,10,10
+55,Thiruvananthapuram,Thiruvananthapuram,8.5,76.8997,India,IN,IND,Kerala,admin,743691,1356024354,Supplier,16,16
+61,Kochi,Kochi,9.9667,76.2833,India,IN,IND,Kerala,,677381,1356707865,Supplier,16,16
+95,Calicut,Calicut,11.25,75.7667,India,IN,IND,Kerala,minor,431560,1356010401,Supplier,16,16
+98,Quilon,Quilon,8.8853,76.5864,India,IN,IND,Kerala,,397419,1356304110,Supplier,16,16
+117,Trichūr,Trichur,10.52,76.21,India,IN,IND,Kerala,,315596,1356589298,Supplier,16,16
+176,Alleppey,Alleppey,9.5004,76.37,India,IN,IND,Kerala,,176783,1356293762,Supplier,16,16
+217,Pālghāt,Palghat,10.7792,76.6547,India,IN,IND,Kerala,,130955,1356115164,Supplier,16,16
+269,Kaippakanchēri,Kaippakancheri,10.938,75.987,India,IN,IND,Kerala,,33721,1356036784,Supplier,16,16
+374,Beypore,Beypore,11.18,75.82,India,IN,IND,Kerala,,66883,1356592326,Supplier,16,16
+436,Pathanāmthitta,Pathanamthitta,9.2647,76.7872,India,IN,IND,Kerala,,37802,1356059485,Supplier,16,16
+439,Mahē,Mahe,11.7011,75.5367,India,IN,IND,Kerala,,36828,1356686273,Supplier,16,16
+448,Angamāli,Angamali,10.196,76.386,India,IN,IND,Kerala,,33424,1356561428,Supplier,16,16
+476,Varandarapilli,Varandarapilli,10.4167,76.3333,India,IN,IND,Kerala,,27343,1356143594,Supplier,16,16
+503,Kattanam,Kattanam,9.1833,76.55,India,IN,IND,Kerala,,19764,1356034553,Supplier,16,16
+52,Bhubaneshwar,Bhubaneshwar,20.2644,85.8281,India,IN,IND,Odisha,admin,837737,1356140143,Supplier,15,15
+65,Raurkela,Raurkela,22.2492,84.8828,India,IN,IND,Odisha,,625831,1356096816,Supplier,15,15
+68,Cuttack,Cuttack,20.465,85.8793,India,IN,IND,Odisha,,606007,1356872061,Supplier,15,15
+110,Brahmapur,Brahmapur,19.32,84.8,India,IN,IND,Odisha,,324726,1356569354,Supplier,15,15
+120,Sambalpur,Sambalpur,21.4704,83.9701,India,IN,IND,Odisha,,310852,1356772339,Supplier,15,15
+148,Puri,Puri,19.8,85.8167,India,IN,IND,Odisha,,201026,1356558409,Supplier,15,15
+380,Jatani,Jatani,20.17,85.7,India,IN,IND,Odisha,,63697,1356087327,Supplier,15,15
+558,Konārka,Konarka,19.8878,86.0948,India,IN,IND,Odisha,,15015,1356415171,Supplier,15,15
+848,Battili,Battili,19.0167,83.7833,India,IN,IND,Odisha,,7264,1356013228,Supplier,15,15
+1004,Korukonda,Korukonda,18.2833,81.9833,India,IN,IND,Odisha,,5012,1356067238,Supplier,15,15
+248,Gangtok,Gangtok,27.33,88.62,India,IN,IND,Sikkim,admin,100286,1356689564,Supplier,26,26
+612,Namchi,Namchi,27.17,88.35,India,IN,IND,Sikkim,,12190,1356210398,Supplier,26,26
+973,Rhenok,Rhenok,27.1772,88.649,India,IN,IND,Sikkim,,5883,1356056613,Supplier,26,26
+134,Imphāl,Imphal,24.82,93.95,India,IN,IND,Manipur,admin,264986,1356107172,Supplier,20,20
+124,Āīzawl,Aizawl,23.7333,92.7167,India,IN,IND,Mizoram,admin,293416,1356342768,Supplier,19,19
+79,Agartala,Agartala,23.8333,91.2667,India,IN,IND,Tripura,admin,522613,1356148992,Supplier,18,18
+8,Ahmedabad,Ahmedabad,23.03,72.58,India,IN,IND,Gujarāt,minor,7717000,1356304381,Supplier,23,23
+10,Sūrat,Surat,21.17,72.83,India,IN,IND,Gujarāt,,4875000,1356758738,Supplier,23,23
+17,Vadodara,Vadodara,22.3,73.2,India,IN,IND,Gujarāt,,2065771,1356705249,Supplier,23,23
+29,Rājkot,Rajkot,22.2969,70.7984,India,IN,IND,Gujarāt,,1335397,1356317190,Supplier,23,23
+74,Bhāvnagar,Bhavnagar,21.765,72.1369,India,IN,IND,Gujarāt,,554978,1356982375,Supplier,23,23
+87,Jāmnagar,Jamnagar,22.47,70.07,India,IN,IND,Gujarāt,,479920,1356104995,Supplier,23,23
+116,Jūnāgadh,Junagadh,21.52,70.47,India,IN,IND,Gujarāt,,320250,1356057451,Supplier,23,23
+126,Bhuj,Bhuj,23.2504,69.81,India,IN,IND,Gujarāt,,289429,1356806356,Supplier,23,23
+144,Porbandar,Porbandar,21.6425,69.6047,India,IN,IND,Gujarāt,,234684,1356634492,Supplier,23,23
+146,Nadiād,Nadiad,22.7,72.87,India,IN,IND,Gujarāt,,225132,1356992385,Supplier,23,23
+165,Ghāndīnagar,Ghandinagar,23.22,72.68,India,IN,IND,Gujarāt,admin,195891,1356140914,Supplier,23,23
+170,Mahesāna,Mahesana,23.6,72.4,India,IN,IND,Gujarāt,,184991,1356719082,Supplier,23,23
+189,Navsāri,Navsari,20.8504,72.92,India,IN,IND,Gujarāt,,163000,1356120513,Supplier,23,23
+190,Godhra,Godhra,22.7772,73.6203,India,IN,IND,Gujarāt,,161925,1356386046,Supplier,23,23
+193,Bharūch,Bharuch,21.6948,72.9805,India,IN,IND,Gujarāt,,158253,1356981799,Supplier,23,23
+199,Verāval,Veraval,20.9,70.37,India,IN,IND,Gujarāt,,153696,1356346826,Supplier,23,23
+353,Khambhāt,Khambhat,22.3131,72.6194,India,IN,IND,Gujarāt,,98700,1356354348,Supplier,23,23
+399,Nāndod,Nandod,21.8704,73.5026,India,IN,IND,Gujarāt,,54923,1356800561,Supplier,23,23
+404,Dholka,Dholka,22.72,72.47,India,IN,IND,Gujarāt,,53792,1356709185,Supplier,23,23
+405,Sihor,Sihor,21.7,71.97,India,IN,IND,Gujarāt,,52603,1356675162,Supplier,23,23
+413,Jasdan,Jasdan,22.03,71.2,India,IN,IND,Gujarāt,,48483,1356284058,Supplier,23,23
+434,Dwārka,Dwarka,22.2403,68.9686,India,IN,IND,Gujarāt,,38873,1356276872,Supplier,23,23
+482,Khed Brahma,Khed Brahma,24.0299,73.0463,India,IN,IND,Gujarāt,,25001,1356775137,Supplier,23,23
+508,Mundra,Mundra,22.85,69.73,India,IN,IND,Gujarāt,,20338,1356047064,Supplier,23,23
+633,Meghraj,Meghraj,23.5,73.5,India,IN,IND,Gujarāt,,11363,1356158185,Supplier,23,23
+648,Naliya,Naliya,23.2611,68.8267,India,IN,IND,Gujarāt,,11415,1356368840,Supplier,23,23
+761,Chikhli,Chikhli,20.75,73.07,India,IN,IND,Gujarāt,,6953,1356649674,Supplier,23,23
+26,Jamshedpur,Jamshedpur,22.8,86.1833,India,IN,IND,Jharkhand,,1558000,1356501259,Supplier,12,12
+32,Dhanbād,Dhanbad,23.7928,86.435,India,IN,IND,Jharkhand,,1246000,1356103392,Supplier,12,12
+39,Rānchi,Ranchi,23.3556,85.3347,India,IN,IND,Jharkhand,admin,1073440,1356110588,Supplier,12,12
+161,Chakradharpur,Chakradharpur,22.7,85.63,India,IN,IND,Jharkhand,,197953,1356082013,Supplier,12,12
+366,Gumlā,Gumla,23.0444,84.5417,India,IN,IND,Jharkhand,,80129,1356058585,Supplier,12,12
+367,Simdega,Simdega,22.62,84.52,India,IN,IND,Jharkhand,,80129,1356073158,Supplier,12,12
+471,Khunti,Khunti,23.014,85.2724,India,IN,IND,Jharkhand,,29271,1356123961,Supplier,12,12
+709,Udburu,Udburu,23.0333,85.3667,India,IN,IND,Jharkhand,,9539,1356183257,Supplier,12,12
+785,Lakhanpur,Lakhanpur,24.6185,87.9484,India,IN,IND,Jharkhand,,6756,1356028860,Supplier,12,12
+847,Umarpur,Umarpur,24.6109,87.8952,India,IN,IND,Jharkhand,,5785,1356319218,Supplier,12,12
+6,Hyderābād,Hyderabad,17.3617,78.4747,India,IN,IND,Telangana,admin,9840000,1356871768,Supplier,6,6
+58,Warangal,Warangal,17.9756,79.6011,India,IN,IND,Telangana,,704570,1356851618,Supplier,6,6
+102,Nizāmābād,Nizamabad,18.6704,78.1,India,IN,IND,Telangana,,388505,1356242168,Supplier,6,6
+125,Karīmnagar,Karimnagar,18.4333,79.15,India,IN,IND,Telangana,,289821,1356578937,Supplier,6,6
+141,Rāmgundam,Ramgundam,18.8,79.45,India,IN,IND,Telangana,,242979,1356590864,Supplier,6,6
+150,Secunderābād,Secunderabad,17.45,78.5,India,IN,IND,Telangana,,213698,1356779437,Supplier,6,6
+164,Khammam,Khammam,17.25,80.15,India,IN,IND,Telangana,,196283,1356007170,Supplier,6,6
+167,Mahbūbnagar,Mahbubnagar,16.7333,77.9833,India,IN,IND,Telangana,,190400,1356014528,Supplier,6,6
+196,Nalgonda,Nalgonda,17.05,79.27,India,IN,IND,Telangana,,154326,1356414359,Supplier,6,6
+230,Adilābād,Adilabad,19.6667,78.5333,India,IN,IND,Telangana,,117167,1356085840,Supplier,6,6
+234,Siddipet,Siddipet,18.1,78.85,India,IN,IND,Telangana,,114091,1356671720,Supplier,6,6
+242,Suriāpet,Suriapet,17.15,79.6167,India,IN,IND,Telangana,,106805,1356067301,Supplier,6,6
+261,Bodupāl,Bodupal,17.4139,78.5783,India,IN,IND,Telangana,,43692,1356074103,Supplier,6,6
+299,Bandlagūda,Bandlaguda,17.3543,78.3853,India,IN,IND,Telangana,,12734,1356134351,Supplier,6,6
+357,Mancherāl,Mancheral,18.8679,79.4639,India,IN,IND,Telangana,,89935,1356990383,Supplier,6,6
+362,Sirsilla,Sirsilla,18.38,78.83,India,IN,IND,Telangana,,83186,1356360144,Supplier,6,6
+364,Kāmāreddipet,Kamareddipet,18.3167,78.35,India,IN,IND,Telangana,,80315,1356010343,Supplier,6,6
+368,Kottagūdem,Kottagudem,17.55,80.63,India,IN,IND,Telangana,,79819,1356124457,Supplier,6,6
+370,Bodhan,Bodhan,18.67,77.9,India,IN,IND,Telangana,,77573,1356506985,Supplier,6,6
+376,Koratla,Koratla,18.82,78.72,India,IN,IND,Telangana,,66504,1356581279,Supplier,6,6
+379,Gadwāl,Gadwal,16.23,77.8,India,IN,IND,Telangana,,63177,1356741221,Supplier,6,6
+381,Kodād,Kodad,16.9978,79.9653,India,IN,IND,Telangana,,64234,1356852582,Supplier,6,6
+383,Armūr,Armur,18.79,78.29,India,IN,IND,Telangana,,64023,1356043277,Supplier,6,6
+385,Wanparti,Wanparti,16.361,78.0627,India,IN,IND,Telangana,,60949,1356934970,Supplier,6,6
+392,Kothāpet,Kothapet,19.3333,79.4833,India,IN,IND,Telangana,,57583,1356072921,Supplier,6,6
+396,Belampalli,Belampalli,19.0558,79.4931,India,IN,IND,Telangana,,55841,1356972240,Supplier,6,6
+402,Vikārābād,Vikarabad,17.33,77.9,India,IN,IND,Telangana,,53143,1356904767,Supplier,6,6
+406,Jangaon,Jangaon,17.72,79.18,India,IN,IND,Telangana,,52394,1356403400,Supplier,6,6
+407,Mandamāri,Mandamari,18.9822,79.4811,India,IN,IND,Telangana,,52352,1356193430,Supplier,6,6
+409,Metpalli,Metpalli,18.8297,78.5878,India,IN,IND,Telangana,,50902,1356583037,Supplier,6,6
+410,Bhadrāchalam,Bhadrachalam,17.67,80.88,India,IN,IND,Telangana,,50087,1356456973,Supplier,6,6
+412,Bhainsa,Bhainsa,19.1,77.9667,India,IN,IND,Telangana,,49764,1356798697,Supplier,6,6
+418,Mahbūbābād,Mahbubabad,17.6167,80.0167,India,IN,IND,Telangana,,42851,1356014527,Supplier,6,6
+426,Peddapalli,Peddapalli,18.6162,79.3832,India,IN,IND,Telangana,,41171,1356814846,Supplier,6,6
+441,Huzūrnagar,Huzurnagar,16.9,79.8833,India,IN,IND,Telangana,,35850,1356954462,Supplier,6,6
+444,Medchal,Medchal,17.6297,78.4814,India,IN,IND,Telangana,,35611,1356009043,Supplier,6,6
+446,Yellandu,Yellandu,17.6,80.33,India,IN,IND,Telangana,,35056,1356029729,Supplier,6,6
+449,Vemalwāda,Vemalwada,18.4667,78.8833,India,IN,IND,Telangana,,33706,1356119137,Supplier,6,6
+451,Shamsābād,Shamsabad,17.2603,78.3969,India,IN,IND,Telangana,,32583,1356251040,Supplier,6,6
+455,Jamikunta,Jamikunta,18.2864,79.4761,India,IN,IND,Telangana,,32645,1356570935,Supplier,6,6
+457,Nāspur,Naspur,18.83,79.45,India,IN,IND,Telangana,,31244,1356637430,Supplier,6,6
+458,Mangūr,Mangur,17.9373,80.8185,India,IN,IND,Telangana,,32091,1356904043,Supplier,6,6
+469,Devarkonda,Devarkonda,16.7,78.9333,India,IN,IND,Telangana,,29731,1356060197,Supplier,6,6
+472,Nakrekal,Nakrekal,17.1667,79.4333,India,IN,IND,Telangana,,29126,1356926722,Supplier,6,6
+473,Kalwākurti,Kalwakurti,16.65,78.48,India,IN,IND,Telangana,,28060,1356100988,Supplier,6,6
+474,Bānswāda,Banswada,18.3833,77.8833,India,IN,IND,Telangana,,28384,1356367642,Supplier,6,6
+481,Gajwel,Gajwel,17.8517,78.6828,India,IN,IND,Telangana,,24961,1356985510,Supplier,6,6
+485,Ashwarāopeta,Ashwaraopeta,17.25,81.1333,India,IN,IND,Telangana,,24405,1356588318,Supplier,6,6
+490,Asafābād,Asafabad,19.365,79.274,India,IN,IND,Telangana,,23059,1356547910,Supplier,6,6
+495,Sarapāka,Sarapaka,17.6922,80.8614,India,IN,IND,Telangana,,22149,1356331264,Supplier,6,6
+496,Husnābād,Husnabad,17.0667,77.65,India,IN,IND,Telangana,,22082,1356546891,Supplier,6,6
+498,Kosgi,Kosgi,16.9839,77.7193,India,IN,IND,Telangana,,21215,1356669733,Supplier,6,6
+500,Parkāl,Parkal,18.2,79.7167,India,IN,IND,Telangana,,20257,1356956935,Supplier,6,6
+504,Ghatkesar,Ghatkesar,17.4494,78.6853,India,IN,IND,Telangana,,19763,1356365517,Supplier,6,6
+519,Chilkūru,Chilkuru,16.9611,79.9125,India,IN,IND,Telangana,,18952,1356142066,Supplier,6,6
+520,Chautāpal,Chautapal,17.2508,78.8972,India,IN,IND,Telangana,,19092,1356795326,Supplier,6,6
+523,Jadcherla,Jadcherla,16.7667,78.15,India,IN,IND,Telangana,,17958,1356187321,Supplier,6,6
+524,Mellacheruvu,Mellacheruvu,16.8173,79.9331,India,IN,IND,Telangana,,18550,1356016977,Supplier,6,6
+528,Maripād,Maripad,17.4031,79.8567,India,IN,IND,Telangana,,17685,1356873992,Supplier,6,6
+531,Manthani,Manthani,18.65,79.6667,India,IN,IND,Telangana,,17927,1356453110,Supplier,6,6
+534,Dharmāpuri,Dharmapuri,18.9475,79.094,India,IN,IND,Telangana,,17243,1356922969,Supplier,6,6
+539,Rāmāyampet,Ramayampet,18.1166,78.4298,India,IN,IND,Telangana,,16899,1356359427,Supplier,6,6
+540,Chopadandi,Chopadandi,18.5833,79.1667,India,IN,IND,Telangana,,16459,1356589291,Supplier,6,6
+542,Kompalle,Kompalle,17.4993,78.4583,India,IN,IND,Telangana,,15575,1356654785,Supplier,6,6
+547,Rāikal,Raikal,18.9,78.8,India,IN,IND,Telangana,,16404,1356268881,Supplier,6,6
+548,Sultānābād,Sultanabad,18.5333,79.3333,India,IN,IND,Telangana,,16116,1356975454,Supplier,6,6
+550,Bālkonda,Balkonda,18.8667,78.35,India,IN,IND,Telangana,,15644,1356903520,Supplier,6,6
+551,Kallūr,Kallur,17.2,80.55,India,IN,IND,Telangana,,15807,1356501492,Supplier,6,6
+553,Utnūr,Utnur,19.3667,78.7667,India,IN,IND,Telangana,,16005,1356434516,Supplier,6,6
+555,Vijayapuri North,Vijayapuri North,16.6028,79.3075,India,IN,IND,Telangana,,15887,1356296261,Supplier,6,6
+556,Kohīr,Kohir,17.6,77.7167,India,IN,IND,Telangana,,15075,1356364942,Supplier,6,6
+562,Yellāreddi,Yellareddi,18.1859,78.0212,India,IN,IND,Telangana,,14923,1356002311,Supplier,6,6
+568,Lingāl,Lingal,16.2833,78.5167,India,IN,IND,Telangana,,14497,1356015110,Supplier,6,6
+569,Korangal,Korangal,17.107,77.627,India,IN,IND,Telangana,,14294,1356182344,Supplier,6,6
+570,Dornakal,Dornakal,17.4447,80.1492,India,IN,IND,Telangana,,14425,1356805121,Supplier,6,6
+572,Domkonda,Domkonda,18.2536,78.4378,India,IN,IND,Telangana,,13648,1356677299,Supplier,6,6
+575,Yedapalli,Yedapalli,18.6789,77.9505,India,IN,IND,Telangana,,13469,1356857489,Supplier,6,6
+578,Dundigal,Dundigal,17.5781,78.4288,India,IN,IND,Telangana,,13465,1356684448,Supplier,6,6
+581,Chityāl,Chityal,17.2333,79.1333,India,IN,IND,Telangana,,13752,1356091931,Supplier,6,6
+585,Amrābād,Amrabad,16.3833,78.8333,India,IN,IND,Telangana,,13753,1356022195,Supplier,6,6
+591,Tirmaigiri,Tirmaigiri,16.723,79.3374,India,IN,IND,Telangana,,12899,1356092592,Supplier,6,6
+592,Bichkunda,Bichkunda,18.4,77.7167,India,IN,IND,Telangana,,13213,1356419572,Supplier,6,6
+601,Mudhol,Mudhol,18.9667,77.9167,India,IN,IND,Telangana,,12777,1356741326,Supplier,6,6
+605,Motkūr,Motkur,17.45,79.2667,India,IN,IND,Telangana,,12616,1356353860,Supplier,6,6
+606,Dāmarcherla,Damarcherla,16.7269,79.6369,India,IN,IND,Telangana,,12710,1356000300,Supplier,6,6
+607,Pebberu,Pebberu,16.2167,77.9833,India,IN,IND,Telangana,,12289,1356076940,Supplier,6,6
+609,Dubak,Dubak,18.1914,78.6783,India,IN,IND,Telangana,,12349,1356243033,Supplier,6,6
+613,Ichora,Ichora,19.4333,78.4667,India,IN,IND,Telangana,,12358,1356489123,Supplier,6,6
+615,Nandipeta,Nandipeta,18.9622,78.1772,India,IN,IND,Telangana,,11525,1356396371,Supplier,6,6
+617,Ghambiraopet,Ghambiraopet,18.3,78.5833,India,IN,IND,Telangana,,11545,1356200566,Supplier,6,6
+625,Biknūr,Biknur,18.215,78.4367,India,IN,IND,Telangana,,11787,1356034364,Supplier,6,6
+626,Pedda Adsarlapalli,Pedda Adsarlapalli,16.7086,79.0286,India,IN,IND,Telangana,,11925,1356861679,Supplier,6,6
+636,Dammapeta,Dammapeta,17.2667,81.0167,India,IN,IND,Telangana,,11629,1356795204,Supplier,6,6
+637,Kushmanchi,Kushmanchi,17.2263,79.9668,India,IN,IND,Telangana,,11563,1356597619,Supplier,6,6
+638,Amarchinta,Amarchinta,16.374,77.7729,India,IN,IND,Telangana,,11225,1356070260,Supplier,6,6
+643,Mortād,Mortad,18.8167,78.4833,India,IN,IND,Telangana,,11123,1356027669,Supplier,6,6
+646,Kodmiāl,Kodmial,18.6333,78.9,India,IN,IND,Telangana,,10892,1356078012,Supplier,6,6
+652,Allāhdurg,Allahdurg,17.9667,77.9167,India,IN,IND,Telangana,,11018,1356302297,Supplier,6,6
+657,Kamalāpuram,Kamalapuram,18.16,79.5406,India,IN,IND,Telangana,,10423,1356308072,Supplier,6,6
+660,Chandūr,Chandur,16.98,79.06,India,IN,IND,Telangana,,10880,1356371611,Supplier,6,6
+667,Kotūr,Kotur,17.1447,78.2886,India,IN,IND,Telangana,,10519,1356206598,Supplier,6,6
+670,Narkatpalli,Narkatpalli,17.203,79.195,India,IN,IND,Telangana,,10394,1356046669,Supplier,6,6
+672,Telkapalli,Telkapalli,16.45,78.4667,India,IN,IND,Telangana,,10384,1356020207,Supplier,6,6
+674,Borgampād,Borgampad,17.65,80.8667,India,IN,IND,Telangana,,10235,1356917535,Supplier,6,6
+676,Mungod,Mungod,17.0667,79.0667,India,IN,IND,Telangana,,10141,1356844377,Supplier,6,6
+677,Rāmannapeta,Ramannapeta,17.2833,79.1,India,IN,IND,Telangana,,10202,1356079915,Supplier,6,6
+679,Lingampet,Lingampet,18.2383,78.1303,India,IN,IND,Telangana,,9860,1356911464,Supplier,6,6
+685,Bomareddipalli,Bomareddipalli,18.7044,79.1568,India,IN,IND,Telangana,,9998,1356564798,Supplier,6,6
+688,Honwāda,Honwada,16.7333,77.9333,India,IN,IND,Telangana,,9916,1356033791,Supplier,6,6
+696,Dhanwāda,Dhanwada,16.65,77.6667,India,IN,IND,Telangana,,9743,1356703437,Supplier,6,6
+704,Zafargarh,Zafargarh,17.7686,79.4859,India,IN,IND,Telangana,,9698,1356679643,Supplier,6,6
+714,Dāmargidda,Damargidda,16.8189,77.5031,India,IN,IND,Telangana,,9197,1356865520,Supplier,6,6
+717,Penaballi,Penaballi,17.2103,80.6978,India,IN,IND,Telangana,,8915,1356309393,Supplier,6,6
+719,Jājireddigūdem,Jajireddigudem,17.3278,79.5711,India,IN,IND,Telangana,,9223,1356464422,Supplier,6,6
+720,Maddūr,Maddur,16.8667,77.6167,India,IN,IND,Telangana,,8896,1356331878,Supplier,6,6
+723,Munagāla,Munagala,17.05,79.8333,India,IN,IND,Telangana,,8942,1356708472,Supplier,6,6
+731,Tummalacheruvu,Tummalacheruvu,17.7667,80.8,India,IN,IND,Telangana,,8889,1356592663,Supplier,6,6
+733,Maisaram,Maisaram,17.1329,78.4367,India,IN,IND,Telangana,,8795,1356959971,Supplier,6,6
+735,Mustafābād,Mustafabad,18.2787,78.7108,India,IN,IND,Telangana,,8665,1356783833,Supplier,6,6
+737,Ranjal,Ranjal,18.7458,77.9483,India,IN,IND,Telangana,,8802,1356139049,Supplier,6,6
+739,Madnūr,Madnur,18.5,77.6333,India,IN,IND,Telangana,,8841,1356028856,Supplier,6,6
+743,Kismatpur,Kismatpur,17.3333,78.4,India,IN,IND,Telangana,,7288,1356037746,Supplier,6,6
+746,Navipet,Navipet,18.8022,77.9836,India,IN,IND,Telangana,,8563,1356624612,Supplier,6,6
+750,Rāiparthi,Raiparthi,17.7042,79.6081,India,IN,IND,Telangana,,8618,1356005960,Supplier,6,6
+752,Bontapalli,Bontapalli,17.6625,78.3667,India,IN,IND,Telangana,,8032,1356473953,Supplier,6,6
+753,Devarkadra,Devarkadra,16.6167,77.85,India,IN,IND,Telangana,,8047,1356200486,Supplier,6,6
+759,Tungaturti,Tungaturti,17.4567,79.6258,India,IN,IND,Telangana,,8379,1356002689,Supplier,6,6
+762,Madnakal,Madnakal,16.123,77.696,India,IN,IND,Telangana,,8355,1356614986,Supplier,6,6
+764,Kodakandla,Kodakandla,17.528,79.5052,India,IN,IND,Telangana,,8313,1356715797,Supplier,6,6
+766,Gūmmadidola,Gummadidola,17.683,78.37,India,IN,IND,Telangana,,8032,1356680547,Supplier,6,6
+768,Tekmāl,Tekmal,17.97,78.04,India,IN,IND,Telangana,,8212,1356072169,Supplier,6,6
+772,Bībīnagar,Bibinagar,17.4708,78.7946,India,IN,IND,Telangana,,8320,1356065877,Supplier,6,6
+773,Venavanka,Venavanka,18.3975,79.3878,India,IN,IND,Telangana,,7920,1356989620,Supplier,6,6
+775,Kethepalli,Kethepalli,17.1907,79.4468,India,IN,IND,Telangana,,8193,1356820381,Supplier,6,6
+781,Chiwemla,Chiwemla,17.1528,79.6861,India,IN,IND,Telangana,,8016,1356080354,Supplier,6,6
+784,Pālakurti,Palakurti,17.6588,79.4325,India,IN,IND,Telangana,,7819,1356881549,Supplier,6,6
+786,Bīrkur,Birkur,18.4836,77.8003,India,IN,IND,Telangana,,8043,1356655664,Supplier,6,6
+790,Nārāyanpur,Narayanpur,17.1622,78.8817,India,IN,IND,Telangana,,7927,1356101758,Supplier,6,6
+791,Niāla Kondapalle,Niala Kondapalle,17.1,80.0506,India,IN,IND,Telangana,,7767,1356698261,Supplier,6,6
+804,Bajanki,Bajanki,18.2556,79.0165,India,IN,IND,Telangana,,7804,1356010760,Supplier,6,6
+814,Mathampalli,Mathampalli,16.8558,79.8936,India,IN,IND,Telangana,,7560,1356316513,Supplier,6,6
+828,Annāram,Annaram,17.6288,78.3759,India,IN,IND,Telangana,,6840,1356991809,Supplier,6,6
+832,Bījnapalli,Bijnapalli,16.55,78.2,India,IN,IND,Telangana,,7329,1356429584,Supplier,6,6
+837,Chevella,Chevella,17.3067,78.1353,India,IN,IND,Telangana,,7031,1356984356,Supplier,6,6
+842,Valigonda,Valigonda,17.3667,79.05,India,IN,IND,Telangana,,7324,1356982358,Supplier,6,6
+843,Sāyampet,Sayampet,18.1167,79.7375,India,IN,IND,Telangana,,6878,1356613824,Supplier,6,6
+849,Katangūr,Katangur,17.16,79.313,India,IN,IND,Telangana,,7034,1356165272,Supplier,6,6
+850,Nekkonda,Nekkonda,16.7833,78.2333,India,IN,IND,Telangana,,7264,1356748823,Supplier,6,6
+854,Devaruppal,Devaruppal,17.6511,79.3556,India,IN,IND,Telangana,,7104,1356329488,Supplier,6,6
+863,Kamarpalli,Kamarpalli,18.9219,78.5081,India,IN,IND,Telangana,,6865,1356539660,Supplier,6,6
+873,Kongal,Kongal,16.944,79.216,India,IN,IND,Telangana,,7010,1356208229,Supplier,6,6
+881,Tipparti,Tipparti,17.0167,79.4167,India,IN,IND,Telangana,,6805,1356059010,Supplier,6,6
+886,Timmāpuram,Timmapuram,18.3597,79.0875,India,IN,IND,Telangana,,6411,1356245632,Supplier,6,6
+907,Kodūr,Kodur,16.2667,78.3,India,IN,IND,Telangana,,6426,1356708195,Supplier,6,6
+915,Jakrānpalli,Jakranpalli,18.7183,78.2775,India,IN,IND,Telangana,,6228,1356483374,Supplier,6,6
+931,Jagdeopur,Jagdeopur,17.768,78.808,India,IN,IND,Telangana,,6091,1356344982,Supplier,6,6
+934,Kukunūru,Kukunuru,17.5667,81.1833,India,IN,IND,Telangana,,6380,1356676756,Supplier,6,6
+939,Chinna Chintakunta,Chinna Chintakunta,17.7797,78.2744,India,IN,IND,Telangana,,5637,1356253274,Supplier,6,6
+949,Medpalli,Medpalli,18.8003,78.8042,India,IN,IND,Telangana,,6054,1356994750,Supplier,6,6
+956,Ankāpuram,Ankapuram,18.77,78.25,India,IN,IND,Telangana,,5689,1356990011,Supplier,6,6
+959,Kerimeri,Kerimeri,19.4333,79.05,India,IN,IND,Telangana,,5975,1356910228,Supplier,6,6
+964,Kothakota,Kothakota,16.3667,77.9667,India,IN,IND,Telangana,,5749,1356072920,Supplier,6,6
+974,Yelmanaid,Yelmanaid,17.29,79.026,India,IN,IND,Telangana,,5846,1356158128,Supplier,6,6
+982,Singareni,Singareni,17.5,80.2667,India,IN,IND,Telangana,,5505,1356440311,Supplier,6,6
+985,Kārepalli,Karepalli,17.4539,80.2682,India,IN,IND,Telangana,,5464,1356884206,Supplier,6,6
+987,Pegadpalli,Pegadpalli,18.7293,77.9042,India,IN,IND,Telangana,,5502,1356021297,Supplier,6,6
+990,Kundapāk,Kundapak,17.97,78.85,India,IN,IND,Telangana,,5607,1356902738,Supplier,6,6
+993,Rāmadugu,Ramadugu,18.5869,79.0617,India,IN,IND,Telangana,,5121,1356548666,Supplier,6,6
+998,Jukal,Jukal,18.3689,77.6169,India,IN,IND,Telangana,,5283,1356050049,Supplier,6,6
+999,Dandepalii,Dandepalii,19.0151,79.1002,India,IN,IND,Telangana,,5147,1356399810,Supplier,6,6
+1007,Nāgareddipet,Nagareddipet,18.1439,78.1292,India,IN,IND,Telangana,,5109,1356384977,Supplier,6,6
+1012,Māchareddi,Machareddi,18.3597,78.4147,India,IN,IND,Telangana,,5053,1356077045,Supplier,6,6
+1013,Manyapādu,Manyapadu,15.9639,77.9411,India,IN,IND,Telangana,,5013,1356302728,Supplier,6,6
+1016,Kāsipet,Kasipet,19.0333,79.4667,India,IN,IND,Telangana,,5133,1356392578,Supplier,6,6
+1017,Rebna,Rebna,19.1414,79.7181,India,IN,IND,Telangana,,5088,1356285812,Supplier,6,6
+1018,Mulakalapalle,Mulakalapalle,17.5758,80.9247,India,IN,IND,Telangana,,6679,1356611197,Supplier,6,6
+1019,Venkatāpuram,Venkatapuram,18.3,80.55,India,IN,IND,Telangana,,5494,1356857876,Supplier,6,6
+4,Bangalore,Bangalore,12.9791,77.5913,India,IN,IND,Karnātaka,admin,13999000,1356410365,Supplier,4,4
+43,Mysore,Mysore,12.3086,76.6531,India,IN,IND,Karnātaka,,1014227,1356779323,Supplier,4,4
+51,Hubli,Hubli,15.3619,75.1231,India,IN,IND,Karnātaka,,890000,1356102365,Supplier,4,4
+63,Shimoga,Shimoga,13.9167,75.5667,India,IN,IND,Karnātaka,,654055,1356016156,Supplier,4,4
+66,Mangalore,Mangalore,12.8703,74.8806,India,IN,IND,Karnātaka,,623841,1356972351,Supplier,4,4
+69,Tumkūr,Tumkur,13.3422,77.1017,India,IN,IND,Karnātaka,,599078,1356033724,Supplier,4,4
+83,Davangere,Davangere,14.4667,75.9167,India,IN,IND,Karnātaka,,503564,1356445061,Supplier,4,4
+85,Belgaum,Belgaum,15.8667,74.5,India,IN,IND,Karnātaka,,488157,1356390535,Supplier,4,4
+86,Gulbarga,Gulbarga,17.3333,76.8333,India,IN,IND,Karnātaka,,483615,1356091187,Supplier,4,4
+92,Bellary,Bellary,15.15,76.915,India,IN,IND,Karnātaka,,445388,1356209152,Supplier,4,4
+114,Bijāpur,Bijapur,16.8244,75.7154,India,IN,IND,Karnātaka,,327427,1356499139,Supplier,4,4
+128,Hospet,Hospet,15.2667,76.4,India,IN,IND,Karnātaka,,286007,1356241463,Supplier,4,4
+136,Rāichūr,Raichur,16.2,77.3667,India,IN,IND,Karnātaka,,255240,1356217280,Supplier,4,4
+182,Bīdar,Bidar,17.9,77.55,India,IN,IND,Karnātaka,,172298,1356933453,Supplier,4,4
+186,Udipi,Udipi,13.3322,74.7461,India,IN,IND,Karnātaka,,165401,1356145399,Supplier,4,4
+208,Kolār,Kolar,13.1333,78.1333,India,IN,IND,Karnātaka,,144625,1356953848,Supplier,4,4
+212,Mandya,Mandya,12.5242,76.8958,India,IN,IND,Karnātaka,,137358,1356039212,Supplier,4,4
+215,Hassan,Hassan,13.005,76.1028,India,IN,IND,Karnātaka,,133436,1356007455,Supplier,4,4
+278,Jālhalli,Jalhalli,13.0333,77.55,India,IN,IND,Karnātaka,,13063,1356033556,Supplier,4,4
+373,Basavakalyān,Basavakalyan,17.87,76.95,India,IN,IND,Karnātaka,,69717,1356923425,Supplier,4,4
+386,Chāmrājnagar,Chamrajnagar,11.9236,76.94,India,IN,IND,Karnātaka,,60810,1356007832,Supplier,4,4
+428,Channarāyapatna,Channarayapatna,12.9,76.39,India,IN,IND,Karnātaka,,40400,1356209573,Supplier,4,4
+450,Shrīrangapattana,Shrirangapattana,12.4181,76.6947,India,IN,IND,Karnātaka,,34135,1356689943,Supplier,4,4
+467,Koratgi,Koratgi,15.6081,76.6597,India,IN,IND,Karnātaka,,29991,1356316435,Supplier,4,4
+510,Belūr,Belur,13.1642,75.8647,India,IN,IND,Karnātaka,,20225,1356747417,Supplier,4,4
+516,Sirvār,Sirvar,16.1739,77.0225,India,IN,IND,Karnātaka,,19295,1356081620,Supplier,4,4
+532,Kembhāvi,Kembhavi,16.65,76.5333,India,IN,IND,Karnātaka,,17346,1356653155,Supplier,4,4
+561,Sindhnūr,Sindhnur,15.7833,76.7667,India,IN,IND,Karnātaka,,14906,1356158630,Supplier,4,4
+563,Hanamsāgar,Hanamsagar,15.8722,76.0431,India,IN,IND,Karnātaka,,14874,1356799012,Supplier,4,4
+583,Kalādgi,Kaladgi,16.204,75.5,India,IN,IND,Karnātaka,,13676,1356448614,Supplier,4,4
+593,Turbihāl,Turbihal,15.7614,76.5964,India,IN,IND,Karnātaka,,13034,1356364510,Supplier,4,4
+597,Gurgunta,Gurgunta,16.2875,76.6319,India,IN,IND,Karnātaka,,12898,1356120396,Supplier,4,4
+598,Lokāpur,Lokapur,16.1656,75.366,India,IN,IND,Karnātaka,,12790,1356341352,Supplier,4,4
+602,Sirūr,Sirur,16.0965,75.7858,India,IN,IND,Karnātaka,,12623,1356261996,Supplier,4,4
+610,Sāvalgi,Savalgi,16.671,75.3515,India,IN,IND,Karnātaka,,12506,1356087192,Supplier,4,4
+616,Doddanahalli,Doddanahalli,12.3892,76.9672,India,IN,IND,Karnātaka,,12243,1356227049,Supplier,4,4
+623,Amarāpuuram,Amarapuuram,14.1333,76.9833,India,IN,IND,Karnātaka,,11950,1356001353,Supplier,4,4
+659,Besagarahalli,Besagarahalli,12.6333,77,India,IN,IND,Karnātaka,,10669,1356153935,Supplier,4,4
+683,Belagola,Belagola,13.3833,75.5833,India,IN,IND,Karnātaka,,10121,1356949795,Supplier,4,4
+697,Kinhālu,Kinhalu,15.4431,76.1397,India,IN,IND,Karnātaka,,9802,1356502789,Supplier,4,4
+703,Dodarasinakere,Dodarasinakere,12.5083,77.02,India,IN,IND,Karnātaka,,9541,1356082600,Supplier,4,4
+713,Nirna,Nirna,17.77,77.14,India,IN,IND,Karnātaka,,9415,1356783830,Supplier,4,4
+724,Belakvādi,Belakvadi,12.255,77.1225,India,IN,IND,Karnātaka,,9151,1356649537,Supplier,4,4
+738,Keregodu,Keregodu,12.6333,76.9167,India,IN,IND,Karnātaka,,8528,1356059262,Supplier,4,4
+744,Kālkuni,Kalkuni,14.6,74.8333,India,IN,IND,Karnātaka,,8844,1356030366,Supplier,4,4
+751,Bāgalvād,Bagalvad,16.0528,76.8877,India,IN,IND,Karnātaka,,8682,1356983749,Supplier,4,4
+755,Yaragol,Yaragol,16.9047,77.0661,India,IN,IND,Karnātaka,,8554,1356567613,Supplier,4,4
+756,Ginigera,Ginigera,15.3483,76.2473,India,IN,IND,Karnātaka,,8449,1356725264,Supplier,4,4
+763,Galgali,Galgali,16.416,75.4376,India,IN,IND,Karnātaka,,8380,1356698737,Supplier,4,4
+774,Rodalkundi,Rodalkundi,15.6774,76.7754,India,IN,IND,Karnātaka,,8260,1356414292,Supplier,4,4
+779,Kirugāvalu,Kirugavalu,12.3667,76.95,India,IN,IND,Karnātaka,,8268,1356485270,Supplier,4,4
+783,Danagalli,Danagalli,12.2228,76.5714,India,IN,IND,Karnātaka,,6655,1356478449,Supplier,4,4
+788,Bhātumra,Bhatumra,18.03,77.22,India,IN,IND,Karnātaka,,8070,1356412724,Supplier,4,4
+796,Huliyūrdurga,Huliyurdurga,12.8167,77.0333,India,IN,IND,Karnātaka,,7989,1356118003,Supplier,4,4
+805,Hire Kotankal,Hire Kotankal,15.9628,76.9511,India,IN,IND,Karnātaka,,7889,1356020566,Supplier,4,4
+808,Sante Kasalgere,Sante Kasalgere,12.4972,76.8878,India,IN,IND,Karnātaka,,7457,1356114596,Supplier,4,4
+812,Mantūr,Mantur,16.3809,75.3774,India,IN,IND,Karnātaka,,7681,1356957783,Supplier,4,4
+825,Nīrmānvi,Nirmanvi,16.0433,77.0991,India,IN,IND,Karnātaka,,7541,1356030965,Supplier,4,4
+838,Bellūru,Belluru,12.9833,76.75,India,IN,IND,Karnātaka,,7412,1356795103,Supplier,4,4
+841,Hire Padsalgi,Hire Padsalgi,16.594,75.3867,India,IN,IND,Karnātaka,,7112,1356380521,Supplier,4,4
+845,Kodekal,Kodekal,16.3522,76.4025,India,IN,IND,Karnātaka,,7245,1356470799,Supplier,4,4
+855,Kennālu,Kennalu,12.4667,76.6667,India,IN,IND,Karnātaka,,6973,1356086886,Supplier,4,4
+860,Holavanhalli,Holavanhalli,13.5333,77.3,India,IN,IND,Karnātaka,,7034,1356062720,Supplier,4,4
+861,Arakeri,Arakeri,16.2746,76.9494,India,IN,IND,Karnātaka,,7091,1356037626,Supplier,4,4
+870,Katak Chincholi,Katak Chincholi,18.03,77.22,India,IN,IND,Karnātaka,,6955,1356212744,Supplier,4,4
+872,Sālgundi,Salgundi,15.6677,76.8286,India,IN,IND,Karnātaka,,6937,1356381787,Supplier,4,4
+878,Pālhalli,Palhalli,12.4139,76.6528,India,IN,IND,Karnātaka,,6638,1356570525,Supplier,4,4
+887,Hebbūr,Hebbur,13.15,77.0333,India,IN,IND,Karnātaka,,6349,1356300228,Supplier,4,4
+895,Balatgi,Balatgi,16.1114,76.9487,India,IN,IND,Karnātaka,,6644,1356075339,Supplier,4,4
+897,Galaga,Galaga,16.2667,76.8333,India,IN,IND,Karnātaka,,6592,1356046794,Supplier,4,4
+902,Kandgal,Kandgal,15.9568,76.2734,India,IN,IND,Karnātaka,,6486,1356113365,Supplier,4,4
+913,Kyādgeri,Kyadgeri,16.2319,76.9553,India,IN,IND,Karnātaka,,6496,1356217734,Supplier,4,4
+916,Nangli,Nangli,13.1833,78.5167,India,IN,IND,Karnātaka,,6359,1356315799,Supplier,4,4
+917,Algūr,Algur,16.7,76.3499,India,IN,IND,Karnātaka,,6448,1356816689,Supplier,4,4
+918,Dodharye,Dodharye,12.3939,75.9549,India,IN,IND,Karnātaka,,6354,1356215874,Supplier,4,4
+920,Gavunipalli,Gavunipalli,13.514,78.227,India,IN,IND,Karnātaka,,6418,1356780781,Supplier,4,4
+925,Mirkal,Mirkal,17.86,76.95,India,IN,IND,Karnātaka,,6422,1356470987,Supplier,4,4
+942,Harvi,Harvi,16.0628,77.0642,India,IN,IND,Karnātaka,,6252,1356818458,Supplier,4,4
+945,Kyalanūr,Kyalanur,13.2667,77.9833,India,IN,IND,Karnātaka,,5928,1356065218,Supplier,4,4
+952,Mirle,Mirle,12.5333,76.3167,India,IN,IND,Karnātaka,,5845,1356535815,Supplier,4,4
+960,Sakkarepatna,Sakkarepatna,13.56,76.01,India,IN,IND,Karnātaka,,6087,1356517184,Supplier,4,4
+961,Bevūr,Bevur,16.2084,75.8941,India,IN,IND,Karnātaka,,5881,1356651449,Supplier,4,4
+970,Masarkal,Masarkal,16.3694,77.0172,India,IN,IND,Karnātaka,,5917,1356022169,Supplier,4,4
+971,Hattikuni,Hattikuni,16.8506,77.1542,India,IN,IND,Karnātaka,,5840,1356566670,Supplier,4,4
+975,Lingadahalli,Lingadahalli,13.6,75.83,India,IN,IND,Karnātaka,,5853,1356052638,Supplier,4,4
+978,Kalmali,Kalmali,16.1978,77.2061,India,IN,IND,Karnātaka,,5638,1356105487,Supplier,4,4
+980,Indiri,Indiri,15.4406,76.3244,India,IN,IND,Karnātaka,,5594,1356641573,Supplier,4,4
+988,Matmāri,Matmari,16.0299,77.2959,India,IN,IND,Karnātaka,,5434,1356112420,Supplier,4,4
+994,Gote,Gote,16.7225,75.4326,India,IN,IND,Karnātaka,,5357,1356348445,Supplier,4,4
+1000,Rāmasamudram,Ramasamudram,16.7725,77.2353,India,IN,IND,Karnātaka,,5340,1356210437,Supplier,4,4
+1003,Mustūr,Mustur,13.45,77.7167,India,IN,IND,Karnātaka,,5150,1356044975,Supplier,4,4
+1006,Chingarali,Chingarali,12.5394,76.6039,India,IN,IND,Karnātaka,,5104,1356857389,Supplier,4,4
+1010,Byādanūr,Byadanur,14.0833,77.2167,India,IN,IND,Karnātaka,,5199,1356241260,Supplier,4,4
+1014,Samse,Samse,13.13,75.64,India,IN,IND,Karnātaka,,5064,1356054492,Supplier,4,4
+1015,Virapāpur,Virapapur,16.65,76.8,India,IN,IND,Karnātaka,,5002,1356554112,Supplier,4,4
+207,Shillong,Shillong,25.5744,91.8789,India,IN,IND,Meghālaya,admin,143229,1356533936,Supplier,24,24
+564,Cherrapunji,Cherrapunji,25.3009,91.6962,India,IN,IND,Meghālaya,,14816,1356603770,Supplier,24,24
+250,Kohīma,Kohima,25.6667,94.1194,India,IN,IND,Nāgāland,admin,99039,1356332206,Supplier,27,27
+143,Puducherry,Puducherry,11.93,79.83,India,IN,IND,Puducherry,admin,227411,1356368903,Supplier,21,21
+41,Chandīgarh,Chandigarh,30.7353,76.7911,India,IN,IND,Chandīgarh,admin,1026459,1356739179,Supplier,13,13
+322,Kavaratti,Kavaratti,10.5626,72.6369,India,IN,IND,Lakshadweep,admin,10688,1356089869,Supplier,32,32
+12,Jaipur,Jaipur,26.9167,75.8667,India,IN,IND,Rājasthān,admin,3073350,1356293537,Supplier,8,8
+42,Jodhpur,Jodhpur,26.2944,73.0278,India,IN,IND,Rājasthān,,1033918,1356727084,Supplier,8,8
+45,Kota,Kota,25.18,75.83,India,IN,IND,Rājasthān,,1001694,1356820310,Supplier,8,8
+76,Ajmer,Ajmer,26.468,74.639,India,IN,IND,Rājasthān,,542321,1356058258,Supplier,8,8
+78,Bīkaner,Bikaner,28.0181,73.3169,India,IN,IND,Rājasthān,,529007,1356026593,Supplier,8,8
+91,Udaipur,Udaipur,24.5833,73.6833,India,IN,IND,Rājasthān,,451100,1356266094,Supplier,8,8
+99,Sīkar,Sikar,27.6119,75.1397,India,IN,IND,Rājasthān,,400000,1356163729,Supplier,8,8
+101,Bhīlwāra,Bhilwara,25.35,74.6333,India,IN,IND,Rājasthān,,389911,1356077831,Supplier,8,8
+109,Alwar,Alwar,27.5667,76.6167,India,IN,IND,Rājasthān,,341422,1356570855,Supplier,8,8
+137,Bharatpur,Bharatpur,27.2172,77.49,India,IN,IND,Rājasthān,,252342,1356168278,Supplier,8,8
+145,Pāli,Pali,25.7725,73.3233,India,IN,IND,Rājasthān,,229956,1356212172,Supplier,8,8
+173,Tonk,Tonk,26.1505,75.79,India,IN,IND,Rājasthān,,181734,1356991408,Supplier,8,8
+204,Beāwar,Beawar,26.1011,74.3203,India,IN,IND,Rājasthān,,151472,1356028963,Supplier,8,8
+219,Hanumāngarh,Hanumangarh,29.5833,74.3167,India,IN,IND,Rājasthān,,129654,1356133715,Supplier,8,8
+232,Chittaurgarh,Chittaurgarh,24.8894,74.6239,India,IN,IND,Rājasthān,,116406,1356110002,Supplier,8,8
+245,Būndi,Bundi,25.4383,75.6372,India,IN,IND,Rājasthān,,103286,1356402465,Supplier,8,8
+378,Jaisalmer,Jaisalmer,26.9167,70.9167,India,IN,IND,Rājasthān,,65471,1356575402,Supplier,8,8
+382,Nawalgarh,Nawalgarh,27.85,75.27,India,IN,IND,Rājasthān,,63948,1356085018,Supplier,8,8
+400,Jalor,Jalor,25.35,72.6167,India,IN,IND,Rājasthān,,54081,1356488284,Supplier,8,8
+491,Abu,Abu,24.5925,72.7083,India,IN,IND,Rājasthān,,22943,1356598126,Supplier,8,8
+494,Pushkar,Pushkar,26.4903,74.5542,India,IN,IND,Rājasthān,,21626,1356618005,Supplier,8,8
+757,Udrāmsar,Udramsar,27.9355,73.2942,India,IN,IND,Rājasthān,,8162,1356672680,Supplier,8,8
+5,Chennai,Chennai,13.0825,80.275,India,IN,IND,Tamil Nādu,admin,11564000,1356374944,Supplier,5,5
+25,Madurai,Madurai,9.9197,78.1194,India,IN,IND,Tamil Nādu,minor,1561129,1356257289,Supplier,5,5
+48,Coimbatore,Coimbatore,11,76.9667,India,IN,IND,Tamil Nādu,,959823,1356999503,Supplier,5,5
+50,Trichinopoly,Trichinopoly,10.8269,78.6928,India,IN,IND,Tamil Nādu,,916857,1356884472,Supplier,5,5
+59,Salem,Salem,11.65,78.1667,India,IN,IND,Tamil Nādu,,693236,1356567087,Supplier,5,5
+64,Tiruppūr,Tiruppur,11.1075,77.3398,India,IN,IND,Tamil Nādu,,650000,1356539761,Supplier,5,5
+77,Tinnevelly,Tinnevelly,8.7289,77.7081,India,IN,IND,Tamil Nādu,,542200,1356037155,Supplier,5,5
+94,Tuticorin,Tuticorin,8.7833,78.1333,India,IN,IND,Tamil Nādu,,436094,1356751023,Supplier,5,5
+106,Rājapālaiyam,Rajapalaiyam,9.4204,77.58,India,IN,IND,Tamil Nādu,,369991,1356110350,Supplier,5,5
+147,Nāgercoil,Nagercoil,8.17,77.43,India,IN,IND,Tamil Nādu,,224329,1356051733,Supplier,5,5
+149,Tanjore,Tanjore,10.8,79.15,India,IN,IND,Tamil Nādu,,222943,1356599194,Supplier,5,5
+156,Dindigul,Dindigul,10.369,77.9804,India,IN,IND,Tamil Nādu,,207327,1356106153,Supplier,5,5
+177,Vellore,Vellore,12.9204,79.15,India,IN,IND,Tamil Nādu,,177081,1356977661,Supplier,5,5
+180,Cuddalore,Cuddalore,11.75,79.75,India,IN,IND,Tamil Nādu,,173676,1356544008,Supplier,5,5
+188,Conjeeveram,Conjeeveram,12.8308,79.7078,India,IN,IND,Tamil Nādu,,164384,1356148941,Supplier,5,5
+203,Erode,Erode,11.3428,77.7274,India,IN,IND,Tamil Nādu,,151184,1356040695,Supplier,5,5
+210,Kumbakonam,Kumbakonam,10.9805,79.4,India,IN,IND,Tamil Nādu,,139264,1356960436,Supplier,5,5
+211,Tiruvannāmalai,Tiruvannamalai,12.2604,79.1,India,IN,IND,Tamil Nādu,,138243,1356561184,Supplier,5,5
+235,Vālpārai,Valparai,10.3204,76.97,India,IN,IND,Tamil Nādu,,114308,1356065507,Supplier,5,5
+244,Negapatam,Negapatam,10.7667,79.8333,India,IN,IND,Tamil Nādu,,102905,1356879770,Supplier,5,5
+360,Ootacamund,Ootacamund,11.4086,76.6939,India,IN,IND,Tamil Nādu,,88430,1356809681,Supplier,5,5
+371,Karūr,Karur,10.9504,78.0833,India,IN,IND,Tamil Nādu,,76915,1356837900,Supplier,5,5
+415,Rāmeswaram,Rameswaram,9.28,79.3,India,IN,IND,Tamil Nādu,,44856,1356465756,Supplier,5,5
+442,Kodaikānal,Kodaikanal,10.23,77.48,India,IN,IND,Tamil Nādu,,36501,1356350123,Supplier,5,5
+475,Kotagiri,Kotagiri,11.4167,76.8667,India,IN,IND,Tamil Nādu,,28207,1356645188,Supplier,5,5
+511,Kanniyākumāri,Kanniyakumari,8.0911,77.5417,India,IN,IND,Tamil Nādu,,19678,1356026727,Supplier,5,5
+552,Seven Pagodas,Seven Pagodas,12.6208,80.1933,India,IN,IND,Tamil Nādu,,15172,1356071916,Supplier,5,5
+686,Kilkunda,Kilkunda,11.2569,76.6697,India,IN,IND,Tamil Nādu,,10150,1356523989,Supplier,5,5
+899,Āndimatam,Andimatam,11.3353,79.3758,India,IN,IND,Tamil Nādu,,6165,1356876971,Supplier,5,5
+924,Elākkurichchi,Elakkurichchi,10.96,79.163,India,IN,IND,Tamil Nādu,,6008,1356173087,Supplier,5,5
+972,Kuvāgam,Kuvagam,11.2826,79.2852,India,IN,IND,Tamil Nādu,,5807,1356171695,Supplier,5,5
+991,Kallankurichchi,Kallankurichchi,11.1504,79.1199,India,IN,IND,Tamil Nādu,,5385,1356248043,Supplier,5,5
+1011,Kulumūr,Kulumur,11.3167,79.15,India,IN,IND,Tamil Nādu,,5052,1356214886,Supplier,5,5
+71,Dehra Dūn,Dehra Dun,30.318,78.029,India,IN,IND,Uttarakhand,admin,578420,1356970407,Supplier,17,17
+397,Pithorāgarh,Pithoragarh,29.58,80.22,India,IN,IND,Uttarakhand,,56044,1356198469,Supplier,17,17
+427,Naini Tal,Naini Tal,29.3919,79.4542,India,IN,IND,Uttarakhand,,41377,1356070793,Supplier,17,17
+452,Almora,Almora,29.62,79.67,India,IN,IND,Uttarakhand,,34122,1356045284,Supplier,17,17
+461,Mussoorie,Mussoorie,30.4561,78.0781,India,IN,IND,Uttarakhand,,30118,1356713058,Supplier,17,17
+923,Narendranagar,Narendranagar,30.17,78.3,India,IN,IND,Uttarakhand,,6049,1356094714,Supplier,17,17
+995,Lansdowne,Lansdowne,29.83,78.68,India,IN,IND,Uttarakhand,,5667,1356052732,Supplier,17,17
+3,Kolkāta,Kolkata,22.5727,88.3639,India,IN,IND,West Bengal,admin,18698000,1356060520,Supplier,3,3
+38,Hāora,Haora,22.5736,88.3251,India,IN,IND,West Bengal,,1077075,1356986516,Supplier,3,3
+72,Durgāpur,Durgapur,23.55,87.32,India,IN,IND,West Bengal,,566517,1356045686,Supplier,3,3
+73,Āsansol,Asansol,23.6833,86.9667,India,IN,IND,West Bengal,,563917,1356093694,Supplier,3,3
+100,Bhātpāra,Bhatpara,22.8667,88.4167,India,IN,IND,West Bengal,,386019,1356022456,Supplier,3,3
+118,Barddhamān,Barddhaman,23.25,87.85,India,IN,IND,West Bengal,,314265,1356062166,Supplier,3,3
+123,Bāli,Bali,22.65,88.34,India,IN,IND,West Bengal,,293373,1356113138,Supplier,3,3
+130,Bārāsat,Barasat,22.72,88.48,India,IN,IND,West Bengal,,278435,1356644721,Supplier,3,3
+139,Shrīrāmpur,Shrirampur,22.75,88.34,India,IN,IND,West Bengal,,181842,1356021505,Supplier,3,3
+142,Uluberiya,Uluberiya,22.47,88.11,India,IN,IND,West Bengal,,235345,1356354610,Supplier,3,3
+155,Kharagpur,Kharagpur,22.3302,87.3237,India,IN,IND,West Bengal,,207604,1356305803,Supplier,3,3
+157,Ingrāj Bāzār,Ingraj Bazar,25,88.15,India,IN,IND,West Bengal,,205521,1356142829,Supplier,3,3
+158,Haldia,Haldia,22.03,88.06,India,IN,IND,West Bengal,,200827,1356491171,Supplier,3,3
+160,Baharampur,Baharampur,24.1,88.25,India,IN,IND,West Bengal,,195223,1356612685,Supplier,3,3
+162,Madhyamgram,Madhyamgram,22.7,88.45,India,IN,IND,West Bengal,,196127,1356501701,Supplier,3,3
+166,Hugli,Hugli,22.9,88.39,India,IN,IND,West Bengal,,179931,1356109548,Supplier,3,3
+168,Rāiganj,Raiganj,25.6167,88.1167,India,IN,IND,West Bengal,,183612,1356159126,Supplier,3,3
+169,Bārākpur,Barakpur,22.75,88.3667,India,IN,IND,West Bengal,,152783,1356768708,Supplier,3,3
+179,Chandannagar,Chandannagar,22.8667,88.3833,India,IN,IND,West Bengal,,166867,1356174802,Supplier,3,3
+183,Medinīpur,Medinipur,22.4333,87.3333,India,IN,IND,West Bengal,,169264,1356432910,Supplier,3,3
+192,Krishnanagar,Krishnanagar,23.4,88.5,India,IN,IND,West Bengal,,153062,1356128689,Supplier,3,3
+197,Bālurghāt,Balurghat,25.2167,88.7667,India,IN,IND,West Bengal,,153279,1356496150,Supplier,3,3
+202,Shāntipur,Shantipur,23.25,88.43,India,IN,IND,West Bengal,,151777,1356584320,Supplier,3,3
+205,Hābra,Habra,22.83,88.63,India,IN,IND,West Bengal,,147221,1356091822,Supplier,3,3
+213,Bānkura,Bankura,23.25,87.0667,India,IN,IND,West Bengal,,137386,1356582158,Supplier,3,3
+218,Kānchrāpāra,Kanchrapara,22.97,88.43,India,IN,IND,West Bengal,,129576,1356022687,Supplier,3,3
+221,Basīrhat,Basirhat,22.6572,88.8942,India,IN,IND,West Bengal,,125254,1356109985,Supplier,3,3
+222,Navadwīp,Navadwip,23.4088,88.3657,India,IN,IND,West Bengal,,125543,1356449184,Supplier,3,3
+224,Rishra,Rishra,22.71,88.35,India,IN,IND,West Bengal,,124577,1356339732,Supplier,3,3
+225,Baidyabāti,Baidyabati,22.79,88.32,India,IN,IND,West Bengal,,121110,1356079081,Supplier,3,3
+227,Puruliya,Puruliya,23.3333,86.3667,India,IN,IND,West Bengal,,121067,1356350196,Supplier,3,3
+228,Darjeeling,Darjeeling,27.0375,88.2631,India,IN,IND,West Bengal,,118805,1356267176,Supplier,3,3
+233,Bānsbāria,Bansbaria,22.97,88.4,India,IN,IND,West Bengal,,103920,1356897672,Supplier,3,3
+238,Khardah,Khardah,22.72,88.38,India,IN,IND,West Bengal,,108496,1356765227,Supplier,3,3
+239,Bangaon,Bangaon,23.07,88.82,India,IN,IND,West Bengal,,108864,1356624441,Supplier,3,3
+241,Jalpāiguri,Jalpaiguri,26.5167,88.7333,India,IN,IND,West Bengal,,107341,1356763479,Supplier,3,3
+243,Kalyani,Kalyani,22.975,88.4344,India,IN,IND,West Bengal,,100575,1356108133,Supplier,3,3
+246,Bhadreswar,Bhadreswar,22.82,88.35,India,IN,IND,West Bengal,,101477,1356320019,Supplier,3,3
+249,Dhuliān,Dhulian,24.68,87.97,India,IN,IND,West Bengal,,95706,1356241829,Supplier,3,3
+252,Jangipur,Jangipur,24.47,88.07,India,IN,IND,West Bengal,,88165,1356655968,Supplier,3,3
+253,Baj Baj,Baj Baj,22.4828,88.1818,India,IN,IND,West Bengal,,76837,1356102140,Supplier,3,3
+254,Siuri,Siuri,23.9167,87.5333,India,IN,IND,West Bengal,,67864,1356042495,Supplier,3,3
+255,Tamlūk,Tamluk,22.3,87.9167,India,IN,IND,West Bengal,,65306,1356893735,Supplier,3,3
+256,Bankra,Bankra,22.63,88.3,India,IN,IND,West Bengal,,63957,1356096653,Supplier,3,3
+257,Chakapara,Chakapara,22.63,88.35,India,IN,IND,West Bengal,,35282,1356000447,Supplier,3,3
+260,Bāruipur,Baruipur,22.3654,88.4325,India,IN,IND,West Bengal,,53128,1356275520,Supplier,3,3
+262,Gobārdānga,Gobardanga,22.87,88.76,India,IN,IND,West Bengal,,45377,1356963190,Supplier,3,3
+263,Diamond Harbour,Diamond Harbour,22.191,88.1905,India,IN,IND,West Bengal,,41802,1356247896,Supplier,3,3
+265,Kānkuria,Kankuria,24.658,87.9794,India,IN,IND,West Bengal,,36925,1356994427,Supplier,3,3
+266,Pujali,Pujali,22.4679,88.1452,India,IN,IND,West Bengal,,37047,1356010831,Supplier,3,3
+267,Chittaranjan,Chittaranjan,23.87,86.87,India,IN,IND,West Bengal,,39098,1356842137,Supplier,3,3
+270,Sānkrāil,Sankrail,22.57,88.24,India,IN,IND,West Bengal,,29114,1356477305,Supplier,3,3
+271,Tarakeswar,Tarakeswar,22.89,88.02,India,IN,IND,West Bengal,,30947,1356820799,Supplier,3,3
+272,Nibria,Nibria,22.61,88.25,India,IN,IND,West Bengal,,27818,1356924997,Supplier,3,3
+273,Kuli,Kuli,24.7366,87.9426,India,IN,IND,West Bengal,,28092,1356864766,Supplier,3,3
+274,Beldānga,Beldanga,23.93,88.25,India,IN,IND,West Bengal,,29205,1356073095,Supplier,3,3
+275,Saranga,Saranga,22.54,88.21,India,IN,IND,West Bengal,,25200,1356064506,Supplier,3,3
+276,Jaynagar-Majilpur,Jaynagar-Majilpur,22.1745,88.4184,India,IN,IND,West Bengal,,25922,1356557030,Supplier,3,3
+277,Pānchla,Panchla,22.54,88.14,India,IN,IND,West Bengal,,26432,1356068400,Supplier,3,3
+279,Bāuria,Bauria,22.4521,88.1853,India,IN,IND,West Bengal,,16764,1356688611,Supplier,3,3
+280,Dumjor,Dumjor,22.64,88.22,India,IN,IND,West Bengal,,18433,1356922708,Supplier,3,3
+281,Mahiari,Mahiari,22.59,88.24,India,IN,IND,West Bengal,,18223,1356110820,Supplier,3,3
+282,Mayahaura,Mayahaura,22.1834,88.4998,India,IN,IND,West Bengal,,19604,1356113261,Supplier,3,3
+284,Mālancha,Malancha,24.666,87.922,India,IN,IND,West Bengal,,16918,1356456699,Supplier,3,3
+285,Raghudebbati,Raghudebbati,22.53,88.2,India,IN,IND,West Bengal,,14165,1356255292,Supplier,3,3
+286,Nahāzāri,Nahazari,22.4347,88.2487,India,IN,IND,West Bengal,,17422,1356632745,Supplier,3,3
+287,Giria,Giria,24.5167,88.0667,India,IN,IND,West Bengal,,17131,1356054875,Supplier,3,3
+288,Baharu,Baharu,22.204,88.4283,India,IN,IND,West Bengal,,16155,1356142669,Supplier,3,3
+289,Jagdispur,Jagdispur,22.65,88.29,India,IN,IND,West Bengal,,16259,1356912324,Supplier,3,3
+290,Ramnagar,Ramnagar,22.3245,88.494,India,IN,IND,West Bengal,,17053,1356026794,Supplier,3,3
+291,Jaypul,Jaypul,22.7833,88.5695,India,IN,IND,West Bengal,,16134,1356322402,Supplier,3,3
+292,Dogāchi,Dogachi,24.6195,87.9221,India,IN,IND,West Bengal,,13848,1356586621,Supplier,3,3
+293,Janāi,Janai,22.7157,88.2426,India,IN,IND,West Bengal,,12837,1356241630,Supplier,3,3
+294,Bāhāgalpur,Bahagalpur,24.5934,87.9536,India,IN,IND,West Bengal,,11528,1356004919,Supplier,3,3
+296,Chandi,Chandi,22.3503,88.2828,India,IN,IND,West Bengal,,13332,1356146343,Supplier,3,3
+297,Saktipur,Saktipur,23.864,88.1987,India,IN,IND,West Bengal,,13123,1356407230,Supplier,3,3
+298,Bhabānipur,Bhabanipur,24.7153,87.9227,India,IN,IND,West Bengal,,11465,1356237076,Supplier,3,3
+300,Begampur,Begampur,22.3705,88.494,India,IN,IND,West Bengal,,12742,1356787471,Supplier,3,3
+301,Amtala,Amtala,22.22,88.17,India,IN,IND,West Bengal,,8765,1356179828,Supplier,3,3
+302,Begampur,Begampur,22.74,88.24,India,IN,IND,West Bengal,,10487,1356059388,Supplier,3,3
+303,Kalinagar,Kalinagar,22.4383,88.115,India,IN,IND,West Bengal,,11358,1356809062,Supplier,3,3
+304,Natshal,Natshal,22.1957,88.0272,India,IN,IND,West Bengal,,11331,1356961923,Supplier,3,3
+305,Chaital,Chaital,22.5106,88.7996,India,IN,IND,West Bengal,,11927,1356876532,Supplier,3,3
+306,Dhāmua,Dhamua,22.2875,88.3962,India,IN,IND,West Bengal,,10055,1356600666,Supplier,3,3
+307,Multi,Multi,22.2847,88.4053,India,IN,IND,West Bengal,,10215,1356171822,Supplier,3,3
+308,Chāndpur,Chandpur,22.4368,88.1711,India,IN,IND,West Bengal,,9066,1356602192,Supplier,3,3
+309,Sāhāpur,Sahapur,22.52,88.17,India,IN,IND,West Bengal,,9022,1356064505,Supplier,3,3
+310,Amgachia,Amgachia,22.4156,88.3051,India,IN,IND,West Bengal,,10179,1356436848,Supplier,3,3
+311,Laskarpar,Laskarpar,22.5833,88.1036,India,IN,IND,West Bengal,,8489,1356556732,Supplier,3,3
+312,Nimpot,Nimpot,22.15,88.43,India,IN,IND,West Bengal,,8014,1356113263,Supplier,3,3
+313,Hārua,Harua,24.5249,87.9931,India,IN,IND,West Bengal,,9012,1356085339,Supplier,3,3
+314,Nāzira,Nazira,22.218,88.2757,India,IN,IND,West Bengal,,9552,1356808460,Supplier,3,3
+315,Krishnapur,Krishnapur,22.67,88.26,India,IN,IND,West Bengal,,8205,1356078345,Supplier,3,3
+316,Nalpur,Nalpur,22.53,88.19,India,IN,IND,West Bengal,,6911,1356361842,Supplier,3,3
+317,Mahadipur,Mahadipur,24.8566,88.1248,India,IN,IND,West Bengal,,8638,1356139009,Supplier,3,3
+318,Iarpur,Iarpur,22.2998,88.2994,India,IN,IND,West Bengal,,9238,1356656331,Supplier,3,3
+319,Raspunji,Raspunji,22.4367,88.2705,India,IN,IND,West Bengal,,8036,1356420017,Supplier,3,3
+320,Nijgaon Parānpur,Nijgaon Paranpur,25.1559,87.9732,India,IN,IND,West Bengal,,8523,1356110154,Supplier,3,3
+321,Ballālpur,Ballalpur,24.7386,87.9083,India,IN,IND,West Bengal,,7217,1356617460,Supplier,3,3
+323,Pātra,Patra,22.2194,88.2142,India,IN,IND,West Bengal,,8310,1356078205,Supplier,3,3
+324,Chāndnidaha,Chandnidaha,24.6342,87.951,India,IN,IND,West Bengal,,5996,1356511733,Supplier,3,3
+325,Nabagrām,Nabagram,22.2935,88.5183,India,IN,IND,West Bengal,,8452,1356926193,Supplier,3,3
+326,Hilora,Hilora,24.5055,87.9661,India,IN,IND,West Bengal,,7667,1356127024,Supplier,3,3
+327,Imamnagar,Imamnagar,24.745,87.9247,India,IN,IND,West Bengal,,6933,1356819152,Supplier,3,3
+328,Serpur,Serpur,22.3204,88.3117,India,IN,IND,West Bengal,,8170,1356204007,Supplier,3,3
+329,Dīgnagar,Dignagar,23.3283,88.4469,India,IN,IND,West Bengal,,6023,1356801516,Supplier,3,3
+330,Palta,Palta,22.8083,88.3943,India,IN,IND,West Bengal,,6408,1356128487,Supplier,3,3
+331,Beonta,Beonta,22.5242,88.5049,India,IN,IND,West Bengal,,7850,1356916954,Supplier,3,3
+332,Andharmanik,Andharmanik,22.3715,88.3517,India,IN,IND,West Bengal,,6676,1356701037,Supplier,3,3
+333,Balbalpāra,Balbalpara,24.6234,87.9594,India,IN,IND,West Bengal,,5207,1356601239,Supplier,3,3
+334,Bhandārdaha,Bhandardaha,22.62,88.21,India,IN,IND,West Bengal,,5667,1356052495,Supplier,3,3
+335,Jājigrām,Jajigram,24.4724,87.9589,India,IN,IND,West Bengal,,6977,1356127022,Supplier,3,3
+336,Alipur,Alipur,22.1936,88.4295,India,IN,IND,West Bengal,,5937,1356063143,Supplier,3,3
+337,Burul,Burul,22.3685,88.1065,India,IN,IND,West Bengal,,7014,1356374734,Supplier,3,3
+338,Purbba Ramnagar,Purbba Ramnagar,22.8541,88.0193,India,IN,IND,West Bengal,,7759,1356030889,Supplier,3,3
+339,Bansabāti,Bansabati,24.5064,87.9985,India,IN,IND,West Bengal,,6378,1356688318,Supplier,3,3
+340,Bodāi,Bodai,22.7994,88.4874,India,IN,IND,West Bengal,,6971,1356004384,Supplier,3,3
+341,Uttarbhag,Uttarbhag,22.3465,88.4976,India,IN,IND,West Bengal,,6748,1356817365,Supplier,3,3
+342,Gācha,Gacha,22.7063,88.9198,India,IN,IND,West Bengal,,6489,1356074954,Supplier,3,3
+343,Gotra,Gotra,22.6216,88.8792,India,IN,IND,West Bengal,,5894,1356426591,Supplier,3,3
+344,Bāmanpukur,Bamanpukur,22.5119,88.7001,India,IN,IND,West Bengal,,6421,1356088599,Supplier,3,3
+345,Padmarhā,Padmarha,22.2474,88.4464,India,IN,IND,West Bengal,,5184,1356048024,Supplier,3,3
+346,Ramkrishnapur,Ramkrishnapur,22.3574,88.2583,India,IN,IND,West Bengal,,5971,1356070837,Supplier,3,3
+347,Iswaripur,Iswaripur,22.7324,88.4106,India,IN,IND,West Bengal,,5155,1356156049,Supplier,3,3
+348,Nadābhānga,Nadabhanga,22.4049,88.234,India,IN,IND,West Bengal,,5927,1356505482,Supplier,3,3
+349,Bishnupur,Bishnupur,22.38,88.27,India,IN,IND,West Bengal,,5030,1356354067,Supplier,3,3
+350,Bhāsa,Bhasa,22.4145,88.2838,India,IN,IND,West Bengal,,5559,1356698957,Supplier,3,3
+351,Bodra,Bodra,22.4453,88.6157,India,IN,IND,West Bengal,,5324,1356952698,Supplier,3,3
+355,Chākdaha,Chakdaha,23.08,88.52,India,IN,IND,West Bengal,,95203,1356089316,Supplier,3,3
+356,Contai,Contai,21.78,87.75,India,IN,IND,West Bengal,,92226,1356643000,Supplier,3,3
+363,Kātoya,Katoya,23.65,88.13,India,IN,IND,West Bengal,,81615,1356487359,Supplier,3,3
+365,Bolpur,Bolpur,23.67,87.72,India,IN,IND,West Bengal,,80210,1356123985,Supplier,3,3
+369,Koch Bihār,Koch Bihar,26.3167,89.4333,India,IN,IND,West Bengal,,77935,1356121274,Supplier,3,3
+375,Bishnupur,Bishnupur,23.0833,87.3167,India,IN,IND,West Bengal,,67783,1356443025,Supplier,3,3
+377,Alīpur Duār,Alipur Duar,26.5,89.52,India,IN,IND,West Bengal,,65232,1356472105,Supplier,3,3
+384,Jhārgrām,Jhargram,22.45,86.98,India,IN,IND,West Bengal,,61712,1356046912,Supplier,3,3
+388,Pānskura,Panskura,22.42,87.7,India,IN,IND,West Bengal,,57932,1356744342,Supplier,3,3
+389,Rāmpur Hat,Rampur Hat,24.17,87.78,India,IN,IND,West Bengal,,57833,1356074159,Supplier,3,3
+394,Gangārāmpur,Gangarampur,25.4,88.52,India,IN,IND,West Bengal,,56217,1356994707,Supplier,3,3
+395,Kāndi,Kandi,23.95,88.03,India,IN,IND,West Bengal,,55632,1356979141,Supplier,3,3
+398,Islāmpur,Islampur,26.27,88.2,India,IN,IND,West Bengal,,54340,1356028148,Supplier,3,3
+401,Kāliyāganj,Kaliyaganj,25.63,88.32,India,IN,IND,West Bengal,,53530,1356116477,Supplier,3,3
+403,Badūria,Baduria,22.74,88.79,India,IN,IND,West Bengal,,52493,1356034082,Supplier,3,3
+414,Dhupgāri,Dhupgari,26.6,89.02,India,IN,IND,West Bengal,,44719,1356217672,Supplier,3,3
+416,Murshidābād,Murshidabad,24.18,88.27,India,IN,IND,West Bengal,,44019,1356366405,Supplier,3,3
+417,Sainthia,Sainthia,23.95,87.67,India,IN,IND,West Bengal,,44601,1356561407,Supplier,3,3
+419,Berubāri,Berubari,26.3603,88.7152,India,IN,IND,West Bengal,,41593,1356337976,Supplier,3,3
+421,Kārsiyāng,Karsiyang,26.88,88.28,India,IN,IND,West Bengal,,42446,1356532333,Supplier,3,3
+423,Nalhāti,Nalhati,24.3,87.82,India,IN,IND,West Bengal,,41534,1356705146,Supplier,3,3
+424,Memāri,Memari,23.2,88.12,India,IN,IND,West Bengal,,41451,1356560015,Supplier,3,3
+431,Kālimpong,Kalimpong,27.06,88.47,India,IN,IND,West Bengal,,40143,1356392969,Supplier,3,3
+433,Tāki,Taki,22.59,88.92,India,IN,IND,West Bengal,,38263,1356065941,Supplier,3,3
+435,Dubrājpur,Dubrajpur,23.8,87.38,India,IN,IND,West Bengal,,38041,1356740995,Supplier,3,3
+437,Sitalkuchi,Sitalkuchi,26.1697,89.1914,India,IN,IND,West Bengal,,37052,1356022394,Supplier,3,3
+438,Dālkola,Dalkola,25.8758,87.8401,India,IN,IND,West Bengal,,36930,1356729017,Supplier,3,3
+440,Dīnhāta,Dinhata,26.13,89.47,India,IN,IND,West Bengal,,36124,1356871105,Supplier,3,3
+445,Guskhara,Guskhara,23.4928,87.7347,India,IN,IND,West Bengal,,35388,1356041960,Supplier,3,3
+447,Balarāmpur,Balarampur,26.2432,89.5863,India,IN,IND,West Bengal,,34113,1356027247,Supplier,3,3
+453,Debagrām,Debagram,23.6833,88.2833,India,IN,IND,West Bengal,,32695,1356831548,Supplier,3,3
+459,Pandua,Pandua,23.08,88.28,India,IN,IND,West Bengal,,30700,1356460941,Supplier,3,3
+460,Lālgola,Lalgola,24.42,88.25,India,IN,IND,West Bengal,,31698,1356049004,Supplier,3,3
+462,Mārgrām,Margram,24.1516,87.8442,India,IN,IND,West Bengal,,30055,1356114722,Supplier,3,3
+464,Maināguri,Mainaguri,26.57,88.82,India,IN,IND,West Bengal,,30490,1356149706,Supplier,3,3
+465,Egra,Egra,21.9,87.53,India,IN,IND,West Bengal,,30148,1356806752,Supplier,3,3
+468,Garaimāri,Garaimari,24.0217,88.6263,India,IN,IND,West Bengal,,29260,1356122000,Supplier,3,3
+470,Sonāmukhi,Sonamukhi,23.3,87.42,India,IN,IND,West Bengal,,29085,1356334677,Supplier,3,3
+478,Panchānandapur,Panchanandapur,24.9339,87.9761,India,IN,IND,West Bengal,,26358,1356286330,Supplier,3,3
+479,Gilarchāt,Gilarchat,22.0703,88.4455,India,IN,IND,West Bengal,,25897,1356659506,Supplier,3,3
+480,Raghunāthpur,Raghunathpur,23.55,86.67,India,IN,IND,West Bengal,,25561,1356379674,Supplier,3,3
+483,Balarāmpur,Balarampur,23.12,86.22,India,IN,IND,West Bengal,,24431,1356300676,Supplier,3,3
+486,Chandrakona,Chandrakona,22.73,87.52,India,IN,IND,West Bengal,,23629,1356507688,Supplier,3,3
+488,Bagulā,Bagula,23.335,88.644,India,IN,IND,West Bengal,,22649,1356186106,Supplier,3,3
+492,Singur,Singur,22.81,88.23,India,IN,IND,West Bengal,,21382,1356135248,Supplier,3,3
+497,Tufānganj,Tufanganj,26.32,89.67,India,IN,IND,West Bengal,,20998,1356500654,Supplier,3,3
+499,Tehata,Tehata,23.7274,88.5331,India,IN,IND,West Bengal,,21093,1356819415,Supplier,3,3
+501,Umrāpur,Umrapur,24.5863,87.9294,India,IN,IND,West Bengal,,19855,1356439102,Supplier,3,3
+502,Krishnapur,Krishnapur,24.4123,88.2582,India,IN,IND,West Bengal,,19462,1356078973,Supplier,3,3
+505,Palāshi,Palashi,23.7898,88.2583,India,IN,IND,West Bengal,,19984,1356301670,Supplier,3,3
+506,Andāl,Andal,23.6,87.2,India,IN,IND,West Bengal,,19924,1356681205,Supplier,3,3
+507,Nalua,Nalua,22.1051,88.4619,India,IN,IND,West Bengal,,19071,1356015232,Supplier,3,3
+512,Rāmjībanpur,Ramjibanpur,22.83,87.62,India,IN,IND,West Bengal,,19611,1356578747,Supplier,3,3
+513,Kākdwīp,Kakdwip,21.8791,88.1913,India,IN,IND,West Bengal,,19368,1356562790,Supplier,3,3
+514,Jhalidā,Jhalida,23.37,85.97,India,IN,IND,West Bengal,,19544,1356425223,Supplier,3,3
+517,Srikhanda,Srikhanda,23.5984,88.0871,India,IN,IND,West Bengal,,18394,1356033928,Supplier,3,3
+518,Bādkulla,Badkulla,23.28,88.53,India,IN,IND,West Bengal,,18051,1356407381,Supplier,3,3
+521,Rāmpur,Rampur,26.4424,89.8038,India,IN,IND,West Bengal,,18274,1356114247,Supplier,3,3
+522,Bhagabānpur,Bhagabanpur,24.7765,88.0217,India,IN,IND,West Bengal,,17397,1356672735,Supplier,3,3
+525,Rājmahal,Rajmahal,25.05,87.84,India,IN,IND,West Bengal,,17974,1356144679,Supplier,3,3
+526,Debīpur,Debipur,24.2272,88.6472,India,IN,IND,West Bengal,,17877,1356369589,Supplier,3,3
+529,Belākoba,Belakoba,26.5744,88.6052,India,IN,IND,West Bengal,,17215,1356014870,Supplier,3,3
+530,Pānchgrām,Panchgram,24.1996,88.0077,India,IN,IND,West Bengal,,17137,1356279119,Supplier,3,3
+533,Dighirpār,Dighirpar,22.3034,88.6678,India,IN,IND,West Bengal,,15881,1356585729,Supplier,3,3
+535,Bahutāl,Bahutal,24.56,87.89,India,IN,IND,West Bengal,,15963,1356754233,Supplier,3,3
+536,Mahālandi,Mahalandi,24.0738,88.1214,India,IN,IND,West Bengal,,16354,1356022399,Supplier,3,3
+537,Gokarna,Gokarna,24.0306,88.1181,India,IN,IND,West Bengal,,16198,1356378146,Supplier,3,3
+538,Bārnia,Barnia,23.7311,88.4329,India,IN,IND,West Bengal,,16350,1356722689,Supplier,3,3
+543,Khirpai,Khirpai,22.711,87.6174,India,IN,IND,West Bengal,,16384,1356147739,Supplier,3,3
+544,Mitrapur,Mitrapur,24.4371,87.9666,India,IN,IND,West Bengal,,15452,1356115899,Supplier,3,3
+545,Islāmpur,Islampur,24.1513,88.4671,India,IN,IND,West Bengal,,15019,1356728986,Supplier,3,3
+546,Bhagwāngola,Bhagwangola,24.3485,88.3243,India,IN,IND,West Bengal,,15587,1356116155,Supplier,3,3
+549,Sānātikri,Sanatikri,22.0198,88.5026,India,IN,IND,West Bengal,,15536,1356384809,Supplier,3,3
+554,Hariharpāra,Hariharpara,24.0468,88.4244,India,IN,IND,West Bengal,,14827,1356090743,Supplier,3,3
+557,Haldībāri,Haldibari,26.33,88.77,India,IN,IND,West Bengal,,14404,1356516679,Supplier,3,3
+559,Dattapulia,Dattapulia,23.2404,88.7115,India,IN,IND,West Bengal,,13562,1356802865,Supplier,3,3
+560,Bāra,Bara,24.3146,87.9643,India,IN,IND,West Bengal,,14450,1356955037,Supplier,3,3
+565,Madanpur,Madanpur,23.02,88.48,India,IN,IND,West Bengal,,13675,1356082919,Supplier,3,3
+566,Odlābāri,Odlabari,26.8364,88.6294,India,IN,IND,West Bengal,,14194,1356894248,Supplier,3,3
+567,Bhānukumāri,Bhanukumari,26.3395,89.7697,India,IN,IND,West Bengal,,14340,1356371010,Supplier,3,3
+571,Barjora,Barjora,23.4333,87.2833,India,IN,IND,West Bengal,,14012,1356294396,Supplier,3,3
+573,Belpukur,Belpukur,21.9851,88.2125,India,IN,IND,West Bengal,,13011,1356759284,Supplier,3,3
+574,Daulatnagar,Daulatnagar,25.3216,87.8443,India,IN,IND,West Bengal,,13235,1356122184,Supplier,3,3
+577,Rājnagar,Rajnagar,23.95,87.32,India,IN,IND,West Bengal,,13965,1356624053,Supplier,3,3
+579,Sābang,Sabang,22.183,87.599,India,IN,IND,West Bengal,,13224,1356188574,Supplier,3,3
+580,Kumirimora,Kumirimora,22.6969,88.2267,India,IN,IND,West Bengal,,12208,1356708218,Supplier,3,3
+582,Champādānga,Champadanga,22.8275,87.9844,India,IN,IND,West Bengal,,12518,1356101477,Supplier,3,3
+584,Ghorādal,Ghoradal,22.0519,88.3594,India,IN,IND,West Bengal,,12170,1356149424,Supplier,3,3
+586,Pātiram,Patiram,25.3167,88.75,India,IN,IND,West Bengal,,12462,1356075890,Supplier,3,3
+587,Gopālnagar,Gopalnagar,22.8289,88.2139,India,IN,IND,West Bengal,,12232,1356095553,Supplier,3,3
+588,Kankandighi,Kankandighi,21.9744,88.4659,India,IN,IND,West Bengal,,12900,1356591513,Supplier,3,3
+589,Cossimbāzār,Cossimbazar,24.12,88.28,India,IN,IND,West Bengal,,11724,1356094914,Supplier,3,3
+594,Panjīpāra,Panjipara,26.1369,88.0132,India,IN,IND,West Bengal,,12376,1356550147,Supplier,3,3
+595,Kumarkhāli,Kumarkhali,22.3598,88.799,India,IN,IND,West Bengal,,12021,1356025767,Supplier,3,3
+596,Domahani,Domahani,23.7569,87.0256,India,IN,IND,West Bengal,,12480,1356465911,Supplier,3,3
+599,Kharar,Kharar,22.7,87.68,India,IN,IND,West Bengal,,12118,1356793502,Supplier,3,3
+600,Kotra,Kotra,22.7062,88.5411,India,IN,IND,West Bengal,,11615,1356847696,Supplier,3,3
+603,Kesabpur,Kesabpur,22.97,88.26,India,IN,IND,West Bengal,,12073,1356046002,Supplier,3,3
+604,Nagar,Nagar,24.0914,87.9888,India,IN,IND,West Bengal,,11882,1356675788,Supplier,3,3
+614,Gopālpur,Gopalpur,22.6161,88.7467,India,IN,IND,West Bengal,,10864,1356526721,Supplier,3,3
+618,Mangalkot,Mangalkot,23.5213,87.9119,India,IN,IND,West Bengal,,11537,1356908397,Supplier,3,3
+619,Sonāda,Sonada,27,88.14,India,IN,IND,West Bengal,,11635,1356109145,Supplier,3,3
+620,Khargrām,Khargram,24.0232,87.9878,India,IN,IND,West Bengal,,11209,1356376857,Supplier,3,3
+621,Fakirtaki,Fakirtaki,22.3815,88.7901,India,IN,IND,West Bengal,,10361,1356913401,Supplier,3,3
+622,Antardipa,Antardipa,24.6442,87.9213,India,IN,IND,West Bengal,,10610,1356686856,Supplier,3,3
+624,Mirik,Mirik,26.887,88.187,India,IN,IND,West Bengal,,11513,1356796096,Supplier,3,3
+627,Lakhipur,Lakhipur,26.3281,88.3863,India,IN,IND,West Bengal,,11383,1356040797,Supplier,3,3
+628,Falimāri,Falimari,26.3856,89.8233,India,IN,IND,West Bengal,,11385,1356480147,Supplier,3,3
+629,Bālupur,Balupur,25.2611,87.8947,India,IN,IND,West Bengal,,10808,1356051781,Supplier,3,3
+630,Bara Belun,Bara Belun,23.4007,87.9733,India,IN,IND,West Bengal,,11261,1356028053,Supplier,3,3
+631,Ambhua,Ambhua,24.5568,87.8651,India,IN,IND,West Bengal,,10477,1356444911,Supplier,3,3
+632,Rudra Nagar,Rudra Nagar,24.3841,87.884,India,IN,IND,West Bengal,,10756,1356549473,Supplier,3,3
+634,Mayūreswar,Mayureswar,23.9851,87.7728,India,IN,IND,West Bengal,,11142,1356705588,Supplier,3,3
+635,Tālsur,Talsur,25.3667,87.8512,India,IN,IND,West Bengal,,10680,1356114899,Supplier,3,3
+639,Srikrishnapur,Srikrishnapur,22.9717,88.0351,India,IN,IND,West Bengal,,10345,1356068749,Supplier,3,3
+642,Fatehpur,Fatehpur,25.3032,87.8623,India,IN,IND,West Bengal,,10423,1356847421,Supplier,3,3
+644,Rāmchandrapur,Ramchandrapur,22.9,88.48,India,IN,IND,West Bengal,,10312,1356118929,Supplier,3,3
+645,Bhagirathpur,Bhagirathpur,24.0912,88.4947,India,IN,IND,West Bengal,,10125,1356789321,Supplier,3,3
+647,Sonakhal,Sonakhal,22.2213,88.6939,India,IN,IND,West Bengal,,10582,1356587924,Supplier,3,3
+649,Pātrasāer,Patrasaer,23.1968,87.5272,India,IN,IND,West Bengal,,10844,1356961094,Supplier,3,3
+650,Galsi,Galsi,23.3427,87.6885,India,IN,IND,West Bengal,,10700,1356039133,Supplier,3,3
+651,Nalgora,Nalgora,22.0346,88.4743,India,IN,IND,West Bengal,,10373,1356342288,Supplier,3,3
+654,Chota Mollakhāli,Chota Mollakhali,22.2177,88.8957,India,IN,IND,West Bengal,,10537,1356435959,Supplier,3,3
+655,Ganga Sāgar,Ganga Sagar,21.6571,88.08,India,IN,IND,West Bengal,,10340,1356790764,Supplier,3,3
+656,Kamargani,Kamargani,22.5475,88.6606,India,IN,IND,West Bengal,,9555,1356656536,Supplier,3,3
+658,Petua,Petua,22.4143,88.4489,India,IN,IND,West Bengal,,9596,1356023714,Supplier,3,3
+662,Janāpul,Janapul,22.8615,88.6868,India,IN,IND,West Bengal,,9515,1356020133,Supplier,3,3
+663,Karīmpur,Karimpur,23.9667,88.6167,India,IN,IND,West Bengal,,9661,1356853498,Supplier,3,3
+664,Daulatpur,Daulatpur,25.3682,87.8983,India,IN,IND,West Bengal,,9565,1356152465,Supplier,3,3
+665,Ketugrām,Ketugram,23.6957,88.0414,India,IN,IND,West Bengal,,9990,1356142528,Supplier,3,3
+666,Gok,Gok,27.1065,88.2459,India,IN,IND,West Bengal,,9100,1356966986,Supplier,3,3
+668,Jaipur,Jaipur,23.4313,86.1493,India,IN,IND,West Bengal,,10259,1356450301,Supplier,3,3
+669,Pāikpāra,Paikpara,24.3149,87.8503,India,IN,IND,West Bengal,,9993,1356378672,Supplier,3,3
+671,Khāsbalanda,Khasbalanda,22.5881,88.6887,India,IN,IND,West Bengal,,9046,1356124124,Supplier,3,3
+673,Pāra,Para,23.5142,86.498,India,IN,IND,West Bengal,,9697,1356401794,Supplier,3,3
+675,Samalpur,Samalpur,25.1961,88.0419,India,IN,IND,West Bengal,,9250,1356286381,Supplier,3,3
+678,Dhāntola,Dhantola,26.2016,88.1095,India,IN,IND,West Bengal,,9503,1356003782,Supplier,3,3
+680,Kanakpur,Kanakpur,24.4976,88.0361,India,IN,IND,West Bengal,,8865,1356972843,Supplier,3,3
+682,Kalinagar,Kalinagar,22.4206,88.8655,India,IN,IND,West Bengal,,8679,1356171774,Supplier,3,3
+684,Manteswar,Manteswar,23.4197,88.1104,India,IN,IND,West Bengal,,9331,1356795086,Supplier,3,3
+687,Tūlin,Tulin,23.37,85.9,India,IN,IND,West Bengal,,9844,1356533903,Supplier,3,3
+689,Sātgāchia,Satgachia,23.2641,88.16,India,IN,IND,West Bengal,,8733,1356971977,Supplier,3,3
+690,Bāsudebpur,Basudebpur,21.8256,87.619,India,IN,IND,West Bengal,,9129,1356095667,Supplier,3,3
+691,Mālior,Malior,25.39,87.8473,India,IN,IND,West Bengal,,8941,1356136425,Supplier,3,3
+692,Chunakhali,Chunakhali,22.301,88.7951,India,IN,IND,West Bengal,,9241,1356843727,Supplier,3,3
+693,Muragācha,Muragacha,23.5314,88.4104,India,IN,IND,West Bengal,,8937,1356547607,Supplier,3,3
+694,Panchgara,Panchgara,22.7356,88.2675,India,IN,IND,West Bengal,,8428,1356595231,Supplier,3,3
+695,Gopālpur,Gopalpur,22.2006,87.9692,India,IN,IND,West Bengal,,8294,1356867209,Supplier,3,3
+698,Chilakhāna,Chilakhana,26.299,89.5892,India,IN,IND,West Bengal,,9263,1356065859,Supplier,3,3
+699,Lakhya,Lakhya,22.1515,88.0388,India,IN,IND,West Bengal,,8247,1356355631,Supplier,3,3
+700,Kalaīkunda,Kalaikunda,22.3392,87.2264,India,IN,IND,West Bengal,,9344,1356758403,Supplier,3,3
+701,Ahmadpur,Ahmadpur,23.8301,87.6866,India,IN,IND,West Bengal,,9242,1356692177,Supplier,3,3
+702,Barwān,Barwan,23.9409,87.935,India,IN,IND,West Bengal,,8974,1356955537,Supplier,3,3
+705,Kāthia,Kathia,24.4663,87.9022,India,IN,IND,West Bengal,,8465,1356956301,Supplier,3,3
+706,Dunigrām,Dunigram,24.2215,87.9162,India,IN,IND,West Bengal,,8282,1356207782,Supplier,3,3
+707,Dumargrām,Dumargram,24.4453,87.8317,India,IN,IND,West Bengal,,8335,1356754898,Supplier,3,3
+708,Mashāt,Mashat,22.737,88.1918,India,IN,IND,West Bengal,,8007,1356402903,Supplier,3,3
+710,Dattapāra,Dattapara,22.8491,88.9023,India,IN,IND,West Bengal,,8532,1356531302,Supplier,3,3
+711,Jujhārpur,Jujharpur,25.7514,87.9634,India,IN,IND,West Bengal,,8665,1356155162,Supplier,3,3
+712,Kāliganj,Kaliganj,23.7348,88.2293,India,IN,IND,West Bengal,,8575,1356538008,Supplier,3,3
+715,Ayas,Ayas,24.2508,87.7784,India,IN,IND,West Bengal,,8906,1356656921,Supplier,3,3
+716,Bahira,Bahira,22.4421,88.0934,India,IN,IND,West Bengal,,7845,1356425755,Supplier,3,3
+718,Gorsa,Gorsa,24.5493,87.8808,India,IN,IND,West Bengal,,7964,1356377464,Supplier,3,3
+721,Bishnupur,Bishnupur,24.1312,87.8902,India,IN,IND,West Bengal,,8118,1356922770,Supplier,3,3
+722,Saktigarh,Saktigarh,23.2041,87.9677,India,IN,IND,West Bengal,,8432,1356082210,Supplier,3,3
+725,Nurpur,Nurpur,22.2138,88.0747,India,IN,IND,West Bengal,,7527,1356076129,Supplier,3,3
+726,Bhāluka,Bhaluka,25.2886,87.8804,India,IN,IND,West Bengal,,8076,1356006613,Supplier,3,3
+727,Alipukur,Alipukur,22.2939,88.075,India,IN,IND,West Bengal,,7533,1356251583,Supplier,3,3
+728,Chaubaria,Chaubaria,22.9809,88.6748,India,IN,IND,West Bengal,,8039,1356741609,Supplier,3,3
+729,Kotālpur,Kotalpur,23.0125,87.5936,India,IN,IND,West Bengal,,8483,1356577057,Supplier,3,3
+730,Jigarhāti,Jigarhati,24.0317,87.8838,India,IN,IND,West Bengal,,8163,1356667652,Supplier,3,3
+732,Bhogālt,Bhogalt,22.555,88.6138,India,IN,IND,West Bengal,,7516,1356937904,Supplier,3,3
+734,Hingalganj,Hingalganj,22.4708,88.9833,India,IN,IND,West Bengal,,8179,1356837348,Supplier,3,3
+736,Islāmpur,Islampur,22.5643,88.068,India,IN,IND,West Bengal,,7813,1356499792,Supplier,3,3
+740,Pānuria,Panuria,23.8229,86.9839,India,IN,IND,West Bengal,,8399,1356282127,Supplier,3,3
+741,Tālgāchhi,Talgachhi,25.3383,87.8929,India,IN,IND,West Bengal,,7829,1356687546,Supplier,3,3
+742,Jagatballabhpur,Jagatballabhpur,22.6864,88.1069,India,IN,IND,West Bengal,,7113,1356079313,Supplier,3,3
+745,Bārāsat,Barasat,22.9187,88.8301,India,IN,IND,West Bengal,,7441,1356104142,Supplier,3,3
+747,Jasāikāti,Jasaikati,22.7657,88.7974,India,IN,IND,West Bengal,,7317,1356123666,Supplier,3,3
+748,Bhagabatipur,Bhagabatipur,22.6938,88.1936,India,IN,IND,West Bengal,,7068,1356728733,Supplier,3,3
+749,Manipur,Manipur,22.2799,88.9267,India,IN,IND,West Bengal,,8152,1356018916,Supplier,3,3
+754,Churulia,Churulia,23.78,87.08,India,IN,IND,West Bengal,,8173,1356031776,Supplier,3,3
+758,Gangājalghāti,Gangajalghati,23.42,87.12,India,IN,IND,West Bengal,,8708,1356470216,Supplier,3,3
+760,Majlispur,Majlispur,26.0978,87.9976,India,IN,IND,West Bengal,,7802,1356467017,Supplier,3,3
+765,Chandpur,Chandpur,22.1623,88.3602,India,IN,IND,West Bengal,,6777,1356912611,Supplier,3,3
+767,Khājuri,Khajuri,21.8611,87.948,India,IN,IND,West Bengal,,7471,1356912781,Supplier,3,3
+769,Berghom,Berghom,22.8687,88.7088,India,IN,IND,West Bengal,,6989,1356936517,Supplier,3,3
+770,Dīgnagar,Dignagar,23.4283,87.6976,India,IN,IND,West Bengal,,8313,1356362673,Supplier,3,3
+771,Jagannāthpur,Jagannathpur,25.3159,87.8785,India,IN,IND,West Bengal,,7310,1356304254,Supplier,3,3
+776,Chandipur,Chandipur,22.0528,88.2911,India,IN,IND,West Bengal,,6982,1356673781,Supplier,3,3
+777,Māliāra,Maliara,23.475,87.223,India,IN,IND,West Bengal,,7918,1356836132,Supplier,3,3
+778,Khandaghosh,Khandaghosh,23.2091,87.6983,India,IN,IND,West Bengal,,7717,1356017128,Supplier,3,3
+780,Karatber,Karatber,22.4977,88.0649,India,IN,IND,West Bengal,,6729,1356478438,Supplier,3,3
+782,Dhanbela,Dhanbela,22.9113,88.5345,India,IN,IND,West Bengal,,6659,1356427101,Supplier,3,3
+787,Gopālganj,Gopalganj,22.0572,88.6182,India,IN,IND,West Bengal,,7853,1356504398,Supplier,3,3
+789,Bhāndārhāti,Bhandarhati,22.9227,88.0996,India,IN,IND,West Bengal,,6928,1356529523,Supplier,3,3
+792,Berāberi,Beraberi,22.8461,88.2047,India,IN,IND,West Bengal,,6810,1356468031,Supplier,3,3
+793,Gopālpur,Gopalpur,25.8738,87.9637,India,IN,IND,West Bengal,,7109,1356026825,Supplier,3,3
+794,Mahishkuchi,Mahishkuchi,26.3866,89.7646,India,IN,IND,West Bengal,,7192,1356284826,Supplier,3,3
+795,Uchalon,Uchalon,23.0333,87.7833,India,IN,IND,West Bengal,,7439,1356404912,Supplier,3,3
+797,Bhadrapur,Bhadrapur,24.2624,87.952,India,IN,IND,West Bengal,,6571,1356088472,Supplier,3,3
+800,Baruipāra,Baruipara,22.7574,88.2429,India,IN,IND,West Bengal,,6731,1356797961,Supplier,3,3
+801,Barua Gopālpur,Barua Gopalpur,24.5618,87.8121,India,IN,IND,West Bengal,,6614,1356761213,Supplier,3,3
+802,Bara Bakra,Bara Bakra,22.7621,88.8899,India,IN,IND,West Bengal,,6866,1356778923,Supplier,3,3
+803,Dhalpāl,Dhalpal,26.3941,89.6536,India,IN,IND,West Bengal,,7319,1356129030,Supplier,3,3
+806,Dātura,Datura,24.4038,87.9579,India,IN,IND,West Bengal,,6870,1356600167,Supplier,3,3
+807,Indrāni,Indrani,24.1381,88.0217,India,IN,IND,West Bengal,,7018,1356135742,Supplier,3,3
+809,Haripur,Haripur,22.5912,88.6342,India,IN,IND,West Bengal,,6315,1356094583,Supplier,3,3
+810,Bujang,Bujang,24.2593,87.9187,India,IN,IND,West Bengal,,7198,1356868243,Supplier,3,3
+811,Hātinda,Hatinda,25.4157,87.9879,India,IN,IND,West Bengal,,6177,1356128827,Supplier,3,3
+813,Kirnāhar,Kirnahar,23.7569,87.8768,India,IN,IND,West Bengal,,7103,1356120317,Supplier,3,3
+815,Rādhāngar,Radhangar,22.4488,88.4719,India,IN,IND,West Bengal,,6675,1356090592,Supplier,3,3
+816,Bāishāta,Baishata,22.1329,88.467,India,IN,IND,West Bengal,,6245,1356128144,Supplier,3,3
+817,Nāmkhāna,Namkhana,21.7667,88.2333,India,IN,IND,West Bengal,,7058,1356698193,Supplier,3,3
+818,Muglispur,Muglispur,24.4443,87.8936,India,IN,IND,West Bengal,,6373,1356885204,Supplier,3,3
+819,Sheakhala,Sheakhala,22.7636,88.1781,India,IN,IND,West Bengal,,6434,1356480279,Supplier,3,3
+820,Chelyāma,Chelyama,23.6199,86.5496,India,IN,IND,West Bengal,,7413,1356111040,Supplier,3,3
+821,Gura,Gura,24.1926,88.0652,India,IN,IND,West Bengal,,6802,1356504181,Supplier,3,3
+822,Adwitnagar,Adwitnagar,24.6296,87.8986,India,IN,IND,West Bengal,,6176,1356745721,Supplier,3,3
+823,Khātra,Khatra,22.98,86.85,India,IN,IND,West Bengal,,7382,1356370217,Supplier,3,3
+824,Belsur,Belsur,25.3727,87.83,India,IN,IND,West Bengal,,6570,1356407787,Supplier,3,3
+826,Rānīganj,Raniganj,25.8564,87.9124,India,IN,IND,West Bengal,,6609,1356796349,Supplier,3,3
+827,Krishnarānpur,Krishnaranpur,22.0561,88.3326,India,IN,IND,West Bengal,,6204,1356861497,Supplier,3,3
+829,Simlāpāl,Simlapal,22.9227,87.0734,India,IN,IND,West Bengal,,7206,1356301507,Supplier,3,3
+830,Gosānimāri Bandar,Gosanimari Bandar,26.1519,89.3335,India,IN,IND,West Bengal,,6410,1356190111,Supplier,3,3
+831,Nigan,Nigan,23.5045,87.9871,India,IN,IND,West Bengal,,6825,1356147904,Supplier,3,3
+833,Pipa,Pipa,22.6018,88.8364,India,IN,IND,West Bengal,,5760,1356093182,Supplier,3,3
+835,Rājbāri,Rajbari,22.4019,88.8059,India,IN,IND,West Bengal,,5964,1356516298,Supplier,3,3
+836,Pārākaram,Parakaram,25.2703,87.9846,India,IN,IND,West Bengal,,6386,1356419144,Supplier,3,3
+839,Khanta,Khanta,25.8468,88.0525,India,IN,IND,West Bengal,,6457,1356269589,Supplier,3,3
+840,Polba,Polba,22.9615,88.3066,India,IN,IND,West Bengal,,6626,1356067762,Supplier,3,3
+844,Sibkālinagar,Sibkalinagar,21.9288,88.178,India,IN,IND,West Bengal,,6674,1356020625,Supplier,3,3
+846,Bāgdaha,Bagdaha,23.2178,88.8857,India,IN,IND,West Bengal,,6424,1356314166,Supplier,3,3
+851,Rāngaipur,Rangaipur,25.3884,87.9124,India,IN,IND,West Bengal,,6002,1356445013,Supplier,3,3
+852,Rāmapur,Ramapur,22.3102,88.9599,India,IN,IND,West Bengal,,6357,1356483632,Supplier,3,3
+853,Rāmthenga,Ramthenga,26.4724,89.2121,India,IN,IND,West Bengal,,6269,1356398552,Supplier,3,3
+856,Dhola,Dhola,22.0385,88.2979,India,IN,IND,West Bengal,,5804,1356146504,Supplier,3,3
+857,Bharatgarh,Bharatgarh,22.1474,88.6802,India,IN,IND,West Bengal,,6413,1356570553,Supplier,3,3
+858,Digambarpur,Digambarpur,21.9343,88.3876,India,IN,IND,West Bengal,,6577,1356093105,Supplier,3,3
+862,Bagchara,Bagchara,22.9574,88.7706,India,IN,IND,West Bengal,,5745,1356790116,Supplier,3,3
+864,Mallārpur,Mallarpur,24.0814,87.7093,India,IN,IND,West Bengal,,6471,1356159746,Supplier,3,3
+865,Bagela,Bagela,25.8723,87.8978,India,IN,IND,West Bengal,,6122,1356037063,Supplier,3,3
+866,Khopākāti,Khopakati,25.3848,87.7796,India,IN,IND,West Bengal,,6003,1356214167,Supplier,3,3
+867,Mohanpur,Mohanpur,21.8425,87.4214,India,IN,IND,West Bengal,,6049,1356101285,Supplier,3,3
+868,Sāsan,Sasan,22.6622,88.5823,India,IN,IND,West Bengal,,5818,1356393935,Supplier,3,3
+869,Madhura,Madhura,24.3298,87.8793,India,IN,IND,West Bengal,,5996,1356076704,Supplier,3,3
+874,Mohanpur,Mohanpur,25.3206,87.94,India,IN,IND,West Bengal,,5963,1356373012,Supplier,3,3
+875,Kantālia,Kantalia,22.7219,88.5415,India,IN,IND,West Bengal,,5724,1356997639,Supplier,3,3
+876,Rimbik,Rimbik,27.1271,88.0993,India,IN,IND,West Bengal,,6980,1356279529,Supplier,3,3
+879,Beliātor,Beliator,23.3333,87.2167,India,IN,IND,West Bengal,,6463,1356235641,Supplier,3,3
+880,Mandirtala,Mandirtala,21.813,88.1103,India,IN,IND,West Bengal,,6135,1356882235,Supplier,3,3
+882,Tārāchua,Tarachua,24.1472,87.6107,India,IN,IND,West Bengal,,6276,1356260182,Supplier,3,3
+883,Dariapur,Dariapur,22.8697,88.5002,India,IN,IND,West Bengal,,5748,1356705847,Supplier,3,3
+884,Murarai,Murarai,24.4428,87.8575,India,IN,IND,West Bengal,,5770,1356059322,Supplier,3,3
+885,Karimnagar,Karimnagar,22.1158,88.2455,India,IN,IND,West Bengal,,5443,1356176890,Supplier,3,3
+888,Elangi,Elangi,25.2986,87.9054,India,IN,IND,West Bengal,,5704,1356520732,Supplier,3,3
+889,Palsa,Palsa,24.4721,87.8637,India,IN,IND,West Bengal,,5417,1356935457,Supplier,3,3
+890,Sidhar,Sidhar,24.5484,87.9332,India,IN,IND,West Bengal,,5362,1356765097,Supplier,3,3
+891,Baswa,Baswa,24.1472,87.8802,India,IN,IND,West Bengal,,5511,1356400449,Supplier,3,3
+892,Digalgrām,Digalgram,24.0474,87.6432,India,IN,IND,West Bengal,,6284,1356029720,Supplier,3,3
+893,Kandāran,Kandaran,25.2828,87.9904,India,IN,IND,West Bengal,,5634,1356622608,Supplier,3,3
+894,Kāsimpur,Kasimpur,22.765,88.5136,India,IN,IND,West Bengal,,5427,1356415399,Supplier,3,3
+896,Bānpur,Banpur,23.4484,88.7511,India,IN,IND,West Bengal,,5888,1356585924,Supplier,3,3
+898,Mahurāpur,Mahurapur,24.5079,87.8231,India,IN,IND,West Bengal,,5348,1356017819,Supplier,3,3
+900,Begunkudar,Begunkudar,23.3528,86.0566,India,IN,IND,West Bengal,,6347,1356114980,Supplier,3,3
+901,Gobindapur,Gobindapur,22.8801,88.8942,India,IN,IND,West Bengal,,5481,1356505796,Supplier,3,3
+903,Rāmchandrapur,Ramchandrapur,24.4227,87.8573,India,IN,IND,West Bengal,,5226,1356936973,Supplier,3,3
+904,Manoharpur,Manoharpur,22.121,88.2333,India,IN,IND,West Bengal,,5206,1356122980,Supplier,3,3
+905,Ratua,Ratua,25.2001,87.9274,India,IN,IND,West Bengal,,5498,1356064240,Supplier,3,3
+906,Raipur,Raipur,22.8,86.95,India,IN,IND,West Bengal,,6280,1356269159,Supplier,3,3
+908,Nātabāri Hāt,Natabari Hat,26.4064,89.5975,India,IN,IND,West Bengal,,6113,1356832949,Supplier,3,3
+909,Bheliān,Bhelian,24.2954,87.8958,India,IN,IND,West Bengal,,5901,1356500409,Supplier,3,3
+910,Nizāmpur,Nizampur,26.0148,87.8942,India,IN,IND,West Bengal,,5755,1356737099,Supplier,3,3
+911,Khulna,Khulna,22.3465,88.9167,India,IN,IND,West Bengal,,5958,1356544066,Supplier,3,3
+912,Kariāli,Kariali,25.3263,87.9074,India,IN,IND,West Bengal,,5467,1356832557,Supplier,3,3
+914,Nārathali,Narathali,26.5204,89.7669,India,IN,IND,West Bengal,,6337,1356970353,Supplier,3,3
+919,Bāndhkhola,Bandhkhola,24.2542,87.988,India,IN,IND,West Bengal,,5042,1356958521,Supplier,3,3
+921,Phulbāri,Phulbari,21.7969,88.0997,India,IN,IND,West Bengal,,5731,1356012584,Supplier,3,3
+922,Harispur,Harispur,24.5121,87.9425,India,IN,IND,West Bengal,,5128,1356074814,Supplier,3,3
+926,Sathaur,Sathaur,26.034,87.9212,India,IN,IND,West Bengal,,5645,1356422099,Supplier,3,3
+927,Jejur,Jejur,22.8804,88.1235,India,IN,IND,West Bengal,,5173,1356072218,Supplier,3,3
+928,Jhikra,Jhikra,22.6236,87.9195,India,IN,IND,West Bengal,,5421,1356645631,Supplier,3,3
+929,Durgāpur,Durgapur,25.2461,87.9046,India,IN,IND,West Bengal,,5366,1356055347,Supplier,3,3
+930,Khanta,Khanta,25.4265,87.8575,India,IN,IND,West Bengal,,5360,1356010494,Supplier,3,3
+932,Mehegrām,Mehegram,24.2463,87.8509,India,IN,IND,West Bengal,,5731,1356122700,Supplier,3,3
+933,Khedra,Khedra,25.2987,88.1873,India,IN,IND,West Bengal,,5617,1356127282,Supplier,3,3
+935,Onda,Onda,23.142,87.202,India,IN,IND,West Bengal,,5933,1356013307,Supplier,3,3
+936,Muratpur,Muratpur,23.0014,88.4507,India,IN,IND,West Bengal,,5208,1356561173,Supplier,3,3
+937,Chopra,Chopra,26.3675,88.3076,India,IN,IND,West Bengal,,5777,1356089734,Supplier,3,3
+938,Tālgrām,Talgram,25.4271,87.8029,India,IN,IND,West Bengal,,5285,1356779675,Supplier,3,3
+940,Bhāstāra,Bhastara,23.0223,88.1493,India,IN,IND,West Bengal,,5084,1356305232,Supplier,3,3
+941,Nandīgrām,Nandigram,22.01,87.99,India,IN,IND,West Bengal,,5803,1356830613,Supplier,3,3
+944,Bajargaon,Bajargaon,25.8932,87.9989,India,IN,IND,West Bengal,,5296,1356190074,Supplier,3,3
+946,Bisor,Bisor,24.3846,87.967,India,IN,IND,West Bengal,,5181,1356109971,Supplier,3,3
+947,Sārenga,Sarenga,22.7534,87.017,India,IN,IND,West Bengal,,5888,1356523694,Supplier,3,3
+948,Kochara,Kochara,25.8523,87.9653,India,IN,IND,West Bengal,,5256,1356001241,Supplier,3,3
+951,Nirman,Nirman,22.843,88.8809,India,IN,IND,West Bengal,,5088,1356636420,Supplier,3,3
+953,Rādhānagar,Radhanagar,21.6906,88.2374,India,IN,IND,West Bengal,,5292,1356953256,Supplier,3,3
+954,Fatehpur,Fatehpur,22.9375,88.5864,India,IN,IND,West Bengal,,5093,1356930942,Supplier,3,3
+955,Bhulki,Bhulki,25.8628,87.9346,India,IN,IND,West Bengal,,5193,1356655553,Supplier,3,3
+957,Tārāpur,Tarapur,24.1023,87.8055,India,IN,IND,West Bengal,,5143,1356326488,Supplier,3,3
+958,Hātgācha,Hatgacha,24.1036,87.5938,India,IN,IND,West Bengal,,5557,1356148852,Supplier,3,3
+962,Birajnagar,Birajnagar,22.1436,88.7849,India,IN,IND,West Bengal,,5328,1356022784,Supplier,3,3
+963,Lābpur,Labpur,23.83,87.82,India,IN,IND,West Bengal,,5419,1356914800,Supplier,3,3
+965,Benior,Benior,24.3292,87.8157,India,IN,IND,West Bengal,,5369,1356876228,Supplier,3,3
+966,Chūrākuti,Churakuti,26.074,87.9971,India,IN,IND,West Bengal,,5257,1356917090,Supplier,3,3
+967,Pānāgarh,Panagarh,23.4538,87.4378,India,IN,IND,West Bengal,,5510,1356944424,Supplier,3,3
+968,Majiyara,Majiyara,23.7249,87.0176,India,IN,IND,West Bengal,,5444,1356048061,Supplier,3,3
+969,Goyamara,Goyamara,21.9133,88.13,India,IN,IND,West Bengal,,5193,1356841322,Supplier,3,3
+976,Budhakhāli,Budhakhali,21.8243,88.2087,India,IN,IND,West Bengal,,5195,1356957579,Supplier,3,3
+977,Jāldhoa,Jaldhoa,26.3995,89.7894,India,IN,IND,West Bengal,,5042,1356358563,Supplier,3,3
+979,Sabakpur,Sabakpur,24.0117,87.8543,India,IN,IND,West Bengal,,5050,1356085452,Supplier,3,3
+981,Barabāri,Barabari,22.0994,88.0692,India,IN,IND,West Bengal,,5051,1356571525,Supplier,3,3
+983,Mejia,Mejia,23.5533,87.1267,India,IN,IND,West Bengal,,5308,1356721136,Supplier,3,3
+984,Rāyna,Rayna,23.0728,87.8902,India,IN,IND,West Bengal,,5157,1356953427,Supplier,3,3
+986,Harirāmpur,Harirampur,25.3786,88.2677,India,IN,IND,West Bengal,,5021,1356307126,Supplier,3,3
+989,Lakshmisāgar,Lakshmisagar,22.9267,87.0157,India,IN,IND,West Bengal,,5304,1356102025,Supplier,3,3
+992,Punchā,Puncha,23.1534,86.6527,India,IN,IND,West Bengal,,5404,1356062612,Supplier,3,3
+996,Kumārgrām,Kumargram,26.6128,89.825,India,IN,IND,West Bengal,,5384,1356795098,Supplier,3,3
+997,Basudha,Basudha,23.6028,87.5226,India,IN,IND,West Bengal,,5166,1356330797,Supplier,3,3
+1001,Burda,Burda,23.2623,86.0076,India,IN,IND,West Bengal,,5159,1356186034,Supplier,3,3
+1002,Gosāba,Gosaba,22.1691,88.8163,India,IN,IND,West Bengal,,5369,1356380303,Supplier,3,3
+1008,Gorubathān,Gorubathan,26.9721,88.7147,India,IN,IND,West Bengal,,5291,1356016519,Supplier,3,3
+1009,Thode,Thode,27.1113,88.8203,India,IN,IND,West Bengal,,5290,1356924409,Supplier,3,3
+22,Bilāspur,Bilaspur,22.15,82.0167,India,IN,IND,Chhattīsgarh,,1625502,1356820491,Supplier,14,14
+37,Bhilai,Bhilai,21.2186,81.4314,India,IN,IND,Chhattīsgarh,,1097000,1356071083,Supplier,14,14
+44,Raipur,Raipur,21.2379,81.6337,India,IN,IND,Chhattīsgarh,admin,1010087,1356374983,Supplier,14,14
+132,Drug,Drug,21.19,81.28,India,IN,IND,Chhattīsgarh,,268806,1356910418,Supplier,14,14
+799,Mallepalli,Mallepalli,18.5833,80.9,India,IN,IND,Chhattīsgarh,,8149,1356346765,Supplier,14,14
+2,Mumbai,Mumbai,19.0758,72.8775,India,IN,IND,Mahārāshtra,admin,22186000,1356226629,Supplier,2,2
+7,Pune,Pune,18.5196,73.8553,India,IN,IND,Mahārāshtra,,7948000,1356081074,Supplier,2,2
+15,Nāgpur,Nagpur,21.1539,79.0831,India,IN,IND,Mahārāshtra,,2405665,1356365743,Supplier,2,2
+19,Thāne,Thane,19.18,72.9633,India,IN,IND,Mahārāshtra,,1886941,1356681152,Supplier,2,2
+24,Kalyān,Kalyan,19.2502,73.1602,India,IN,IND,Mahārāshtra,,1576614,1356172246,Supplier,2,2
+27,Nāsik,Nasik,20,73.7833,India,IN,IND,Mahārāshtra,,1486053,1356562598,Supplier,2,2
+28,Aurangābād,Aurangabad,19.88,75.32,India,IN,IND,Mahārāshtra,,1371330,1356840670,Supplier,2,2
+49,Solāpur,Solapur,17.6715,75.9104,India,IN,IND,Mahārāshtra,,951558,1356314385,Supplier,2,2
+54,Kolhāpur,Kolhapur,16.7,74.2333,India,IN,IND,Mahārāshtra,,750000,1356110593,Supplier,2,2
+56,Bhiwandi,Bhiwandi,19.3,73.0667,India,IN,IND,Mahārāshtra,,709665,1356763571,Supplier,2,2
+60,Mālegaon,Malegaon,20.55,74.55,India,IN,IND,Mahārāshtra,,690844,1356113556,Supplier,2,2
+67,Nānded,Nanded,19.17,77.3,India,IN,IND,Mahārāshtra,,623708,1356722310,Supplier,2,2
+70,Chānda,Chanda,19.95,79.3,India,IN,IND,Mahārāshtra,,595118,1356592607,Supplier,2,2
+75,Amrāvati,Amravati,20.9333,77.75,India,IN,IND,Mahārāshtra,,549370,1356462099,Supplier,2,2
+81,Ulhāsnagar,Ulhasnagar,19.2167,73.15,India,IN,IND,Mahārāshtra,,506098,1356375341,Supplier,2,2
+88,Dhūlia,Dhulia,20.9,74.7833,India,IN,IND,Mahārāshtra,,479073,1356224695,Supplier,2,2
+90,Jalgaon,Jalgaon,21.0167,75.5667,India,IN,IND,Mahārāshtra,,460468,1356734842,Supplier,2,2
+93,Sāngli,Sangli,16.8667,74.5667,India,IN,IND,Mahārāshtra,,436639,1356921375,Supplier,2,2
+96,Akola,Akola,20.7333,77,India,IN,IND,Mahārāshtra,,425817,1356089496,Supplier,2,2
+104,Parbhani,Parbhani,19.2704,76.76,India,IN,IND,Mahārāshtra,,378326,1356632842,Supplier,2,2
+105,Lātūr,Latur,18.4004,76.57,India,IN,IND,Mahārāshtra,,374394,1356918265,Supplier,2,2
+107,Ahmadnagar,Ahmadnagar,19.0833,74.7333,India,IN,IND,Mahārāshtra,,350859,1356972679,Supplier,2,2
+127,Ichalkaranji,Ichalkaranji,16.7,74.47,India,IN,IND,Mahārāshtra,,287570,1356651502,Supplier,2,2
+171,Bhusāval,Bhusaval,21.02,75.83,India,IN,IND,Mahārāshtra,,183001,1356338789,Supplier,2,2
+214,Gondiā,Gondia,21.45,80.2,India,IN,IND,Mahārāshtra,,132821,1356105759,Supplier,2,2
+231,Yavatmāl,Yavatmal,20.4,78.1333,India,IN,IND,Mahārāshtra,,116551,1356201218,Supplier,2,2
+236,Osmānābād,Osmanabad,18.1667,76.05,India,IN,IND,Mahārāshtra,,112085,1356005329,Supplier,2,2
+390,Lonāvale,Lonavale,18.7481,73.4072,India,IN,IND,Mahārāshtra,,57698,1356087772,Supplier,2,2
+430,Junnar,Junnar,19.2,73.88,India,IN,IND,Mahārāshtra,,40000,1356521815,Supplier,2,2
+463,Uran,Uran,18.89,72.95,India,IN,IND,Mahārāshtra,,30439,1356923031,Supplier,2,2
+541,Khed,Khed,17.72,73.38,India,IN,IND,Mahārāshtra,,16892,1356073622,Supplier,2,2
+590,Pānchgani,Panchgani,17.92,73.82,India,IN,IND,Mahārāshtra,,13280,1356363420,Supplier,2,2
+9,Allahābād,Allahabad,25.45,81.85,India,IN,IND,Uttar Pradesh,,5954391,1356718332,Supplier,7,7
+11,Lucknow,Lucknow,26.847,80.947,India,IN,IND,Uttar Pradesh,admin,3382000,1356891790,Supplier,7,7
+13,Cawnpore,Cawnpore,26.4725,80.3311,India,IN,IND,Uttar Pradesh,,2701324,1356575238,Supplier,7,7
+14,Mirzāpur,Mirzapur,25.15,82.58,India,IN,IND,Uttar Pradesh,,2496970,1356427908,Supplier,7,7
+16,Ghāziābād,Ghaziabad,28.6667,77.4167,India,IN,IND,Uttar Pradesh,,2375820,1356691871,Supplier,7,7
+23,Āgra,Agra,27.1724,78.0131,India,IN,IND,Uttar Pradesh,,1592000,1356187395,Supplier,7,7
+30,Meerut,Meerut,28.99,77.7,India,IN,IND,Uttar Pradesh,,1305429,1356390476,Supplier,7,7
+33,Vārānasi,Varanasi,25.3189,83.0128,India,IN,IND,Uttar Pradesh,,1198491,1356145782,Supplier,7,7
+35,Alīgarh,Aligarh,27.88,78.08,India,IN,IND,Uttar Pradesh,,1131160,1356076391,Supplier,7,7
+47,Bareilly,Bareilly,28.364,79.415,India,IN,IND,Uttar Pradesh,,1000000,1356698199,Supplier,7,7
+53,Morādābād,Moradabad,28.8437,78.7548,India,IN,IND,Uttar Pradesh,,787000,1356269375,Supplier,7,7
+57,Sahāranpur,Saharanpur,29.964,77.546,India,IN,IND,Uttar Pradesh,,705478,1356139858,Supplier,7,7
+62,Gorakhpur,Gorakhpur,26.7611,83.3667,India,IN,IND,Uttar Pradesh,,673446,1356190221,Supplier,7,7
+82,Jhānsi,Jhansi,25.4486,78.5696,India,IN,IND,Uttar Pradesh,,507000,1356712664,Supplier,7,7
+112,Mathura,Mathura,27.5035,77.6722,India,IN,IND,Uttar Pradesh,,330511,1356066081,Supplier,7,7
+115,Shāhjānpur,Shahjanpur,27.8804,79.905,India,IN,IND,Uttar Pradesh,,320434,1356415439,Supplier,7,7
+121,Fīrozābād,Firozabad,27.15,78.3949,India,IN,IND,Uttar Pradesh,,306409,1356031978,Supplier,7,7
+122,Rāmpur,Rampur,28.788,79.019,India,IN,IND,Uttar Pradesh,,296418,1356666569,Supplier,7,7
+135,Etāwah,Etawah,26.7855,79.015,India,IN,IND,Uttar Pradesh,,257448,1356241312,Supplier,7,7
+140,Hāpur,Hapur,28.7437,77.7628,India,IN,IND,Uttar Pradesh,,242920,1356820012,Supplier,7,7
+151,Sambhal,Sambhal,28.58,78.55,India,IN,IND,Uttar Pradesh,,220813,1356376216,Supplier,7,7
+159,Bulandshahr,Bulandshahr,28.4,77.85,India,IN,IND,Uttar Pradesh,,198612,1356067648,Supplier,7,7
+172,Bahraigh,Bahraigh,27.5742,81.5958,India,IN,IND,Uttar Pradesh,,182218,1356833304,Supplier,7,7
+174,Jaunpur,Jaunpur,25.7333,82.6833,India,IN,IND,Uttar Pradesh,,180362,1356646586,Supplier,7,7
+185,Fatehpur,Fatehpur,25.8804,80.8,India,IN,IND,Uttar Pradesh,,166480,1356059135,Supplier,7,7
+187,Sitalpur,Sitalpur,27.63,80.75,India,IN,IND,Uttar Pradesh,,164435,1356838415,Supplier,7,7
+191,Budaun,Budaun,28.03,79.09,India,IN,IND,Uttar Pradesh,,161555,1356639213,Supplier,7,7
+200,Fyzābād,Fyzabad,26.7504,82.17,India,IN,IND,Uttar Pradesh,,153047,1356032860,Supplier,7,7
+206,Etah,Etah,27.63,78.67,India,IN,IND,Uttar Pradesh,,145601,1356096916,Supplier,7,7
+216,Pīlibhīt,Pilibhit,28.6333,79.7667,India,IN,IND,Uttar Pradesh,,131008,1356147005,Supplier,7,7
+220,Hāthras,Hathras,27.6,78.05,India,IN,IND,Uttar Pradesh,,126882,1356072147,Supplier,7,7
+226,Ghazīpur,Ghazipur,25.5833,83.5667,India,IN,IND,Uttar Pradesh,,121020,1356773744,Supplier,7,7
+358,Kairāna,Kairana,29.3953,77.2053,India,IN,IND,Uttar Pradesh,,89000,1356768694,Supplier,7,7
+393,Vrindāvan,Vrindavan,27.5728,77.6933,India,IN,IND,Uttar Pradesh,,56618,1356168243,Supplier,7,7
+411,Ajodhya,Ajodhya,26.8036,82.2006,India,IN,IND,Uttar Pradesh,,49650,1356623948,Supplier,7,7
+420,Akbarpur,Akbarpur,26.52,82.62,India,IN,IND,Uttar Pradesh,,42248,1356710855,Supplier,7,7
+454,Fatehpur Sīkri,Fatehpur Sikri,27.0911,77.6611,India,IN,IND,Uttar Pradesh,,32905,1356099769,Supplier,7,7
+509,Mārahra,Marahra,27.75,78.5667,India,IN,IND,Uttar Pradesh,,19542,1356519387,Supplier,7,7
+641,Muzaffarnagar,Muzaffarnagar,29.4708,77.7033,India,IN,IND,Uttar Pradesh,,10793,1356592356,Supplier,7,7
+264,Damān,Daman,20.4169,72.834,India,IN,IND,Damān and Diu,admin,39737,1356008028,Supplier,29,29
+408,Diu,Diu,20.715,70.9844,India,IN,IND,Damān and Diu,,52074,1356923516,Supplier,29,29
+18,Indore,Indore,22.7206,75.8472,India,IN,IND,Madhya Pradesh,,1994397,1356402812,Supplier,9,9
+20,Bhopāl,Bhopal,23.25,77.4167,India,IN,IND,Madhya Pradesh,admin,1798218,1356734039,Supplier,9,9
+31,Jabalpur,Jabalpur,23.1667,79.9333,India,IN,IND,Madhya Pradesh,,1267564,1356115460,Supplier,9,9
+40,Gwalior,Gwalior,26.215,78.1931,India,IN,IND,Madhya Pradesh,,1069276,1356363967,Supplier,9,9
+80,Ujjain,Ujjain,23.1828,75.7772,India,IN,IND,Madhya Pradesh,,515215,1356050735,Supplier,9,9
+113,Saugor,Saugor,23.83,78.71,India,IN,IND,Madhya Pradesh,,328240,1356781800,Supplier,9,9
+129,Sannai,Sannai,24.16,80.83,India,IN,IND,Madhya Pradesh,,283004,1356009968,Supplier,9,9
+131,Ratlām,Ratlam,23.3167,75.0667,India,IN,IND,Madhya Pradesh,,273892,1356241663,Supplier,9,9
+163,Burhānpur,Burhanpur,21.3,76.2267,India,IN,IND,Madhya Pradesh,,197233,1356857493,Supplier,9,9
+195,Vidisha,Vidisha,23.5239,77.8061,India,IN,IND,Madhya Pradesh,,155959,1356299932,Supplier,9,9
+209,Mandsaur,Mandsaur,24.03,75.08,India,IN,IND,Madhya Pradesh,,141667,1356467529,Supplier,9,9
+429,Maihar,Maihar,24.27,80.75,India,IN,IND,Madhya Pradesh,,40192,1356415420,Supplier,9,9
+456,Umaria,Umaria,23.5245,80.8365,India,IN,IND,Madhya Pradesh,,33114,1356133627,Supplier,9,9
+484,Khajurāho,Khajuraho,24.85,79.9333,India,IN,IND,Madhya Pradesh,,24481,1356993147,Supplier,9,9
+608,Betma,Betma,22.68,75.62,India,IN,IND,Madhya Pradesh,,12529,1356357879,Supplier,9,9
+640,Orchha,Orchha,25.35,78.64,India,IN,IND,Madhya Pradesh,,11511,1356593159,Supplier,9,9
+859,Toplā,Topla,22.2333,80.8833,India,IN,IND,Madhya Pradesh,,7178,1356098339,Supplier,9,9
+871,Amarkantak,Amarkantak,22.6751,81.7596,India,IN,IND,Madhya Pradesh,,7074,1356062517,Supplier,9,9
+154,Shimla,Shimla,31.1033,77.1722,India,IN,IND,Himāchal Pradesh,admin,206575,1356962932,Supplier,22,22
+432,Solan,Solan,30.92,77.12,India,IN,IND,Himāchal Pradesh,,39256,1356105721,Supplier,22,22
+515,Dharmsāla,Dharmsala,32.2167,76.3167,India,IN,IND,Himāchal Pradesh,,19034,1356618034,Supplier,22,22
+527,Kulu,Kulu,31.96,77.1,India,IN,IND,Himāchal Pradesh,,18536,1356863384,Supplier,22,22
+798,Manāli,Manali,32.2044,77.17,India,IN,IND,Himāchal Pradesh,,8096,1356961623,Supplier,22,22
+258,Itānagar,Itanagar,27.1,93.62,India,IN,IND,Arunāchal Pradesh,admin,59490,1356023817,Supplier,28,28
+576,Tezu,Tezu,27.9167,96.1667,India,IN,IND,Arunāchal Pradesh,,14376,1356415744,Supplier,28,28
+34,Srīnagar,Srinagar,34.0911,74.8061,India,IN,IND,Jammu and Kashmīr,admin,1180570,1356442950,Supplier,11,11
+84,Jammu,Jammu,32.7333,74.85,India,IN,IND,Jammu and Kashmīr,,502197,1356491738,Supplier,11,11
+133,Handwāra,Handwara,34.4,74.28,India,IN,IND,Jammu and Kashmīr,,269311,1356080179,Supplier,11,11
+184,Bāramūla,Baramula,34.2,74.34,India,IN,IND,Jammu and Kashmīr,,167986,1356671176,Supplier,11,11
+229,Sopur,Sopur,34.3,74.47,India,IN,IND,Jammu and Kashmīr,,118608,1356978065,Supplier,11,11
+240,Islāmābād,Islamabad,33.73,75.15,India,IN,IND,Jammu and Kashmīr,,108505,1356324247,Supplier,11,11
+425,Rajaori,Rajaori,33.38,74.3,India,IN,IND,Jammu and Kashmīr,,41552,1356109150,Supplier,11,11
+443,Udhampur,Udhampur,32.93,75.13,India,IN,IND,Jammu and Kashmīr,,35507,1356335272,Supplier,11,11
+466,Leh,Leh,34.1667,77.5833,India,IN,IND,Jammu and Kashmīr,,30870,1356074174,Supplier,11,11
+477,Bandipura,Bandipura,34.4225,74.6375,India,IN,IND,Jammu and Kashmīr,,27482,1356796191,Supplier,11,11
+489,Kulgam,Kulgam,33.64,75.02,India,IN,IND,Jammu and Kashmīr,,23584,1356729904,Supplier,11,11
+661,Akhnūr,Akhnur,32.9,74.7353,India,IN,IND,Jammu and Kashmīr,,10770,1356433902,Supplier,11,11
+834,Fatehpor,Fatehpor,33.65,75.15,India,IN,IND,Jammu and Kashmīr,,6737,1356619128,Supplier,11,11
+1005,Arīpānthan,Aripanthan,34.061,74.575,India,IN,IND,Jammu and Kashmīr,,5268,1356474292,Supplier,11,11
+247,Port Blair,Port Blair,11.6667,92.75,India,IN,IND,Andaman and Nicobar Islands,admin,100608,1356161713,Supplier,25,25
+103,Pānihāti,Panihati,22.69,88.37,India,IN,IND,West Bengal,,377347,1356118632,Supplier,3,3
+111,Kāmārhāti,Kamarhati,22.67,88.37,India,IN,IND,West Bengal,,330211,1356676559,Supplier,3,3
+178,Titāgarh,Titagarh,22.74,88.37,India,IN,IND,West Bengal,,116541,1356590173,Supplier,3,3
+237,Champdani,Champdani,22.8,88.37,India,IN,IND,West Bengal,,111251,1356132208,Supplier,3,3
+361,Garulia,Garulia,22.82,88.37,India,IN,IND,West Bengal,,85336,1356885496,Supplier,3,3
+391,Kālna,Kalna,23.22,88.37,India,IN,IND,West Bengal,,56722,1356051768,Supplier,3,3
+152,Shiliguri,Shiliguri,26.72,88.42,India,IN,IND,West Bengal,,218718,1356724691,Supplier,3,3
+153,Naihāti,Naihati,22.9,88.42,India,IN,IND,West Bengal,,217900,1356715598,Supplier,3,3
+175,Dam Dam,Dam Dam,22.62,88.42,India,IN,IND,West Bengal,,114786,1356051452,Supplier,3,3
+223,Hālīsahar,Halisahar,22.95,88.42,India,IN,IND,West Bengal,,124939,1356242644,Supplier,3,3
+295,Muragācha,Muragacha,22.69,88.42,India,IN,IND,West Bengal,,13249,1356999062,Supplier,3,3
