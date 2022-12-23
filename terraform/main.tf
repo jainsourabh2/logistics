@@ -1,14 +1,14 @@
 #export TF_LOG="DEBUG"
 
 
-module "gcp" {
-  source            = "./modules"
-  name              = var.name
-  gcp_project       = var.gcp_project
-  region            = var.region
-  zone              = var.zone
-  subnet_cidr_range = var.subnet_cidr_range
-}
+#module "gcp" {
+#  source            = "./modules"
+#  name              = var.name
+#  gcp_project       = var.gcp_project
+#  region            = var.region
+#  zone              = var.zone
+#  subnet_cidr_range = var.subnet_cidr_range
+#}
 
 resource "random_string" "random_suffix" {
   length  = 11
