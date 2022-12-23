@@ -10,10 +10,17 @@
 #  subnet_cidr_range = var.subnet_cidr_range
 #}
 
-resource "random_string" "random_suffix" {
-  length  = 11
-  special = false
-  upper   = false
+#resource "random_string" "random_suffix" {
+#  length  = 11
+#  special = false
+#  upper   = false
+#}
+
+resource "random_id" "random_suffix" {
+  keepers = {
+    first = "${timestamp()}"
+  }     
+  byte_length = 10
 }
 
 #roles/resourcemanager.folderCreator permission is needed
@@ -92,6 +99,7 @@ resource "google_bigquery_dataset" "dataset" {
   description   = "Terraform Created Dataset"
   location      = "asia-south1"
   project       = google_project.terrform_generated_project.project_id
+  depends_on    = [google_project_service.enable_api]
 }
 
 resource "google_bigquery_table" "table" {
@@ -248,7 +256,7 @@ EOF
 }
 
 resource "google_bigquery_job" "suppliers_job" {
-  job_id     = "sj-${random_string.random_suffix.result}"
+  job_id     = "sj-${random_id.random_suffix.hex}"
   location   = "asia-south1"
   project = google_project.terrform_generated_project.project_id
 
@@ -267,7 +275,7 @@ resource "google_bigquery_job" "suppliers_job" {
     skip_leading_rows = 1
 
     write_disposition = "WRITE_TRUNCATE"
-    create_disposition = "CREATE_NEVER"
+    create_disposition = "CREATE_IF_NEEDED"
     autodetect = true
   }
 }
@@ -357,7 +365,7 @@ EOF
 }
 
 resource "google_bigquery_job" "warehouse_job" {
-  job_id     = "wj-${random_string.random_suffix.result}"
+  job_id     = "wj-${random_id.random_suffix.hex}"
   location   = "asia-south1"
   project = google_project.terrform_generated_project.project_id
 
@@ -367,15 +375,15 @@ resource "google_bigquery_job" "warehouse_job" {
     ]
 
     destination_table {
-      project_id = google_bigquery_table.suppliers_table.project
-      dataset_id = google_bigquery_table.suppliers_table.dataset_id
-      table_id   = google_bigquery_table.suppliers_table.table_id
+      project_id = google_bigquery_table.warehouse_table.project
+      dataset_id = google_bigquery_table.warehouse_table.dataset_id
+      table_id   = google_bigquery_table.warehouse_table.table_id
     }
 
     skip_leading_rows = 1
 
     write_disposition = "WRITE_TRUNCATE"
-    create_disposition = "CREATE_NEVER"
+    create_disposition = "CREATE_IF_NEEDED"
     autodetect = true
   }
 }
@@ -464,7 +472,7 @@ EOF
 }
 
 resource "google_bigquery_job" "warehouse_local_job" {
-  job_id     = "wlj-${random_string.random_suffix.result}"
+  job_id     = "wlj-${random_id.random_suffix.hex}"
   location   = "asia-south1"
   project = google_project.terrform_generated_project.project_id
 
@@ -474,14 +482,14 @@ resource "google_bigquery_job" "warehouse_local_job" {
     ]
 
     destination_table {
-      project_id = google_bigquery_table.suppliers_table.project
-      dataset_id = google_bigquery_table.suppliers_table.dataset_id
-      table_id   = google_bigquery_table.suppliers_table.table_id
+      project_id = google_bigquery_table.warehouse_local_table.project
+      dataset_id = google_bigquery_table.warehouse_local_table.dataset_id
+      table_id   = google_bigquery_table.warehouse_local_table.table_id
     }
 
     skip_leading_rows = 1
     write_disposition = "WRITE_TRUNCATE"
-    create_disposition = "CREATE_NEVER"
+    create_disposition = "CREATE_IF_NEEDED"
     autodetect = true
   }
 }
