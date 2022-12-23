@@ -76,7 +76,7 @@ class XyzOptions(PipelineOptions):
         parser.add_argument('--bigtable_instance', default='logistics_inst'),
         parser.add_argument('--bigtable_table_order', default='logistics_order'),
         parser.add_argument('--bigtable_table_customer', default='logistics_customer'),
-        parser.add_argument("--input_topic", default='logistics'),
+        parser.add_argument("--input_topic", default='projects/on-prem-project-337210/topics/logistics'),
         parser.add_argument("--project_id", default='on-prem-project-337210'),
 
 pipeline_options = XyzOptions(
