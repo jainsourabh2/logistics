@@ -126,7 +126,7 @@ def main(argv=None, save_main_session=True):
 
         bigquery_streaming_write = (datasource
             | 'Json Parser' >> beam.Map(json.loads)
-            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(project), schema=schema,
+            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(pipeline_options.project), schema=schema,
                                 write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
                                 create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED)
         )
