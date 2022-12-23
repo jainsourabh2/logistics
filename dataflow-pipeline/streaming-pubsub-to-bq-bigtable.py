@@ -109,16 +109,16 @@ def main(argv=None, save_main_session=True):
         )
 
         bigtable_streaming_write_order = (datasource
-            | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
-            | 'Conversion string to row object' >> beam.ParDo(CreateRowFn_Order(pipeline_options)) 
+            | 'Conversion UTF-8 bytes to string for Order' >> beam.Map(lambda msg: msg.decode('utf-8'))
+            | 'Conversion string to row object for Order' >> beam.ParDo(CreateRowFn_Order(pipeline_options)) 
             | 'Writing row object to Order BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
                               instance_id=pipeline_options.bigtable_instance,
                               table_id=pipeline_options.bigtable_table_order)
         )
 
         bigtable_streaming_write_customer = (datasource
-            | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
-            | 'Conversion string to row object' >> beam.ParDo(CreateRowFn_Customer(pipeline_options)) 
+            | 'Conversion UTF-8 bytes to string for Customer' >> beam.Map(lambda msg: msg.decode('utf-8'))
+            | 'Conversion string to row object for Customer' >> beam.ParDo(CreateRowFn_Customer(pipeline_options)) 
             | 'Writing row object to Customer BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
                               instance_id=pipeline_options.bigtable_instance,
                               table_id=pipeline_options.bigtable_table_customer)
