@@ -12,17 +12,16 @@ from apache_beam.io.gcp.bigtableio import WriteToBigTable
 
 PROJECT="on-prem-project-337210"
 schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING,price:INTEGER"
-TOPIC = "projects/on-prem-project-337210/topics/vitaming"
-
+TOPIC = "projects/on-prem-project-337210/topics/logistics"
 
 # Classes
  
-class CreateRowFn(beam.DoFn):
+class CreateRowFn_Order(beam.DoFn):
 
     def __init__(self, pipeline_options):
         
         self.instance_id = pipeline_options.bigtable_instance
-        self.table_id = pipeline_options.bigtable_table
+        self.table_id = pipeline_options.bigtable_table_order
   
     def process(self, element):
         
@@ -43,6 +42,32 @@ class CreateRowFn(beam.DoFn):
         
         yield direct_row
 
+class CreateRowFn_Customer(beam.DoFn):
+
+    def __init__(self, pipeline_options):
+        
+        self.instance_id = pipeline_options.bigtable_instance
+        self.table_id = pipeline_options.bigtable_table_customer
+  
+    def process(self, element):
+        
+        from google.cloud.bigtable import row
+        import datetime
+        import json
+
+        order_json = json.loads(element)
+        key = order_json["customer_id"]
+        transaction_time = datetime.datetime.strptime(order_json["transaction_time"],"%Y-%m-%d %H:%M:%S.%f")
+
+        direct_row = row.DirectRow(row_key=key)
+        direct_row.set_cell(
+            'delivery_stats',
+            'status',
+            element,
+            timestamp=transaction_time)
+        
+        yield direct_row
+
 # Options
 
 class XyzOptions(PipelineOptions):
@@ -50,9 +75,10 @@ class XyzOptions(PipelineOptions):
     @classmethod
     def _add_argparse_args(cls, parser):
         parser.add_argument('--bigtable_project', default='on-prem-project-337210'),
-        parser.add_argument('--bigtable_instance', default='vitg-inst'),
-        parser.add_argument('--bigtable_table', default='logistics-cust')
-        parser.add_argument("--input_topic", default='vitaming')
+        parser.add_argument('--bigtable_instance', default='logistics_inst'),
+        parser.add_argument('--bigtable_table_order', default='logistics_order')
+        parser.add_argument('--bigtable_table_customer', default='logistics_customer')
+        parser.add_argument("--input_topic", default='logistics')
 
 pipeline_options = XyzOptions(
     save_main_session=True, 
@@ -63,8 +89,9 @@ pipeline_options = XyzOptions(
     temp_location='gs://vitaming-demo/temp/',
     staging_location='gs://vitaming-demo/staging/',
     bigtable_project='on-prem-project-337210',
-    bigtable_instance='vitg-inst',
-    bigtable_table='logistics-cust')
+    bigtable_instance='logistics_inst',
+    bigtable_table_order='logistics_order',
+    bigtable_table_customer='logistics_customer')
 
 def main(argv=None, save_main_session=True):
     import random
@@ -81,17 +108,25 @@ def main(argv=None, save_main_session=True):
             | 'Reshuffle' >> beam.Reshuffle()
         )
 
-        bigtable_streaming_write = (datasource
+        bigtable_streaming_write_order = (datasource
             | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
-            | 'Conversion string to row object' >> beam.ParDo(CreateRowFn(pipeline_options)) 
-            | 'Writing row object to BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
+            | 'Conversion string to row object' >> beam.ParDo(CreateRowFn_Order(pipeline_options)) 
+            | 'Writing row object to Order BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
                               instance_id=pipeline_options.bigtable_instance,
-                              table_id=pipeline_options.bigtable_table)
+                              table_id=pipeline_options.bigtable_table_order)
+        )
+
+        bigtable_streaming_write_customer = (datasource
+            | 'Conversion UTF-8 bytes to string' >> beam.Map(lambda msg: msg.decode('utf-8'))
+            | 'Conversion string to row object' >> beam.ParDo(CreateRowFn_Customer(pipeline_options)) 
+            | 'Writing row object to Customer BigTable' >> WriteToBigTable(project_id=pipeline_options.bigtable_project,
+                              instance_id=pipeline_options.bigtable_instance,
+                              table_id=pipeline_options.bigtable_table_customer)
         )
 
         bigquery_streaming_write = (datasource
             | 'Json Parser' >> beam.Map(json.loads)
-            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:vitaming.logistics'.format(PROJECT), schema=schema,
+            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(PROJECT), schema=schema,
                                 write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
                                 create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED)
         )
