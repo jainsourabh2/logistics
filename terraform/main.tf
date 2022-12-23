@@ -504,7 +504,7 @@ resource "google_bigtable_instance" "bigtable-instance" {
 
 }
 
-resource "google_bigtable_table" "bigtable-table" {
+resource "google_bigtable_table" "bigtable-table-order" {
   name          = "logistics_order"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terrform_generated_project.project_id  
@@ -514,7 +514,7 @@ resource "google_bigtable_table" "bigtable-table" {
   }
 }
 
-resource "google_bigtable_table" "bigtable-table" {
+resource "google_bigtable_table" "bigtable-table-customer" {
   name          = "logistics_customer"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terrform_generated_project.project_id  
