@@ -91,7 +91,6 @@ pipeline_options = XyzOptions(
     bigtable_instance='logistics_inst',
     bigtable_table_order='logistics_order',
     bigtable_table_customer='logistics_customer',
-    input_topic='projects/on-prem-project-337210/topics/logistics',
     project_id='on-prem-project-337210')
 
 def main(argv=None, save_main_session=True):
