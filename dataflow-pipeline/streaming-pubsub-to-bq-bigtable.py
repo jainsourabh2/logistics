@@ -10,9 +10,7 @@ import random
 from apache_beam.io import fileio, filesystem
 from apache_beam.io.gcp.bigtableio import WriteToBigTable
 
-PROJECT="on-prem-project-337210"
 schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING,price:INTEGER"
-TOPIC = "projects/on-prem-project-337210/topics/logistics"
 
 # Classes
  
@@ -78,7 +76,8 @@ class XyzOptions(PipelineOptions):
         parser.add_argument('--bigtable_instance', default='logistics_inst'),
         parser.add_argument('--bigtable_table_order', default='logistics_order')
         parser.add_argument('--bigtable_table_customer', default='logistics_customer')
-        parser.add_argument("--input_topic", default='logistics')
+        parser.add_argument("--input_topic", default='logistics',
+        parser.add_argument("--project", default='on-prem-project-337210')
 
 pipeline_options = XyzOptions(
     save_main_session=True, 
@@ -91,7 +90,8 @@ pipeline_options = XyzOptions(
     bigtable_project='on-prem-project-337210',
     bigtable_instance='logistics_inst',
     bigtable_table_order='logistics_order',
-    bigtable_table_customer='logistics_customer')
+    bigtable_table_customer='logistics_customer',
+    input_topic='projects/on-prem-project-337210/topics/logistics')
 
 def main(argv=None, save_main_session=True):
     import random
@@ -104,7 +104,7 @@ def main(argv=None, save_main_session=True):
     with beam.Pipeline(options=pipeline_options) as p:   
 
         datasource = (p
-            | 'ReadData' >> beam.io.ReadFromPubSub(topic=TOPIC).with_output_types(bytes)
+            | 'ReadData' >> beam.io.ReadFromPubSub(topic=input_topic).with_output_types(bytes)
             | 'Reshuffle' >> beam.Reshuffle()
         )
 
@@ -126,7 +126,7 @@ def main(argv=None, save_main_session=True):
 
         bigquery_streaming_write = (datasource
             | 'Json Parser' >> beam.Map(json.loads)
-            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(PROJECT), schema=schema,
+            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(project), schema=schema,
                                 write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
                                 create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED)
         )
