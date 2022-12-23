@@ -487,12 +487,12 @@ resource "google_bigquery_job" "warehouse_local_job" {
 }
 
 resource "google_bigtable_instance" "bigtable-instance" {
-  name = "logistics_inst"
+  name = "logistics-inst"
   project    = google_project.terrform_generated_project.project_id
   deletion_protection  = "true"
 
   cluster {
-    cluster_id    = "logistics_cluster"
+    cluster_id    = "logistics-cluster"
     num_nodes     = 1
     storage_type  = "HDD"
     zone          = "asia-south1-b"
@@ -505,7 +505,7 @@ resource "google_bigtable_instance" "bigtable-instance" {
 }
 
 resource "google_bigtable_table" "bigtable-table-order" {
-  name          = "logistics_order"
+  name          = "logistics-order"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terrform_generated_project.project_id  
 
@@ -515,7 +515,7 @@ resource "google_bigtable_table" "bigtable-table-order" {
 }
 
 resource "google_bigtable_table" "bigtable-table-customer" {
-  name          = "logistics_customer"
+  name          = "logistics-customer"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terrform_generated_project.project_id  
 
@@ -526,12 +526,12 @@ resource "google_bigtable_table" "bigtable-table-customer" {
 
 resource "google_bigtable_app_profile" "bigtable-app-profile" {
   instance        = google_bigtable_instance.bigtable-instance.name
-  app_profile_id  = "logistics_app_profile"
+  app_profile_id  = "logistics-app-profile"
   ignore_warnings = true
   project         = google_project.terrform_generated_project.project_id
 
   single_cluster_routing {
-    cluster_id                 = "logistics_cluster"
+    cluster_id                 = "logistics-cluster"
     allow_transactional_writes = true
   }
 }
