@@ -77,7 +77,7 @@ class XyzOptions(PipelineOptions):
         parser.add_argument('--bigtable_table_order', default='logistics_order'),
         parser.add_argument('--bigtable_table_customer', default='logistics_customer'),
         parser.add_argument("--input_topic", default='logistics'),
-        parser.add_argument("--project", default='on-prem-project-337210'),
+        parser.add_argument("--project_id", default='on-prem-project-337210'),
 
 pipeline_options = XyzOptions(
     save_main_session=True, 
@@ -91,7 +91,8 @@ pipeline_options = XyzOptions(
     bigtable_instance='logistics_inst',
     bigtable_table_order='logistics_order',
     bigtable_table_customer='logistics_customer',
-    input_topic='projects/on-prem-project-337210/topics/logistics')
+    input_topic='projects/on-prem-project-337210/topics/logistics',
+    project_id='on-prem-project-337210')
 
 def main(argv=None, save_main_session=True):
     import random
@@ -126,7 +127,7 @@ def main(argv=None, save_main_session=True):
 
         bigquery_streaming_write = (datasource
             | 'Json Parser' >> beam.Map(json.loads)
-            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(pipeline_options.project), schema=schema,
+            | 'WriteToBigQuery' >> beam.io.WriteToBigQuery('{0}:logistics.logistics'.format(pipeline_options.project_id), schema=schema,
                                 write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
                                 create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED)
         )
