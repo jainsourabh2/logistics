@@ -510,7 +510,6 @@ resource "google_bigtable_table" "bigtable-table-order" {
   name          = "logistics-order"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terrform_generated_project.project_id  
-
   lifecycle {
     prevent_destroy = true
   }
@@ -531,7 +530,7 @@ resource "google_bigtable_app_profile" "bigtable-app-profile" {
   app_profile_id  = "logistics-app-profile"
   ignore_warnings = true
   project         = google_project.terrform_generated_project.project_id
-
+  depends_on = [google_bigtable_table.bigtable-table-customer]
   single_cluster_routing {
     cluster_id                 = "logistics-cluster"
     allow_transactional_writes = true
