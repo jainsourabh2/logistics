@@ -1,4 +1,4 @@
-variable "gcp_project" {
+variable "project" {
   description = "Project Id of the GCP account"
   type        = string
 }
@@ -25,21 +25,6 @@ variable "organization" {
 
 variable "billing-account" {
   description = "Billing Account to be associated with the project"
-  type        = string
-}
-
-variable "vpc-network" {
-  description = "VPC Network to be created within the project"
-  type        = string
-}
-
-variable "vpc-sub-network" {
-  description = "Subnet to be created within the VPC of the project"
-  type        = string
-}
-
-variable "vpc-sub-network-ip-cidr" {
-  description = "CIDR for the Subnet"
   type        = string
 }
 

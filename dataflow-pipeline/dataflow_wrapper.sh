@@ -1,4 +1,4 @@
-cd ../dataflow-pipeline/
+cd ..
 cp dataflow_generate_template_bkp.sh dataflow_generate_template.sh
 echo $1
 echo "Replacing <<project_id>> in dataflow_generate_template.sh file"
