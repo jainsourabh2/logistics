@@ -19,3 +19,13 @@ python3 -m streaming-pubsub-to-bq --job_name pubsub-dataflow-bigquery --runner D
 
 ##Submitting a new pipeline for bigquery and bigtable
 python3 -m streaming-pubsub-to-bq --job_name pubsub-dataflow-bigquery-bigtable --runner DataflowRunner --project=$PROJECT --staging_location=$STAGING_LOCATION --temp_location=$TEMP_LOCATION --region=$REGION --streaming --subnetwork=https://www.googleapis.com/compute/v1/projects/on-prem-project-337210/regions/asia-south1/subnetworks/on-prem-subnet-mumbai --dataflow_service_options=enable_prime
+
+#Template generation
+  python -m streaming-pubsub-to-bq-bigtable \
+    --runner DataflowRunner \
+    --project on-prem-project-337210 \
+    --staging_location gs://customer-demos-asia-south1/staging \
+    --temp_location gs://customer-demos-asia-south1/temp \
+    --template_location gs://customer-demos-asia-south1/templates/logistics-streaming-bq-bigtable \
+    --region asia-south1
+    --input_topic 'projects/on-prem-project-337210/topics/logistics'

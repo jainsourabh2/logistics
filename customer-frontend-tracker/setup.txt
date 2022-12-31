@@ -5,7 +5,6 @@ export GOOGLE_CLOUD_PROJECT=on-prem-project-337210
 
 gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/customer-frontend
 
-
 gcloud container images list
 
 gcloud run deploy customer-frontend \
