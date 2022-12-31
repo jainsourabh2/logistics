@@ -549,7 +549,7 @@ resource "null_resource" "grant_execute_permission" {
 resource "null_resource" "generate_template" {
 
  provisioner "local-exec" {
-    command = "../dataflow-pipeline/dataflow_wrapper.sh var.project"
+    command = "../dataflow-pipeline/dataflow_wrapper.sh ${google_project.terrform_generated_project.project_id}"
   }
   depends_on = [null_resource.grant_execute_permission]
 }
