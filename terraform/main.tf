@@ -60,6 +60,19 @@ resource "google_compute_subnetwork" "vpc_subnetwork" {
   project       = google_project.terrform_generated_project.project_id
 }
 
+resource "google_service_account" "sa_name" {
+  account_id    = "tf-sa-name"
+  display_name  = "terraform-created-service-account"
+  email         = "dataflow-jobs@${var.project}.iam.gserviceaccount.com"
+  project       = google_project.terrform_generated_project.project_id
+}
+
+resource "google_project_iam_member" "dataflow_roles_binding" {
+  project = google_project.terrform_generated_project.project_id
+  role    = "roles/owner"
+  member  = "serviceAccount:${google_service_account.sa_name.email}"
+}
+
 resource "google_pubsub_topic" "pubsub_topic" {
   name          = "logistics"
   project       = google_project.terrform_generated_project.project_id
@@ -553,6 +566,7 @@ resource "null_resource" "generate_template" {
   depends_on = [null_resource.grant_execute_permission]
 }
 
+
 resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
     name = "logistics_streaming_dataflow_bq_bigtable"
     template_gcs_path = "gs://${var.project}/templates/logistics-streaming-bq-bigtable"
@@ -563,6 +577,7 @@ resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
     region = var.region
     subnetwork = "regions/${var.region}/subnetworks/${google_compute_subnetwork.vpc_subnetwork.name}"
     depends_on = [null_resource.generate_template]
+    service_account_email = ${google_service_account.sa_name.email}
 }
 
 
