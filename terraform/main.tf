@@ -19,15 +19,15 @@ resource "random_id" "random_suffix" {
 
 #roles/resourcemanager.folderCreator permission is needed
 resource "google_folder" "logistics-demo" {
-  display_name = ${var.folder}
+  display_name = var.folder
   parent       = "organizations/${var.organization}"
 }
 
 #roles/resourcemanager.projectCreator permission is needed
 resource "google_project" "terrform_generated_project" {
-  name       = ${var.project}
-  project_id = ${var.project}
-  billing_account = ${var.billing-account}
+  name       = var.project
+  project_id = var.project
+  billing_account = var.billing-account
   folder_id  = google_folder.logistics-demo.name
 }
 
@@ -54,7 +54,7 @@ resource "google_compute_network" "vpc_network" {
 resource "google_compute_subnetwork" "vpc_subnetwork" {
   name          = "terraform-sub-network-logistics-demo"
   ip_cidr_range = "10.0.0.0/24"
-  region        = ${var.region}
+  region        = var.region
   private_ip_google_access = true
   network       = google_compute_network.vpc_network.id
   project       = google_project.terrform_generated_project.project_id
@@ -67,7 +67,7 @@ resource "google_pubsub_topic" "pubsub_topic" {
 
 resource "google_storage_bucket" "gcs_master_data" {
   name          = google_project.terrform_generated_project.project_id
-  location      = ${var.region}
+  location      = var.region
   force_destroy = true
   project       = google_project.terrform_generated_project.project_id
   public_access_prevention = "enforced"
@@ -91,7 +91,7 @@ resource "google_bigquery_dataset" "dataset" {
   dataset_id    = "logistics"
   friendly_name = "logistics"
   description   = "Terraform Created Dataset"
-  location      = ${var.region}
+  location      = var.region
   project       = google_project.terrform_generated_project.project_id
   depends_on    = [google_project_service.enable_api]
 }
@@ -251,7 +251,7 @@ EOF
 
 resource "google_bigquery_job" "suppliers_job" {
   job_id     = "sj-${random_id.random_suffix.hex}"
-  location   = ${var.region}
+  location   = var.region
   project = google_project.terrform_generated_project.project_id
 
 
@@ -360,7 +360,7 @@ EOF
 
 resource "google_bigquery_job" "warehouse_job" {
   job_id     = "wj-${random_id.random_suffix.hex}"
-  location   = ${var.region}
+  location   = var.region
   project = google_project.terrform_generated_project.project_id
 
   load {
@@ -467,7 +467,7 @@ EOF
 
 resource "google_bigquery_job" "warehouse_local_job" {
   job_id     = "wlj-${random_id.random_suffix.hex}"
-  location   = ${var.region}
+  location   = var.region
   project = google_project.terrform_generated_project.project_id
 
   load {
@@ -497,7 +497,7 @@ resource "google_bigtable_instance" "bigtable-instance" {
     cluster_id    = "logistics-cluster"
     num_nodes     = 1
     storage_type  = "HDD"
-    zone          = ${var.zone}
+    zone          = var.zone
   }
 
   lifecycle {
@@ -549,7 +549,7 @@ resource "null_resource" "grant_execute_permission" {
 resource "null_resource" "generate_template" {
 
  provisioner "local-exec" {
-    command = "../dataflow-pipeline/dataflow_wrapper.sh ${var.project}"
+    command = "../dataflow-pipeline/dataflow_wrapper.sh var.project"
   }
   depends_on = [null_resource.grant_execute_permission]
 }
@@ -560,8 +560,8 @@ resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
     temp_gcs_location = "gs://${var.project}/temp"
     enable_streaming_engine = true
     on_delete = "cancel"
-    project = ${var.gcp_project}
-    region = ${var.region}
+    project = var.project
+    region = var.region
     subnetwork = "regions/${var.region}/subnetworks/on-prem-subnet-mumbai"
     depends_on = [null_resource.generate_template]
 }
