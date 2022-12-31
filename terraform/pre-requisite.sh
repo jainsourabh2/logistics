@@ -5,6 +5,4 @@ search_string="<<project-id>>"
 cd ../dataflow-pipeline/
 echo "Replacing <<project_id>> in streaming-pubsub-to-bq-bigtable.py file"
 sed -i "s/$search_string/$project_id/" "streaming-pubsub-to-bq-bigtable.py"
-echo "Replacing <<project_id>> in dataflow_generate_template.sh file"
-sed -i "s/$search_string/$project_id/" "streaming-pubsub-to-bq-bigtable.py"
 cd ../terraform

@@ -74,8 +74,8 @@ class Logistics(PipelineOptions):
 
     @classmethod
     def _add_argparse_args(cls, parser):
-        parser.add_argument("--input_topic", default="projects/on-prem-project-337210/topics/logistics")
-        parser.add_argument("--project_id", default="on-prem-project-337210")
+        parser.add_argument("--input_topic", default="projects/<<project_id>>/topics/logistics")
+        parser.add_argument("--project_id", default="<<project_id>>")
 
 
 def main(argv=None, save_main_session=True):
