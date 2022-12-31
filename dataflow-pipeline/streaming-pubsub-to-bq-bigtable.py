@@ -13,8 +13,6 @@ schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:S
 bigtable_instance = "logistics_inst"
 bigtable_table_order = "logistics_order"
 bigtable_table_customer = "logistics_customer"
-
-# Classes
  
 class CreateRowFn_Order(beam.DoFn):
 
