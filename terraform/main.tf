@@ -33,7 +33,7 @@ resource "google_project" "terrform_generated_project" {
 
 variable "services" {
   type = list(string)
-  default = ["bigtable.googleapis.com","compute.googleapis.com","iam.googleapis.com","run.googleapis.com","cloudbilling.googleapis.com","containerregistry.googleapis.com","dns.googleapis.com","bigquery.googleapis.com","pubsub.googleapis.com"]
+  default = ["bigtable.googleapis.com","compute.googleapis.com","iam.googleapis.com","run.googleapis.com","cloudbilling.googleapis.com","containerregistry.googleapis.com","dns.googleapis.com","bigquery.googleapis.com","pubsub.googleapis.com","dataflow.googleapis.com","compute.googleapis.com"]
 }
 
 resource "google_project_service" "enable_api" {
