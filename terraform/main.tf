@@ -541,7 +541,7 @@ resource "google_bigtable_app_profile" "bigtable-app-profile" {
 resource "null_resource" "grant_execute_permission" {
 
  provisioner "local-exec" {
-    command = "chmod +x ../dataflow_wrapper.sh"
+    command = "chmod +x ../dataflow-pipeline/dataflow_wrapper.sh"
   }
   depends_on = [google_bigtable_app_profile.app]
 }
@@ -549,7 +549,7 @@ resource "null_resource" "grant_execute_permission" {
 resource "null_resource" "generate_template" {
 
  provisioner "local-exec" {
-    command = "../dataflow_wrapper.sh ${var.project}"
+    command = "../dataflow-pipeline/dataflow_wrapper.sh ${var.project}"
   }
   depends_on = [null_resource.grant_execute_permission]
 }
