@@ -1,7 +1,7 @@
 resource "null_resource" "generate_template" {
 
  provisioner "local-exec" {
-    command = "chmod +x dataflow_generate_template_bkp.sh"
+    command = "chmod +x ../dataflow_wrapper.sh"
   }
 }
 
