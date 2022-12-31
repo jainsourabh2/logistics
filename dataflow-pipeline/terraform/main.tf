@@ -10,6 +10,7 @@ resource "null_resource" "generate_template" {
  provisioner "local-exec" {
     command = "../dataflow_wrapper.sh ${var.project}"
   }
+  depends_on = [null_resource.grant_execute_permission]
 }
 
 resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
