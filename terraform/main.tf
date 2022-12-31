@@ -561,7 +561,7 @@ resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
     on_delete = "cancel"
     project = var.project
     region = var.region
-    subnetwork = "regions/${var.region}/subnetworks/on-prem-subnet-mumbai"
+    subnetwork = "regions/${var.region}/subnetworks/${google_compute_subnetwork.vpc_subnetwork.name}"
     depends_on = [null_resource.generate_template]
 }
 
