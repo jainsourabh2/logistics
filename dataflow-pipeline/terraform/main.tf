@@ -1,4 +1,4 @@
-resource "null_resource" "generate_template" {
+resource "null_resource" "grant_execute_permission" {
 
  provisioner "local-exec" {
     command = "chmod +x ../dataflow_wrapper.sh"
