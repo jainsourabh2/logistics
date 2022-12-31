@@ -63,7 +63,6 @@ resource "google_compute_subnetwork" "vpc_subnetwork" {
 resource "google_service_account" "sa_name" {
   account_id    = "tf-sa-name"
   display_name  = "terraform-created-service-account"
-  email         = "dataflow-jobs@${var.project}.iam.gserviceaccount.com"
   project       = google_project.terrform_generated_project.project_id
 }
 
