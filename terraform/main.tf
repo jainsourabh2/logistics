@@ -88,7 +88,7 @@ resource "google_pubsub_topic" "pubsub_topic" {
 resource "google_storage_bucket" "gcs_master_data" {
   name          = google_project.terrform_generated_project.project_id
   location      = var.region
-  force_destroy = true
+  force_destroy = false
   project       = google_project.terrform_generated_project.project_id
   public_access_prevention = "enforced"
   uniform_bucket_level_access = true
