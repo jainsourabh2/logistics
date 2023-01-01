@@ -23,7 +23,7 @@ resource "google_folder" "logistics-demo" {
 }
 
 #roles/resourcemanager.projectCreator permission is needed
-resource "google_project" "terrform_generated_project" {
+resource "google_project" "terraform_generated_project" {
   name       = var.project
   project_id = var.project
   billing_account = var.billing-account
@@ -37,13 +37,13 @@ variable "services" {
 
 resource "google_project_service" "enable_api" {
   for_each = toset(var.services)
-  project = google_project.terrform_generated_project.project_id
+  project = google_project.terraform_generated_project.project_id
   service = each.value
   disable_on_destroy = true
 }
 
 resource "google_compute_network" "vpc_network" {
-  project                 = google_project.terrform_generated_project.project_id
+  project                 = google_project.terraform_generated_project.project_id
   name                    = "terraform-network-logistics-demo"
   auto_create_subnetworks = false
   mtu                     = 1460
@@ -56,13 +56,14 @@ resource "google_compute_subnetwork" "vpc_subnetwork" {
   region        = var.region
   private_ip_google_access = true
   network       = google_compute_network.vpc_network.id
-  project       = google_project.terrform_generated_project.project_id
+  project       = google_project.terraform_generated_project.project_id
 }
 
 resource "google_service_account" "sa_name" {
   account_id    = "tf-sa-name"
   display_name  = "terraform-created-service-account"
-  project       = google_project.terrform_generated_project.project_id
+  project       = google_project.terraform_generated_project.project_id
+  depends_on = [google_compute_subnetwork.vpc_subnetwork]
 }
 
 resource "google_project_iam_member" "dataflow_roles_binding" {
@@ -77,21 +78,24 @@ resource "google_project_iam_member" "dataflow_roles_binding" {
   ])
   role = each.key
   member  = "serviceAccount:${google_service_account.sa_name.email}"
-  project = google_project.terrform_generated_project.project_id
+  project = google_project.terraform_generated_project.project_id
+  depends_on = [google_service_account.sa_name]
 }
 
 resource "google_pubsub_topic" "pubsub_topic" {
   name          = "logistics"
-  project       = google_project.terrform_generated_project.project_id
+  project       = google_project.terraform_generated_project.project_id
+  depends_on = [google_project_iam_member.dataflow_roles_binding]
 }
 
 resource "google_storage_bucket" "gcs_master_data" {
-  name          = google_project.terrform_generated_project.project_id
+  name          = google_project.terraform_generated_project.project_id
   location      = var.region
   force_destroy = false
-  project       = google_project.terrform_generated_project.project_id
+  project       = google_project.terraform_generated_project.project_id
   public_access_prevention = "enforced"
   uniform_bucket_level_access = true
+  depends_on = [google_pubsub_topic.pubsub_topic]
 }
 
 variable "load_files" {
@@ -104,6 +108,7 @@ resource "google_storage_bucket_object" "load_bigquery_master_data" {
   name      = each.value
   source    = each.value
   bucket    = google_storage_bucket.gcs_master_data.name
+  depends_on = [google_storage_bucket.gcs_master_data]
 }
 
 
@@ -112,14 +117,14 @@ resource "google_bigquery_dataset" "dataset" {
   friendly_name = "logistics"
   description   = "Terraform Created Dataset"
   location      = var.region
-  project       = google_project.terrform_generated_project.project_id
-  depends_on    = [google_project_service.enable_api]
+  project       = google_project.terraform_generated_project.project_id
+  depends_on    = [google_storage_bucket_object.load_bigquery_master_data]
 }
 
 resource "google_bigquery_table" "table" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = "logistics"
-  project    = google_project.terrform_generated_project.project_id
+  project    = google_project.terraform_generated_project.project_id
 
   time_partitioning {
     type  = "DAY"
@@ -184,7 +189,7 @@ EOF
 resource "google_bigquery_table" "suppliers_table" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = "suppliers"
-  project    = google_project.terrform_generated_project.project_id
+  project    = google_project.terraform_generated_project.project_id
   deletion_protection = false
 
   schema = <<EOF
@@ -272,7 +277,7 @@ EOF
 resource "google_bigquery_job" "suppliers_job" {
   job_id     = "sj-${random_id.random_suffix.hex}"
   location   = var.region
-  project = google_project.terrform_generated_project.project_id
+  project = google_project.terraform_generated_project.project_id
 
 
   load {
@@ -298,7 +303,7 @@ resource "google_bigquery_job" "suppliers_job" {
 resource "google_bigquery_table" "warehouse_table" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = "warehouse"
-  project    = google_project.terrform_generated_project.project_id
+  project    = google_project.terraform_generated_project.project_id
   deletion_protection = false
 
   schema = <<EOF
@@ -381,7 +386,7 @@ EOF
 resource "google_bigquery_job" "warehouse_job" {
   job_id     = "wj-${random_id.random_suffix.hex}"
   location   = var.region
-  project = google_project.terrform_generated_project.project_id
+  project = google_project.terraform_generated_project.project_id
 
   load {
     source_uris = [
@@ -405,7 +410,7 @@ resource "google_bigquery_job" "warehouse_job" {
 resource "google_bigquery_table" "warehouse_local_table" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = "warehouse_local"
-  project    = google_project.terrform_generated_project.project_id
+  project    = google_project.terraform_generated_project.project_id
   deletion_protection = false
 
   schema = <<EOF
@@ -488,7 +493,7 @@ EOF
 resource "google_bigquery_job" "warehouse_local_job" {
   job_id     = "wlj-${random_id.random_suffix.hex}"
   location   = var.region
-  project = google_project.terrform_generated_project.project_id
+  project = google_project.terraform_generated_project.project_id
 
   load {
     source_uris = [
@@ -510,9 +515,9 @@ resource "google_bigquery_job" "warehouse_local_job" {
 
 resource "google_bigtable_instance" "bigtable-instance" {
   name = "logistics-inst"
-  project    = google_project.terrform_generated_project.project_id
+  project    = google_project.terraform_generated_project.project_id
   deletion_protection  = "true"
-
+  depends_on = [google_bigquery_table.table]
   cluster {
     cluster_id    = "logistics-cluster"
     num_nodes     = 1
@@ -529,7 +534,8 @@ resource "google_bigtable_instance" "bigtable-instance" {
 resource "google_bigtable_table" "bigtable-table-order" {
   name          = "logistics-order"
   instance_name = google_bigtable_instance.bigtable-instance.name
-  project    = google_project.terrform_generated_project.project_id  
+  project    = google_project.terraform_generated_project.project_id
+  depends_on = [google_bigtable_instance.bigtable-instance]  
   lifecycle {
     prevent_destroy = true
   }
@@ -538,8 +544,8 @@ resource "google_bigtable_table" "bigtable-table-order" {
 resource "google_bigtable_table" "bigtable-table-customer" {
   name          = "logistics-customer"
   instance_name = google_bigtable_instance.bigtable-instance.name
-  project    = google_project.terrform_generated_project.project_id  
-  depends_on = [google_project_iam_member.dataflow_roles_binding]
+  project    = google_project.terraform_generated_project.project_id  
+  depends_on = [google_bigtable_instance.bigtable-instance]
   lifecycle {
     prevent_destroy = true
   }
@@ -549,8 +555,8 @@ resource "google_bigtable_app_profile" "bigtable-app-profile" {
   instance        = google_bigtable_instance.bigtable-instance.name
   app_profile_id  = "logistics-app-profile"
   ignore_warnings = true
-  project         = google_project.terrform_generated_project.project_id
-  depends_on = [google_bigtable_table.bigtable-table-customer]
+  project         = google_project.terraform_generated_project.project_id
+  depends_on = [google_bigtable_table.bigtable-table-customer,google_bigtable_table.bigtable-table-order]
   single_cluster_routing {
     cluster_id                 = "logistics-cluster"
     allow_transactional_writes = true
@@ -568,7 +574,7 @@ resource "null_resource" "grant_execute_permission" {
 resource "null_resource" "generate_template" {
 
  provisioner "local-exec" {
-    command = "../dataflow-pipeline/dataflow_wrapper.sh ${google_project.terrform_generated_project.project_id}"
+    command = "../dataflow-pipeline/dataflow_wrapper.sh ${google_project.terraform_generated_project.project_id}"
   }
   depends_on = [null_resource.grant_execute_permission]
 }
@@ -598,7 +604,7 @@ resource "null_resource" "grant_execute_permission_cloudrun_ingest_pubsub" {
 resource "null_resource" "build_ingest_pubsub_container" {
 
  provisioner "local-exec" {
-    command = "../ingest-pubsub/cloudrun_wrapper.sh ${google_project.terrform_generated_project.project_id}"
+    command = "../ingest-pubsub/cloudrun_wrapper.sh ${google_project.terraform_generated_project.project_id}"
   }
   depends_on = [null_resource.grant_execute_permission_cloudrun_ingest_pubsub]
 }
