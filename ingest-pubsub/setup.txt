@@ -4,7 +4,7 @@
 #For revisions to be deployed, the service should have been created with terraform only.
 #Replace projectid appropriately
 gcloud config set project projectid
-gcloud builds submit
+gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/ingest-pubsub
 cd terraform
 terraform apply
 

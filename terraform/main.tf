@@ -587,4 +587,19 @@ resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
     service_account_email = google_service_account.sa_name.email
 }
 
+resource "null_resource" "grant_execute_permission_cloudrun_ingest_pubsub" {
+
+ provisioner "local-exec" {
+    command = "chmod +x ../ingest-pubsub/cloudrun_wrapper.sh"
+  }
+  depends_on = [google_dataflow_job.logistics_streaming_dataflow_bq_bigtable]
+}
+
+resource "null_resource" "build_ingest_pubsub_container" {
+
+ provisioner "local-exec" {
+    command = "../ingest-pubsub/cloudrun_wrapper.sh ${google_project.terrform_generated_project.project_id}"
+  }
+  depends_on = [null_resource.grant_execute_permission_cloudrun_ingest_pubsub]
+}
 
