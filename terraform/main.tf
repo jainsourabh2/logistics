@@ -540,7 +540,7 @@ resource "google_bigtable_table" "bigtable-table-customer" {
   name          = "logistics-customer"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terrform_generated_project.project_id  
-
+  depends_on = [google_project_iam_member.dataflow_roles_binding]
   lifecycle {
     prevent_destroy = true
   }
