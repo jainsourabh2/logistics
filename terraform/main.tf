@@ -67,9 +67,18 @@ resource "google_service_account" "sa_name" {
 }
 
 resource "google_project_iam_member" "dataflow_roles_binding" {
-  project = google_project.terrform_generated_project.project_id
-  role    = "roles/owner"
+  for_each = toset([
+    "roles/owner",
+    "roles/bigquery.admin",
+    "roles/bigtable.admin",
+    "roles/storage.admin",
+    "roles/storage.objectAdmin",
+    "roles/pubsub.admin",
+    "roles/dataflow.admin"
+  ])
+  role = each.key
   member  = "serviceAccount:${google_service_account.sa_name.email}"
+  project = google_project.terrform_generated_project.project_id
 }
 
 resource "google_pubsub_topic" "pubsub_topic" {
