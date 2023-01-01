@@ -1,7 +1,7 @@
 const { PubSub, v1 } = require("@google-cloud/pubsub");
 const pubSubClient = new PubSub();
 const pubSubClient2 = new v1.PublisherClient();
-const topicName = "vitaming";
+const topicName = "logistics";
 
 const pubsubRepository = require("../repositories/pub-sub-repo");
 
