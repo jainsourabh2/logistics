@@ -111,7 +111,6 @@ resource "google_storage_bucket_object" "load_bigquery_master_data" {
   depends_on = [google_storage_bucket.gcs_master_data]
 }
 
-
 resource "google_bigquery_dataset" "dataset" {
   dataset_id    = "logistics"
   friendly_name = "logistics"
