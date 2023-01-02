@@ -3,12 +3,12 @@
 gcloud config set project on-prem-project-337210
 export GOOGLE_CLOUD_PROJECT=on-prem-project-337210
 
-gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/order-frontend
+gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/order_frontend
 
 gcloud container images list
 
 gcloud run deploy customer-frontend \
-  --image gcr.io/$GOOGLE_CLOUD_PROJECT/order-frontend \
+  --image gcr.io/$GOOGLE_CLOUD_PROJECT/order_frontend \
   --platform managed \
   --region asia-south1 \
   --allow-unauthenticated

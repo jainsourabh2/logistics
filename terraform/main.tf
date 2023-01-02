@@ -683,7 +683,7 @@ output "service_url_bigtable_apis" {
 }
 
 
-resource "null_resource" "grant_execute_permission_cloudrun_order-frontend" {
+resource "null_resource" "grant_execute_permission_cloudrun_order_frontend" {
 
  provisioner "local-exec" {
     command = "chmod +x ../customer-frontend-tracker/cloudrun_wrapper.sh"
@@ -691,23 +691,23 @@ resource "null_resource" "grant_execute_permission_cloudrun_order-frontend" {
   depends_on = [google_cloud_run_service.run_service_bigtable_apis]
 }
 
-resource "null_resource" "build_order-frontend_container" {
+resource "null_resource" "build_order_frontend_container" {
 
  provisioner "local-exec" {
     command = "../customer-frontend-tracker/cloudrun_wrapper.sh ${google_project.terraform_generated_project.project_id}"
   }
-  depends_on = [null_resource.grant_execute_permission_cloudrun_order-frontend]
+  depends_on = [null_resource.grant_execute_permission_cloudrun_order_frontend]
 }
 
 # Create the Cloud Run service
-resource "google_cloud_run_service" "run_service_order-frontend" {
-  name = "order-frontend"
+resource "google_cloud_run_service" "run_service_order_frontend" {
+  name = "order_frontend"
   location = var.region
 
   template {
     spec {
       containers {
-        image = "gcr.io/${google_project.terraform_generated_project.project_id}/order-frontend:latest"
+        image = "gcr.io/${google_project.terraform_generated_project.project_id}/order_frontend:latest"
       }
     }
   }
@@ -720,10 +720,10 @@ resource "google_cloud_run_service" "run_service_order-frontend" {
   autogenerate_revision_name = true
 
   # Waits for the Cloud Run API to be enabled
-  depends_on = [null_resource.build_order-frontend_container]
+  depends_on = [null_resource.build_order_frontend_container]
 }
 
 # Display the service URL
-output "service_url_bigtable_apis" {
-  value = google_cloud_run_service.run_service_order-frontend.status[0].url
+output "service_url_order_frontend" {
+  value = google_cloud_run_service.run_service_order_frontend.status[0].url
 }
