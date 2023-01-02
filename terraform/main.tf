@@ -32,7 +32,7 @@ resource "google_project" "terraform_generated_project" {
 
 variable "services" {
   type = list(string)
-  default = ["bigtable.googleapis.com","compute.googleapis.com","iam.googleapis.com","run.googleapis.com","cloudbilling.googleapis.com","containerregistry.googleapis.com","dns.googleapis.com","bigquery.googleapis.com","pubsub.googleapis.com","dataflow.googleapis.com","compute.googleapis.com"]
+  default = ["bigtable.googleapis.com","compute.googleapis.com","iam.googleapis.com","run.googleapis.com","cloudbilling.googleapis.com","containerregistry.googleapis.com","dns.googleapis.com","bigquery.googleapis.com","pubsub.googleapis.com","dataflow.googleapis.com","compute.googleapis.com","cloudbuild.googleapis.com"]
 }
 
 resource "google_project_service" "enable_api" {
@@ -608,3 +608,46 @@ resource "null_resource" "build_ingest_pubsub_container" {
   depends_on = [null_resource.grant_execute_permission_cloudrun_ingest_pubsub]
 }
 
+# Create the Cloud Run service
+resource "google_cloud_run_service" "run_service" {
+  name = ingest-pubsub
+  location = var.region
+
+  template {
+    spec {
+      containers {
+        image = data.external.image_digest.result.image
+      }
+    }
+  }
+
+  traffic {
+    percent         = 100
+    latest_revision = true
+  }
+
+  autogenerate_revision_name = true
+
+  # Waits for the Cloud Run API to be enabled
+  depends_on = [null_resource.build_ingest_pubsub_container]
+}
+
+# Allow unauthenticated users to invoke the service
+resource "google_cloud_run_service_iam_member" "run_all_users" {
+  service  = google_cloud_run_service.run_service.name
+  location = google_cloud_run_service.run_service.location
+  role     = "roles/run.invoker"
+  member   = "allUsers"
+  depends_on = [google_cloud_run_service.run_service]
+}
+
+# Display the service URL
+output "service_url" {
+  value = google_cloud_run_service.run_service.status[0].url
+}
+
+# WORKAROUND 
+data "external" "image_digest" {
+  program = ["bash", "scripts/get_latest_tag.sh", var.project, "ingest-pubsub"]
+}
+# END WORKAROUND
