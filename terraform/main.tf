@@ -655,13 +655,13 @@ resource "null_resource" "build_bigtable_apis_container" {
 
 # Create the Cloud Run service
 resource "google_cloud_run_service" "run_service_bigtable_apis" {
-  name = "bigtable_apis"
+  name = "bigtable-apis"
   location = var.region
   project = google_project.terraform_generated_project.project_id
   template {
     spec {
       containers {
-        image = "gcr.io/${google_project.terraform_generated_project.project_id}/bigtable_apis:latest"
+        image = "gcr.io/${google_project.terraform_generated_project.project_id}/bigtable-apis:latest"
       }
     }
   }
@@ -701,13 +701,13 @@ resource "null_resource" "build_order_frontend_container" {
 
 # Create the Cloud Run service
 resource "google_cloud_run_service" "run_service_order_frontend" {
-  name = "order_frontend"
+  name = "order-frontend"
   location = var.region
   project = google_project.terraform_generated_project.project_id
   template {
     spec {
       containers {
-        image = "gcr.io/${google_project.terraform_generated_project.project_id}/order_frontend:latest"
+        image = "gcr.io/${google_project.terraform_generated_project.project_id}/order-frontend:latest"
       }
     }
   }
