@@ -612,7 +612,7 @@ resource "null_resource" "build_ingest_pubsub_container" {
 resource "google_cloud_run_service" "run_service_ingest_pubsub" {
   name = "ingest-pubsub"
   location = var.region
-
+  project = google_project.terraform_generated_project.project_id
   template {
     spec {
       containers {
@@ -657,7 +657,7 @@ resource "null_resource" "build_bigtable_apis_container" {
 resource "google_cloud_run_service" "run_service_bigtable_apis" {
   name = "bigtable_apis"
   location = var.region
-
+  project = google_project.terraform_generated_project.project_id
   template {
     spec {
       containers {
@@ -703,7 +703,7 @@ resource "null_resource" "build_order_frontend_container" {
 resource "google_cloud_run_service" "run_service_order_frontend" {
   name = "order_frontend"
   location = var.region
-
+  project = google_project.terraform_generated_project.project_id
   template {
     spec {
       containers {
