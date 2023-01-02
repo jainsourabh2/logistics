@@ -609,14 +609,14 @@ resource "null_resource" "build_ingest_pubsub_container" {
 }
 
 # Create the Cloud Run service
-resource "google_cloud_run_service" "run_service" {
-  name = ingest-pubsub
+resource "google_cloud_run_service" "run_service_ingest_pubsub" {
+  name = "ingest-pubsub"
   location = var.region
 
   template {
     spec {
       containers {
-        image = data.external.image_digest.result.image
+        image = "gcr.io/${google_project.terraform_generated_project.project_id}/ingest-pubsub:latest"
       }
     }
   }
@@ -632,22 +632,98 @@ resource "google_cloud_run_service" "run_service" {
   depends_on = [null_resource.build_ingest_pubsub_container]
 }
 
-# Allow unauthenticated users to invoke the service
-resource "google_cloud_run_service_iam_member" "run_all_users" {
-  service  = google_cloud_run_service.run_service.name
-  location = google_cloud_run_service.run_service.location
-  role     = "roles/run.invoker"
-  member   = "allUsers"
-  depends_on = [google_cloud_run_service.run_service]
+# Display the service URL
+output "service_url_ingest_pubsub" {
+  value = google_cloud_run_service.run_service_ingest_pubsub.status[0].url
+}
+
+resource "null_resource" "grant_execute_permission_cloudrun_bigtable_apis" {
+
+ provisioner "local-exec" {
+    command = "chmod +x ../customer-backend-tracker/cloudrun_wrapper.sh"
+  }
+  depends_on = [google_cloud_run_service.run_service_ingest_pubsub]
+}
+
+resource "null_resource" "build_bigtable_apis_container" {
+
+ provisioner "local-exec" {
+    command = "../customer-backend-tracker/cloudrun_wrapper.sh ${google_project.terraform_generated_project.project_id}"
+  }
+  depends_on = [null_resource.grant_execute_permission_cloudrun_bigtable_apis]
+}
+
+# Create the Cloud Run service
+resource "google_cloud_run_service" "run_service_bigtable_apis" {
+  name = "bigtable_apis"
+  location = var.region
+
+  template {
+    spec {
+      containers {
+        image = "gcr.io/${google_project.terraform_generated_project.project_id}/bigtable_apis:latest"
+      }
+    }
+  }
+
+  traffic {
+    percent         = 100
+    latest_revision = true
+  }
+
+  autogenerate_revision_name = true
+
+  # Waits for the Cloud Run API to be enabled
+  depends_on = [null_resource.build_bigtable_apis_container]
 }
 
 # Display the service URL
-output "service_url" {
-  value = google_cloud_run_service.run_service.status[0].url
+output "service_url_bigtable_apis" {
+  value = google_cloud_run_service.run_service_bigtable_apis.status[0].url
 }
 
-# WORKAROUND 
-data "external" "image_digest" {
-  program = ["bash", "scripts/get_latest_tag.sh", var.project, "ingest-pubsub"]
+
+resource "null_resource" "grant_execute_permission_cloudrun_order-frontend" {
+
+ provisioner "local-exec" {
+    command = "chmod +x ../customer-frontend-tracker/cloudrun_wrapper.sh"
+  }
+  depends_on = [google_cloud_run_service.run_service_bigtable_apis]
 }
-# END WORKAROUND
+
+resource "null_resource" "build_order-frontend_container" {
+
+ provisioner "local-exec" {
+    command = "../customer-frontend-tracker/cloudrun_wrapper.sh ${google_project.terraform_generated_project.project_id}"
+  }
+  depends_on = [null_resource.grant_execute_permission_cloudrun_order-frontend]
+}
+
+# Create the Cloud Run service
+resource "google_cloud_run_service" "run_service_order-frontend" {
+  name = "order-frontend"
+  location = var.region
+
+  template {
+    spec {
+      containers {
+        image = "gcr.io/${google_project.terraform_generated_project.project_id}/order-frontend:latest"
+      }
+    }
+  }
+
+  traffic {
+    percent         = 100
+    latest_revision = true
+  }
+
+  autogenerate_revision_name = true
+
+  # Waits for the Cloud Run API to be enabled
+  depends_on = [null_resource.build_order-frontend_container]
+}
+
+# Display the service URL
+output "service_url_bigtable_apis" {
+  value = google_cloud_run_service.run_service_order-frontend.status[0].url
+}
