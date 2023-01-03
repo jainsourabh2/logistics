@@ -179,6 +179,11 @@ resource "google_bigquery_table" "table" {
     "mode": "NULLABLE",
     "name": "package_id",
     "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "price",
+    "type": "INTEGER"
   }
 ]
 EOF
@@ -534,7 +539,10 @@ resource "google_bigtable_table" "bigtable-table-order" {
   name          = "logistics-order"
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terraform_generated_project.project_id
-  depends_on = [google_bigtable_instance.bigtable-instance]  
+  depends_on = [google_bigtable_instance.bigtable-instance]
+  column_family {
+    family = "delivery_stats"
+  }  
   lifecycle {
     prevent_destroy = true
   }
@@ -545,6 +553,9 @@ resource "google_bigtable_table" "bigtable-table-customer" {
   instance_name = google_bigtable_instance.bigtable-instance.name
   project    = google_project.terraform_generated_project.project_id  
   depends_on = [google_bigtable_instance.bigtable-instance]
+  column_family {
+    family = "delivery_stats"
+  }
   lifecycle {
     prevent_destroy = true
   }
@@ -592,12 +603,30 @@ resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
     service_account_email = google_service_account.sa_name.email
 }
 
+
+resource "google_service_account" "sa_ingest_pubsub" {
+  account_id    = "sa_ingest_pubsub"
+  display_name  = "service-account_ingest_pubsub"
+  project       = google_project.terraform_generated_project.project_id
+  depends_on = [google_dataflow_job.logistics_streaming_dataflow_bq_bigtable]
+}
+
+resource "google_project_iam_member" "sa_ingest_pubsub_roles_binding" {
+  for_each = toset([
+    "roles/owner"
+  ])
+  role = each.key
+  member  = "serviceAccount:${google_service_account.sa_ingest_pubsub.email}"
+  project = google_project.terraform_generated_project.project_id
+  depends_on = [google_service_account.sa_ingest_pubsub]
+}
+
 resource "null_resource" "grant_execute_permission_cloudrun_ingest_pubsub" {
 
  provisioner "local-exec" {
     command = "chmod +x ../ingest-pubsub/cloudrun_wrapper.sh"
   }
-  depends_on = [google_dataflow_job.logistics_streaming_dataflow_bq_bigtable]
+  depends_on = [google_project_iam_member.sa_ingest_pubsub_roles_binding]
 }
 
 resource "null_resource" "build_ingest_pubsub_container" {
@@ -627,6 +656,7 @@ resource "google_cloud_run_service" "run_service_ingest_pubsub" {
   }
 
   autogenerate_revision_name = true
+  service_account_name = "serviceAccount:${google_service_account.sa_ingest_pubsub.email}"
 
   # Waits for the Cloud Run API to be enabled
   depends_on = [null_resource.build_ingest_pubsub_container]
@@ -637,12 +667,29 @@ output "service_url_ingest_pubsub" {
   value = google_cloud_run_service.run_service_ingest_pubsub.status[0].url
 }
 
+resource "google_service_account" "sa_bigtable_apis" {
+  account_id    = "sa_bigtable_apis"
+  display_name  = "service-account_bigtable_apis"
+  project       = google_project.terraform_generated_project.project_id
+  depends_on = [google_cloud_run_service.run_service_ingest_pubsub]
+}
+
+resource "google_project_iam_member" "sa_bigtable_apis_roles_binding" {
+  for_each = toset([
+    "roles/owner"
+  ])
+  role = each.key
+  member  = "serviceAccount:${google_service_account.sa_bigtable_apis.email}"
+  project = google_project.terraform_generated_project.project_id
+  depends_on = [google_service_account.sa_bigtable_apis]
+}
+
 resource "null_resource" "grant_execute_permission_cloudrun_bigtable_apis" {
 
  provisioner "local-exec" {
     command = "chmod +x ../customer-backend-tracker/cloudrun_wrapper.sh"
   }
-  depends_on = [google_cloud_run_service.run_service_ingest_pubsub]
+  depends_on = [google_project_iam_member.sa_bigtable_apis_roles_binding]
 }
 
 resource "null_resource" "build_bigtable_apis_container" {
@@ -672,7 +719,7 @@ resource "google_cloud_run_service" "run_service_bigtable_apis" {
   }
 
   autogenerate_revision_name = true
-
+  service_account_name = "serviceAccount:${google_service_account.sa_bigtable_apis.email}"
   # Waits for the Cloud Run API to be enabled
   depends_on = [null_resource.build_bigtable_apis_container]
 }
@@ -682,6 +729,22 @@ output "service_url_bigtable_apis" {
   value = google_cloud_run_service.run_service_bigtable_apis.status[0].url
 }
 
+resource "google_service_account" "sa_order_frontend" {
+  account_id    = "sa_order_frontend"
+  display_name  = "service-account_order_frontend"
+  project       = google_project.terraform_generated_project.project_id
+  depends_on = [google_cloud_run_service.run_service_bigtable_apis]
+}
+
+resource "google_project_iam_member" "sa_order_frontend_roles_binding" {
+  for_each = toset([
+    "roles/owner"
+  ])
+  role = each.key
+  member  = "serviceAccount:${google_service_account.sa_order_frontend.email}"
+  project = google_project.terraform_generated_project.project_id
+  depends_on = [google_service_account.sa_order_frontend]
+}
 
 resource "null_resource" "grant_execute_permission_cloudrun_order_frontend" {
 
@@ -718,6 +781,7 @@ resource "google_cloud_run_service" "run_service_order_frontend" {
   }
 
   autogenerate_revision_name = true
+  service_account_name = "serviceAccount:${google_service_account.sa_order_frontend.email}"
 
   # Waits for the Cloud Run API to be enabled
   depends_on = [null_resource.build_order_frontend_container]
@@ -744,3 +808,4 @@ resource "null_resource" "replace_ingest_url" {
   }
   depends_on = [null_resource.grant_execute_permission_test_harness]
 }
+
