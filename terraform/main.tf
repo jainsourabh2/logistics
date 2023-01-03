@@ -605,7 +605,7 @@ resource "google_dataflow_job" "logistics_streaming_dataflow_bq_bigtable" {
 
 
 resource "google_service_account" "sa_ingest_pubsub" {
-  account_id    = "sa_ingest_pubsub"
+  account_id    = "sa-ingest-pubsub"
   display_name  = "service-account_ingest_pubsub"
   project       = google_project.terraform_generated_project.project_id
   depends_on = [google_dataflow_job.logistics_streaming_dataflow_bq_bigtable]
@@ -668,7 +668,7 @@ output "service_url_ingest_pubsub" {
 }
 
 resource "google_service_account" "sa_bigtable_apis" {
-  account_id    = "sa_bigtable_apis"
+  account_id    = "sa-bigtable-apis"
   display_name  = "service-account_bigtable_apis"
   project       = google_project.terraform_generated_project.project_id
   depends_on = [google_cloud_run_service.run_service_ingest_pubsub]
@@ -730,7 +730,7 @@ output "service_url_bigtable_apis" {
 }
 
 resource "google_service_account" "sa_order_frontend" {
-  account_id    = "sa_order_frontend"
+  account_id    = "sa-order-frontend"
   display_name  = "service-account_order_frontend"
   project       = google_project.terraform_generated_project.project_id
   depends_on = [google_cloud_run_service.run_service_bigtable_apis]
