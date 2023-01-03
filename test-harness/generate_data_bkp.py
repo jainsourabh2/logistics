@@ -4,10 +4,9 @@ import random
 import csv
 import json
 import requests
-#import requests_async as requests
 import datetime  
 
-url = 'https://ingest-pubsub-q5cbfb3b6a-el.a.run.app'
+url = '<<service_url_ingest_pubsub>>'
 
 STATUS = (
     'order_placed', 'supplier_checkout', 'warehouse_checkin', 'warehouse_checkout', 'local_warehouse_checkin', 'local_warehouse_checkout', 'order_delivered'

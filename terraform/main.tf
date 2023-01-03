@@ -727,3 +727,20 @@ resource "google_cloud_run_service" "run_service_order_frontend" {
 output "service_url_order_frontend" {
   value = google_cloud_run_service.run_service_order_frontend.status[0].url
 }
+
+
+resource "null_resource" "grant_execute_permission_test_harness" {
+
+ provisioner "local-exec" {
+    command = "chmod +x ../test-harness/wrapper.sh"
+  }
+  depends_on = [google_cloud_run_service.run_service_order_frontend]
+}
+
+resource "null_resource" "replace_ingest_url" {
+
+ provisioner "local-exec" {
+    command = "../test-harness/wrapper.sh  ${google_cloud_run_service.run_service_ingest_pubsub.status[0].url}"
+  }
+  depends_on = [null_resource.grant_execute_permission_test_harness]
+}
