@@ -647,6 +647,7 @@ resource "google_cloud_run_service" "run_service_ingest_pubsub" {
       containers {
         image = "gcr.io/${google_project.terraform_generated_project.project_id}/ingest-pubsub:latest"
       }
+    service_account_name = "serviceAccount:${google_service_account.sa_ingest_pubsub.email}"
     }
   }
 
@@ -656,7 +657,6 @@ resource "google_cloud_run_service" "run_service_ingest_pubsub" {
   }
 
   autogenerate_revision_name = true
-  service_account_name = "serviceAccount:${google_service_account.sa_ingest_pubsub.email}"
 
   # Waits for the Cloud Run API to be enabled
   depends_on = [null_resource.build_ingest_pubsub_container]
@@ -710,6 +710,7 @@ resource "google_cloud_run_service" "run_service_bigtable_apis" {
       containers {
         image = "gcr.io/${google_project.terraform_generated_project.project_id}/bigtable-apis:latest"
       }
+      service_account_name = "serviceAccount:${google_service_account.sa_bigtable_apis.email}"
     }
   }
 
@@ -719,7 +720,7 @@ resource "google_cloud_run_service" "run_service_bigtable_apis" {
   }
 
   autogenerate_revision_name = true
-  service_account_name = "serviceAccount:${google_service_account.sa_bigtable_apis.email}"
+
   # Waits for the Cloud Run API to be enabled
   depends_on = [null_resource.build_bigtable_apis_container]
 }
@@ -772,6 +773,7 @@ resource "google_cloud_run_service" "run_service_order_frontend" {
       containers {
         image = "gcr.io/${google_project.terraform_generated_project.project_id}/order-frontend:latest"
       }
+    service_account_name = "serviceAccount:${google_service_account.sa_order_frontend.email}"
     }
   }
 
@@ -781,7 +783,6 @@ resource "google_cloud_run_service" "run_service_order_frontend" {
   }
 
   autogenerate_revision_name = true
-  service_account_name = "serviceAccount:${google_service_account.sa_order_frontend.email}"
 
   # Waits for the Cloud Run API to be enabled
   depends_on = [null_resource.build_order_frontend_container]
