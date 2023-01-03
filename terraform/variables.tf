@@ -1,8 +1,3 @@
-variable "project" {
-  description = "Project Id of the GCP account"
-  type        = string
-}
-
 variable "region" {
   description = "Region in which the resources will create"
   type        = string
@@ -13,13 +8,18 @@ variable "zone" {
   type        = string
 }
 
-variable "folder" {
-  description = "Folder in which the organization will be created"
+variable "organization" {
+  description = "Organization in which the folder will be created"
   type        = string
 }
 
-variable "organization" {
-  description = "Organization in which the folder will be created"
+variable "folder" {
+  description = "Folder in which the project will be created"
+  type        = string
+}
+
+variable "project" {
+  description = "Project Id of the GCP account"
   type        = string
 }
 
