@@ -11,8 +11,7 @@ app.use(express.json()); // Let app communicate in jsons.
 
 const btInstance = new bigtable.BigTableReader(
     process.env.BT_INSTANCE,
-    process.env.BT_TABLE_ORDER,
-    process.env.BT_TABLE_CUSTOMER,
+    process.env.BT_TABLE_ORDER
 );
 
 // Get one package's latest location from the database.
