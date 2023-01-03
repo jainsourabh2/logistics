@@ -694,7 +694,7 @@ resource "null_resource" "grant_execute_permission_cloudrun_order_frontend" {
 resource "null_resource" "build_order_frontend_container" {
 
  provisioner "local-exec" {
-    command = "../customer-frontend-tracker/cloudrun_wrapper.sh ${google_project.terraform_generated_project.project_id}"
+    command = "../customer-frontend-tracker/cloudrun_wrapper.sh ${google_project.terraform_generated_project.project_id} ${google_cloud_run_service.run_service_bigtable_apis.status[0].url}"
   }
   depends_on = [null_resource.grant_execute_permission_cloudrun_order_frontend]
 }

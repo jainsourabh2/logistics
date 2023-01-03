@@ -10,7 +10,7 @@ export const CustomerLookupForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`https://bigtable-apis-q5cbfb3b6a-el.a.run.app/api/${submitType}`, {
+        axios.post(`service_url_order_frontend/api/${submitType}`, {
             packageId: id,
         }).then(res => {
             // console.log('res', res.data)
