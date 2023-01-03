@@ -27,5 +27,3 @@ variable "billing-account" {
   description = "Billing Account to be associated with the project"
   type        = string
 }
-
-
