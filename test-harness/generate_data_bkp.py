@@ -6,7 +6,7 @@ import json
 import requests
 import datetime  
 
-url = '<<service_url_ingest_pubsub>>'
+url = '<<service_url_ingest_pubsub>>/api/orders/create'
 
 STATUS = (
     'order_placed', 'supplier_checkout', 'warehouse_checkin', 'warehouse_checkout', 'local_warehouse_checkin', 'local_warehouse_checkout', 'order_delivered'
