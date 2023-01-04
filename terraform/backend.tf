@@ -1,7 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket      = "terraform-state-still-toolbox-356811"
+    bucket      = "customer-demos-asia-south1"
     prefix      = "terraform"
-    credentials = "credentials.json"
   }
 }
