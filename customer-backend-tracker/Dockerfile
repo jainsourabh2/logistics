@@ -3,9 +3,9 @@
 FROM node:12.18.1
 
 ENV NODE_ENV=production
-ENV BT_INSTANCE=logistics_inst
-ENV BT_TABLE_ORDER=logistics_order
-ENV BT_TABLE_CUSTOMER=logistics_customer
+ENV BT_INSTANCE=logistics-inst
+ENV BT_TABLE_ORDER=logistics-order
+ENV BT_TABLE_CUSTOMER=logistics-customer
 
 WORKDIR /app
 
