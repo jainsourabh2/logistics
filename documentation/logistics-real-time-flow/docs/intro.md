@@ -2,46 +2,96 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Installation Steps
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## For Argolis Users:
 
-## Getting Started
+1) Log in via the admin user on GCP Argolis console.
+2) Open the cloud shell via the GCP console.
+3) Clone the repository by running the below command :
 
-Get started by **creating a new site**.
+    git clone https://github.com/jainsourabh2/logistics.git 
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+4) Navigate into logistics/terraform directory
 
-### What you'll need
+    cd logistics/terraform
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+5) Open the terraform.tfvars file and change the values appropriately.
 
-## Generate a new site
+    project                 = "unique_project_name"
+    region                  = "region"
+    zone                    = "zone"
+    folder                  = "logistics-demo"
+    organization            = "12 digit ord id"
+    billing-account         = "XXXXXX-YYYYYY-ZZZZZZ" 
 
-Generate a new Docusaurus site using the **classic template**.
+6) Open the backend.tf file and change the bucket value to an exisitng bucket from the current logged in project.
 
-The classic template will automatically be added to your project after you run the command:
+    terraform {
+      backend "gcs" {
+        bucket      = "replace_this_with_bucket_name"
+        prefix      = "terraform"
+      }
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+7) Run the below command to initialize terraform.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+    terraform init
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+8) Run the below command to validate the structure of terraform 
 
-## Start your site
+    terraform validate
 
-Run the development server:
+9) Run the below command to apply changes in your project.
 
-```bash
-cd my-website
-npm run start
-```
+    terraform apply.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+  Once you run the above command, you would be asked for confirmation. Please provide "yes"
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+10) Post the deployment , provide the permissions to allow unauthenticated access to the Cloud Run 3 services. 
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+**NOTE : In Arglois, by default org policy blocks unauthenticated access and hence the policy(constraints/iam.allowedPolicyMemberDomains) needs to be allowed and then unauthenticated access needs to be enabled on the cloud run URLs**
+
+If you pface any errors , please contact xyz@google.com hello
+
+## For General Users:
+
+1) Log in via the admin user on GCP Argolis console.
+2) Open the cloud shell via the GCP console.
+3) Clone the repository by running the below command :
+
+    git clone https://github.com/jainsourabh2/logistics.git 
+
+4) Navigate into logistics/terraform directory
+
+    cd logistics/terraform
+
+5) Open the terraform.tfvars file and change the values appropriately.
+
+    project                 = "unique_project_name"
+    region                  = "region"
+    zone                    = "zone"
+    folder                  = "logistics-demo"
+    organization            = "12 digit ord id"
+    billing-account         = "XXXXXX-YYYYYY-ZZZZZZ" 
+
+6) Open the backend.tf file and change the bucket value to an exisitng bucket from the current logged in project.
+
+    terraform {
+      backend "gcs" {
+        bucket      = "replace_this_with_bucket_name"
+        prefix      = "terraform"
+      }
+
+7) Run the below command to initialize terraform.
+
+    terraform init
+
+8) Run the below command to validate the structure of terraform 
+
+    terraform validate
+
+9) Run the below command to apply changes in your project.
+
+    terraform apply.
+
+  Once you run the above command, you would be asked for confirmation. Please provide "yes"

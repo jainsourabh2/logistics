@@ -1,7 +1,7 @@
 resource "google_bigtable_instance" "bigtable-instance" {
   name = "logistics-inst"
   project    = google_project.terraform_generated_project.project_id
-  deletion_protection  = "true"
+  deletion_protection  = "false"
   depends_on = [google_bigquery_table.table]
   cluster {
     cluster_id    = "logistics-cluster"
@@ -11,7 +11,7 @@ resource "google_bigtable_instance" "bigtable-instance" {
   }
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }  
 
 }
@@ -25,7 +25,7 @@ resource "google_bigtable_table" "bigtable-table-order" {
     family = "delivery_stats"
   }  
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 }
 
@@ -38,7 +38,7 @@ resource "google_bigtable_table" "bigtable-table-customer" {
     family = "delivery_stats"
   }
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 }
 
