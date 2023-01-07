@@ -11,6 +11,7 @@ resource "google_bigquery_table" "table" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = "logistics"
   project    = google_project.terraform_generated_project.project_id
+  deletion_protection = false
 
   time_partitioning {
     type  = "DAY"
