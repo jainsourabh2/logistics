@@ -1,7 +1,7 @@
 resource "google_storage_bucket" "gcs_master_data" {
   name          = google_project.terraform_generated_project.project_id
   location      = var.region
-  force_destroy = false
+  force_destroy = true
   project       = google_project.terraform_generated_project.project_id
   public_access_prevention = "enforced"
   uniform_bucket_level_access = true
