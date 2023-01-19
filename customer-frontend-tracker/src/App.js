@@ -10,7 +10,7 @@ function App() {
   const [displayData, setDisplayData] = useState('');
   return (
     <div className="App">
-      <h1 className='title'>Next 2022 - Logistics Package Tracker Demo</h1>
+      <h1 className='title'>Logistics Package Tracker</h1>
       <div className='grid'>
         <CustomerLookupForm dataCallback={setDisplayData} />
         <DisplayForm displayData={displayData} />

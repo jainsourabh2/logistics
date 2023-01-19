@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Real Time Logistics Pipeline',
-  tagline: 'Google Cloud is cool',
+  tagline: 'Google Cloud is awesome',
   url: 'https://cloud.google.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
