@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogistics_real_time_flow=self.webpackChunklogistics_real_time_flow||[]).push([[494],{1029:e=>{e.exports=JSON.parse('{"permalink":"/logistics/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

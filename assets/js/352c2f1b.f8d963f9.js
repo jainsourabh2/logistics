@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogistics_real_time_flow=self.webpackChunklogistics_real_time_flow||[]).push([[892],{9168:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/logistics/blog/tags/docusaurus","allTagsPath":"/logistics/blog/tags","count":4}')}}]);
