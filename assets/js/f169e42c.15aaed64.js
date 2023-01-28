@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogistics_real_time_flow=self.webpackChunklogistics_real_time_flow||[]).push([[789],{5745:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
