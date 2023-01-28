@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Ideation',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        This project was build to demonstrate the capabilities of real time data pipeline within google cloud platform and the difference between persisting data within bigtable and bigquery.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Execution',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Terraform Script is created to deploy the end to end project and resources for demonstration. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Outcome',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        We wanted to learn something new and hence we created Terraform for automated deployment and Docusaurus for ducmentation as part of this project.
       </>
     ),
   },

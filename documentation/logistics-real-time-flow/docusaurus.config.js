@@ -9,7 +9,7 @@ const config = {
   title: 'Real Time Logistics Pipeline',
   tagline: 'Google Cloud is awesome',
   url: 'https://cloud.google.com',
-  baseUrl: '/',
+  baseUrl: '/logistics/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -67,9 +67,8 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Installation',
+            label: 'Getting Started',
           },
-          {to: '/blog', label: 'Features', position: 'left'},
           {
             href: 'https://github.com/jainsourabh2/logistics',
             label: 'GitHub',
@@ -116,7 +115,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Logistics, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

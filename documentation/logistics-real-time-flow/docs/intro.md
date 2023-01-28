@@ -6,9 +6,16 @@ sidebar_position: 1
 
 ## For Argolis Users
 
-### Pre-Steps
+### Pre-requisites
 
-1) Log in via the admin user on GCP Argolis console.
+Below applications need to be installed and available before the start of deployment.
+
+1. git
+2. terraform
+
+### Steps
+
+1) Log in via the admin user on GCP Argolis console. **Its important to have the admin privileges because the automation will create a new project and associate the project with the billind id.**
 
 2) Open the cloud shell via the GCP console.
 
@@ -136,6 +143,8 @@ Package Lookup Result provides the status of the package with latest hop being a
 
 13) Looker based Dashboard Visualization
 
+This is Work In Progress.
+
 
 ### Clean-up
 
@@ -149,12 +158,5 @@ and
 
     terraform destroy
 
-
-
-If you face any errors, please contact xyz@google.com
-
-
-
-
-## For General Users:
+If you face any errors, please contact sourabhsjain@google.com or trushar@google.com
 
