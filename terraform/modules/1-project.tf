@@ -5,7 +5,7 @@ resource "random_id" "random_suffix" {
   byte_length = 10
 }
 
-#roles/resourcemanager.folderCreator permission is needed
+# roles/resourcemanager.folderCreator permission is needed
 resource "google_folder" "logistics-demo" {
   display_name = var.folder
   parent       = "organizations/${var.organization}"
