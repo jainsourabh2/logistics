@@ -9,6 +9,7 @@ import json
 from apache_beam.io import fileio, filesystem
 from apache_beam.io.gcp.bigtableio import WriteToBigTable
 
+
 schema = "status:STRING,transaction_time:TIMESTAMP,item_id:INTEGER,customer_id:STRING,local_warehouse:INTEGER,customer_location:INTEGER,warehouse:INTEGER,supplier_id:INTEGER,package_id:STRING,price:INTEGER"
 bigtable_instance = "logistics-inst"
 bigtable_table_order = "logistics-order"
