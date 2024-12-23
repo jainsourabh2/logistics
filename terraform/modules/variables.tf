@@ -1,10 +1,10 @@
 variable "region" {
-  description = "Region in which the resources will create"
+  description = "Region in which the resources will created"
   type        = string
 }
 
 variable "zone" {
-  description = "Zone in which the resources will create"
+  description = "Zone in which the resources will created"
   type        = string
 }
 
