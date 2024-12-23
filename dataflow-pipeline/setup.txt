@@ -1,5 +1,5 @@
-export PROJECT=on-prem-project-337210
-export REGION=asia-south1
+export PROJECT=<<put the project id>>
+export REGION=<<put the region>>
 export STAGING_LOCATION=gs://vitaming-demo/staging/
 export TEMP_LOCATION=gs://vitaming-demo/temp/
 export TEMPLATE_LOCATION=gs://vitaming-demo/templates/
